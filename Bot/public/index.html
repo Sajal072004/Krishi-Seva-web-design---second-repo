@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #chatbox {
+            width: 100%;
+            height: 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-y: scroll;
+        }
+        #userInput {
+            width: 80%;
+            padding: 10px;
+        }
+        #sendButton {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Farmer Chatbot</h1>
+    <div id="chatbox"></div>
+    <input type="text" id="userInput" placeholder="Type your message here...">
+    <button id="sendButton">Send</button>
+
+    <script>
+        document.getElementById('sendButton').addEventListener('click', () => {
+            const userInput = document.getElementById('userInput').value;
+            if (userInput.trim() === '') return;
+
+            const chatbox = document.getElementById('chatbox');
+            chatbox.innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
+
+            fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => response.json())
+            .then(data => {
+                chatbox.innerHTML += `<p><strong>Bot:</strong> ${data.reply}</p>`;
+                chatbox.scrollTop = chatbox.scrollHeight;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                chatbox.innerHTML += `<p><strong>Bot:</strong> An error occurred</p>`;
+            });
+
+            document.getElementById('userInput').value = '';
+        });
+    </script>
+</body>
+</html>

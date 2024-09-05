@@ -1,0 +1,315 @@
+{
+  "Crops": [
+    { 
+      "id": "1",
+      "title": "Sharbati Wheat",
+      "description": "Sharbati wheat is a popular variety of wheat in India. Sharbati wheat is a popular variety of wheat in India.Sharbati wheat is a popular variety of wheat in India.",
+      "image": "apple.png",
+      "price": 5000,
+      "rating": 4,
+      "category": "Crops"
+    },
+    {
+      "id": "2",
+      "title": "Basmati Rice",
+      "description": "Basmati rice is known for its fragrance and long grains.",
+      "image": "apple.png",
+      "price": 6000,
+      "rating": 5,
+      "category": "Crops"
+    },
+    {
+      "id": "3",
+      "title": "Maize",
+      "description": "Maize is a staple food and is used in various dishes.",
+      "image": "apple.png",
+      "price": 3000,
+      "rating": 4,
+      "category": "Crops"
+    },
+    {
+      "id": "4",
+      "title": "Barley",
+      "description": "Barley is used for food, feed, and brewing purposes.",
+      "image": "apple.png",
+      "price": 3500,
+      "rating": 3,
+      "category": "Crops"
+    },
+    {
+      "id": "5",
+      "title": "Barley",
+      "description": "Barley is used for food, feed, and brewing purposes.",
+      "image": "apple.png",
+      "price": 3500,
+      "rating": 3,
+      "category": "Crops"
+    }
+  ],
+  "Seeds": [
+    { 
+      "id": "1",
+      "title": "Hybrid Rice Seeds",
+      "description": "High-yielding rice seeds for better production.",
+      "image": "apple.png",
+      "price": 3000,
+      "rating": 5,
+      "category": "Seeds"
+    },
+    {
+      "id": "2",
+      "title": "Wheat Seeds",
+      "description": "High-quality wheat seeds for robust growth.",
+      "image": "apple.png",
+      "price": 2800,
+      "rating": 4,
+      "category": "Seeds"
+    },
+    {
+      "id": "3",
+      "title": "Maize Seeds",
+      "description": "Disease-resistant maize seeds for optimal yield.",
+      "image": "apple.png",
+      "price": 3200,
+      "rating": 5,
+      "category": "Seeds"
+    },
+    {
+      "id": "4",
+      "title": "Cotton Seeds",
+      "description": "Cotton seeds with high germination rate.",
+      "image": "apple.png",
+      "price": 4000,
+      "rating": 4,
+      "category": "Seeds"
+    }
+  ],
+  "Pulses": [
+    {
+      "id": "1",
+      "title": "Green Gram",
+      "description": "Green gram, also known as mung bean, is rich in protein.",
+      "image": "https://www.example.com/green-gram.jpg",
+      "price": 4000,
+      "rating": 5,
+      "category": "Pulses"
+    },
+    {
+      "id": "2",
+      "title": "Red Lentils",
+      "description": "Red lentils are a staple in many diets, high in protein.",
+      "image": "https://www.example.com/red-lentils.jpg",
+      "price": 4500,
+      "rating": 4,
+      "category": "Pulses"
+    },
+    {
+      "id": "3",
+      "title": "Chickpeas",
+      "description": "Chickpeas are a versatile pulse used in various cuisines.",
+      "image": "https://www.example.com/chickpeas.jpg",
+      "price": 5000,
+      "rating": 5,
+      "category": "Pulses"
+    },
+    {
+      "id": "4",
+      "title": "Black Gram",
+      "description": "Black gram is used in traditional Indian dishes like dal.",
+      "image": "https://www.example.com/black-gram.jpg",
+      "price": 4300,
+      "rating": 4,
+      "category": "Pulses"
+    }
+  ],
+  "Fruits": [
+    {
+      "id": "1",
+      "title": "Mango",
+      "description": "Mangoes are sweet, tropical fruits loved by many.",
+      "image": "https://www.example.com/mango.jpg",
+      "price": 2000,
+      "rating": 5,
+      "category": "Fruits"
+    },
+    {
+      "id": "2",
+      "title": "Banana",
+      "description": "Bananas are rich in potassium and easy to eat on the go.",
+      "image": "https://www.example.com/banana.jpg",
+      "price": 1500,
+      "rating": 4,
+      "category": "Fruits"
+    },
+    {
+      "id": "3",
+      "title": "Apple",
+      "description": "Apples are crisp and can be enjoyed fresh or cooked.",
+      "image": "https://www.example.com/apple.jpg",
+      "price": 2500,
+      "rating": 5,
+      "category": "Fruits"
+    },
+    {
+      "id": "4",
+      "title": "Grapes",
+      "description": "Grapes are small, juicy fruits perfect for snacking.",
+      "image": "https://www.example.com/grapes.jpg",
+      "price": 2200,
+      "rating": 4,
+      "category": "Fruits"
+    }
+  ],
+  "Vegetables": [
+    {
+      "id": "1",
+      "title": "Tomato",
+      "description": "Tomatoes are a versatile vegetable used in many dishes.",
+      "image": "https://www.example.com/tomato.jpg",
+      "price": 1200,
+      "rating": 4,
+      "category": "Vegetables"
+    },
+    {
+      "id": "2",
+      "title": "Potato",
+      "description": "Potatoes are a staple in many diets, versatile in cooking.",
+      "image": "https://www.example.com/potato.jpg",
+      "price": 1100,
+      "rating": 5,
+      "category": "Vegetables"
+    },
+    {
+      "id": "3",
+      "title": "Onion",
+      "description": "Onions are essential in many recipes, providing flavor and aroma.",
+      "image": "https://www.example.com/onion.jpg",
+      "price": 1000,
+      "rating": 4,
+      "category": "Vegetables"
+    },
+    {
+      "id": "4",
+      "title": "Carrot",
+      "description": "Carrots are rich in beta-carotene and good for vision.",
+      "image": "https://www.example.com/carrot.jpg",
+      "price": 1300,
+      "rating": 5,
+      "category": "Vegetables"
+    }
+  ],
+  "Fodder Crops": [
+    {
+      "id": "1",
+      "title": "Alfalfa",
+      "description": "Alfalfa is a high-protein fodder crop for livestock.",
+      "image": "https://www.example.com/alfalfa.jpg",
+      "price": 5000,
+      "rating": 5,
+      "category": "Fodder Crops"
+    },
+    {
+      "id": "2",
+      "title": "Sorghum",
+      "description": "Sorghum is a drought-resistant crop used for feeding livestock.",
+      "image": "https://www.example.com/sorghum.jpg",
+      "price": 4000,
+      "rating": 4,
+      "category": "Fodder Crops"
+    },
+    {
+      "id": "3",
+      "title": "Corn Silage",
+      "description": "Corn silage is an energy-rich fodder used to feed dairy cattle.",
+      "image": "https://www.example.com/corn-silage.jpg",
+      "price": 4500,
+      "rating": 5,
+      "category": "Fodder Crops"
+    },
+    {
+      "id": "4",
+      "title": "Oat",
+      "description": "Oat is a nutritious fodder crop for horses and livestock.",
+      "image": "https://www.example.com/oat.jpg",
+      "price": 3000,
+      "rating": 4,
+      "category": "Fodder Crops"
+    }
+  ],
+  "Dairy Products": [
+    {
+      "id": "1",
+      "title": "Milk",
+      "description": "Fresh and pure milk rich in calcium.",
+      "image": "https://www.example.com/milk.jpg",
+      "price": 50,
+      "rating": 5,
+      "category": "Dairy Products"
+    },
+    {
+      "id": "2",
+      "title": "Cheese",
+      "description": "Creamy and flavorful cheese made from fresh milk.",
+      "image": "https://www.example.com/cheese.jpg",
+      "price": 200,
+      "rating": 5,
+      "category": "Dairy Products"
+    },
+    {
+      "id": "3",
+      "title": "Yogurt",
+      "description": "Natural yogurt with probiotics for a healthy gut.",
+      "image": "https://www.example.com/yogurt.jpg",
+      "price": 100,
+      "rating": 4,
+      "category": "Dairy Products"
+    },
+    {
+      "id": "4",
+      "title": "Butter",
+      "description": "Rich and creamy butter perfect for cooking and baking.",
+      "image": "https://www.example.com/butter.jpg",
+      "price": 150,
+      "rating": 5,
+      "category": "Dairy Products"
+    }
+  ],
+  "Fertilizers": [
+    {
+      "id": "1",
+      "title": "Urea",
+      "description": "Urea is a widely used nitrogen fertilizer.",
+      "image": "https://www.example.com/urea.jpg",
+      "price": 1000,
+      "rating": 5,
+      "category": "Fertilizers"
+    },
+    {
+      "id": "2",
+      "title": "DAP",
+      "description": "Diammonium phosphate (DAP) is a high-phosphate fertilizer.",
+      "image": "https://www.example.com/dap.jpg",
+      "price": 1200,
+      "rating": 5,
+      "category": "Fertilizers"
+    },
+    {
+      "id": "3",
+      "title": "Potash",
+      "description": "Potash is a potassium-rich fertilizer essential for plant growth.",
+      "image": "https://www.example.com/potash.jpg",
+      "price": 1300,
+      "rating": 4,
+      "category": "Fertilizers"
+    },
+    {
+      "id": "4",
+      "title": "NPK",
+      "description": "NPK fertilizer contains nitrogen, phosphorus, and potassium.",
+      "image": "https://www.example.com/npk.jpg",
+      "price": 1500,
+      "rating": 5,
+      "category": "Fertilizers"
+    }
+  ]
+}

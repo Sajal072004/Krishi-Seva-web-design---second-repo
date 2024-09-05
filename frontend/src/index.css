@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Custom scrollbar styles for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #d4edda; /* Light green background of the scrollbar track */
+  border-radius: 10px; /* Curved edges for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1B7A43; /* Dark green color for the scrollbar thumb */
+  border-radius: 10px; /* Curved edges for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1B7A43; /* Darker green when hovering over the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #1B7A43; /* Even darker green when clicking on the scrollbar thumb */
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hide arrows at the top and bottom */
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent; /* Hide the corner where the scrollbars meet */
+}
+
+/* Ensure that the body uses the new scrollbar styles */
+body {
+  margin: 0;
+  padding: 0;
+}
