@@ -2,16 +2,33 @@ import React, { useState } from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
 
 const ForgotPassword = () => {
-  const [otp, setOtp] = useState('');
+  const [otp, setOtp] = useState(new Array(6).fill('')); // Create an array for 6 digits
 
-  const handleChange = (e) => {
-    setOtp(e.target.value);
+  // Handle the input change for each OTP box
+  const handleChange = (e, index) => {
+    const value = e.target.value;
+    if (/^\d$/.test(value)) { // Ensure only digits are entered
+      const newOtp = [...otp];
+      newOtp[index] = value;
+      setOtp(newOtp);
+
+      // Move focus to the next input field if available
+      if (index < 5 && value) {
+        document.getElementById(`otp-input-${index + 1}`).focus();
+      }
+    } else if (value === '') {
+      const newOtp = [...otp];
+      newOtp[index] = '';
+      setOtp(newOtp);
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Combine the OTP digits into a single string
+    const enteredOtp = otp.join('');
+    console.log('Entered OTP:', enteredOtp);
     // Handle OTP submission logic here
-    console.log('Entered OTP:', otp);
   };
 
   return (
@@ -54,16 +71,19 @@ const ForgotPassword = () => {
             An OTP has been sent to your registered email. Please enter the 6-digit OTP below to reset your password.
           </p>
           <form onSubmit={handleSubmit} className="space-y-5">
-            <input
-              type="text"
-              name="otp"
-              placeholder="Enter 6-digit OTP"
-              value={otp}
-              onChange={handleChange}
-              required
-              maxLength="6"
-              className="w-full p-3 border border-gray-300 rounded-lg text-center text-xl focus:outline-none focus:ring-2 focus:ring-green-700"
-            />
+            <div className="flex justify-between space-x-2">
+              {otp.map((digit, index) => (
+                <input
+                  key={index}
+                  id={`otp-input-${index}`}
+                  type="text"
+                  maxLength="1"
+                  value={digit}
+                  onChange={(e) => handleChange(e, index)}
+                  className="w-12 h-12 text-center text-xl border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-700"
+                />
+              ))}
+            </div>
 
             <button
               type="submit"

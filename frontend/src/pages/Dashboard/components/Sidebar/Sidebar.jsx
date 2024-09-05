@@ -10,6 +10,10 @@ import { FaBook } from "react-icons/fa";
 import { VscCommentDiscussion } from "react-icons/vsc";
 import { useNavigate, useLocation } from 'react-router-dom';
 
+// Make sure to use correct paths for images
+const logoPath = "/logo.png";
+const helpCenterPath = "/help_center.png";
+
 const arr = [
   {
     "id": 1,
@@ -27,7 +31,7 @@ const arr = [
     "id": 3,
     "title": "Explore",
     "icon": <FaMagnifyingGlass />,
-    "path": "/services"
+    "path": "/explore"  // Updated path for the Explore section
   },
   {
     "id": 4,
@@ -73,9 +77,10 @@ const Sidebar = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // Set the selected item based on the current path
     const currentPath = location.pathname;
-    const currentItem = arr.find(item => item.path === currentPath);
+    const currentItem = arr.find(item =>
+      currentPath.startsWith(item.path) || (item.path === '/explore' && currentPath.includes('/explore'))
+    );
     if (currentItem) {
       setSelected(currentItem.title);
     }
@@ -88,10 +93,9 @@ const Sidebar = () => {
 
   return (
     <div className='w-[25vw] md:w-[17vw] bg-white h-screen flex flex-col'>
-      {/* Sticky top section */}
-      <div className='flex flex-row items-center p-3 sticky top-0 bg-white z-10 justify-between mr-8 mb-8'>
-        <img src="logo.png" alt="Logo" className='w-[70px] h-[70px]' />
-        <h1 className='text-2xl text-gray-700 font-semibold'>Krishi Seva</h1>
+      <div className='flex flex-row items-center p-3 sticky top-0 bg-white z-10 justify-between mx-4'>
+        <img src={logoPath} alt="Logo" className='w-[70px] h-[70px]' />
+        <h1 className='text-2xl text-gray-700 font-semibold ml-[-20px]'>Krishi Seva</h1>
       </div>
 
       {/* Scrollable content */}
@@ -112,20 +116,19 @@ const Sidebar = () => {
             </div>
           ))}
         </div>
-    
 
-      {/* Help Center */}
-      <div className='mt-8 mb-12 flex flex-col items-center relative p-3'>
-        <img src="help_center.png" alt="Help Center" className='w-[85%] h-[100%] absolute z-0' />
-        <p className='text-gray-700 z-20 mt-16 font-semibold'>Help Center</p>
-        <p className='w-[80%] text-gray-700 z-20 mt-10 font-semibold'>Having trouble? Contact us for more questions.</p>
-        <button className='z-20 mt-8 px-4 py-2 bg-[#1b7a43] text-white rounded-lg '>
-          Go to Help Center
-        </button>
-      </div>
+        {/* Help Center */}
+        <div className='mt-8 mb-12 flex flex-col items-center relative p-3'>
+          <img src={helpCenterPath} alt="Help Center" className='w-[85%] h-[100%] absolute z-0' />
+          <p className='text-gray-700 z-20 mt-16 font-semibold'>Help Center</p>
+          <p className='w-[80%] text-gray-700 z-20 mt-10 font-semibold'>Having trouble? Contact us for more questions.</p>
+          <button className='z-20 mt-8 px-4 py-2 bg-[#1b7a43] text-white rounded-lg'>
+            Go to Help Center
+          </button>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default Sidebar;

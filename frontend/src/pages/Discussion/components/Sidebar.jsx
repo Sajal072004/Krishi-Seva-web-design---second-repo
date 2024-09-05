@@ -31,7 +31,7 @@ const arr = [
     "id": 3,
     "title": "Explore",
     "icon": <FaMagnifyingGlass />,
-    "path": "/services"
+    "path": "/explore"  // Updated path for the Explore section
   },
   {
     "id": 4,
@@ -78,8 +78,8 @@ const Sidebar = () => {
 
   useEffect(() => {
     const currentPath = location.pathname;
-    const currentItem = arr.find(item => 
-      currentPath.startsWith(item.path) // Check if currentPath starts with item.path
+    const currentItem = arr.find(item =>
+      currentPath.startsWith(item.path) || (item.path === '/explore' && currentPath.includes('/explore'))
     );
     if (currentItem) {
       setSelected(currentItem.title);
@@ -93,9 +93,9 @@ const Sidebar = () => {
 
   return (
     <div className='w-[25vw] md:w-[17vw] bg-white h-screen flex flex-col'>
-      <div className='flex flex-row items-center p-3 sticky top-0 bg-white z-10 justify-between mr-8 mb-8'>
+      <div className='flex flex-row items-center p-3 sticky top-0 bg-white z-10 justify-between mx-4'>
         <img src={logoPath} alt="Logo" className='w-[70px] h-[70px]' />
-        <h1 className='text-2xl text-gray-700 font-semibold'>Krishi Seva</h1>
+        <h1 className='text-2xl text-gray-700 font-semibold ml-[-20px]'>Krishi Seva</h1>
       </div>
 
       {/* Scrollable content */}
@@ -129,6 +129,6 @@ const Sidebar = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Sidebar;

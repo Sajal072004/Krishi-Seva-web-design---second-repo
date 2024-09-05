@@ -19,8 +19,9 @@ const Services = () => {
         <Utilities/>
         <Labs/>
         <Schemes/>
-        <Footer/>
+        
       </div>
+      <Footer/>
       
 
     </>

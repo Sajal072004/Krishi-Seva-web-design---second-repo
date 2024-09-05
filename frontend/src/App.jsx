@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import Services from './pages/Services/Services';
+import Services from './pages/Services/Services.jsx'
 import Dashboard from './pages/Dashboard/Dashboard';
 import Mandi from './pages/Mandi/Mandi';
 import ContactUs from './pages/ContactUs/ContactUs';
@@ -19,6 +19,8 @@ import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
+import GovtSchemes from './pages/Govt-Schemes/GovtSchemes';
+import PrivateRoute from './components/PrivateRoute';
 
 const App = () => {
   return (
@@ -27,22 +29,36 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/mandi" element={<Mandi />} />
-        <Route path="/educational" element={<Educational />} />
-        <Route path="/latest-news" element={<News />} />
-        <Route path="/contact-us" element={<ContactUs />} />
+
+        <Route path="/explore/govt-schemes" element={<GovtSchemes />} />
+
+        <Route path="/explore" element={<Services />} />
+
+        <Route path="/contact-us" element={<ContactUs />}/>
+
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/mandi-seller" element={<Seller />} />
-        <Route path="/discussions" element={<Discussion />} />
-        <Route path="/discussions/new-thread" element={<NewThread />} />
-        <Route path="/sign-up" element={<SignUp />} />
+
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
-        <Route path="/discussions/:id" element={<ThreadDetail />} />
-        <Route path="/latest-news/:id" element={<NewsDetail />} />
-        <Route path="/settings" element={<Settings />} />
+
+        {/* Protected routes */}
+
+        <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
+        <Route path="/mandi" element={<PrivateRoute element={<Mandi />} />} />
+        <Route path="/educational" element={<PrivateRoute element={<Educational />} />} />
+        <Route path="/latest-news" element={<PrivateRoute element={<News />} />} />
+        
+        
+        <Route path="/mandi-seller" element={<PrivateRoute element={<Seller />} />} />
+        <Route path="/discussions" element={<PrivateRoute element={<Discussion />} />} />
+        <Route path="/discussions/new-thread" element={<PrivateRoute element={<NewThread />} />} />
+        <Route path="/discussions/:id" element={<PrivateRoute element={<ThreadDetail />} />} />
+        <Route path="/latest-news/:id" element={<PrivateRoute element={<NewsDetail />} />} />
+        <Route path="/settings" element={<PrivateRoute element={<Settings />} />} />
+        
+        
       </Routes>
     </>
   );

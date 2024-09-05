@@ -1,12 +1,25 @@
-import React, { useState } from 'react';
-import { FaGoogle } from 'react-icons/fa';
-import { FaPhoneAlt } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import { FaGoogle, FaPhoneAlt } from 'react-icons/fa';
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 const SignIn = () => {
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   });
+
+  const [url, setUrl] = useState('https://kisansevao.onrender.com/api/v1/user/signin');
+  const navigate = useNavigate(); // To handle redirection
+
+  useEffect(() => {
+    // Check if token exists in localStorage
+    const token = localStorage.getItem('token');
+    if (token) {
+      // If token exists, redirect to the dashboard
+      navigate('/dashboard');
+    }
+  }, [navigate]);
 
   const handleChange = (e) => {
     setFormData({
@@ -15,10 +28,27 @@ const SignIn = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add form submission logic here
-    console.log('Form Data:', formData);
+    
+    try {
+      const response = await axios.post(url, formData);
+      console.log(response);
+
+      if (response.data.success) {
+        // Store token and user info in localStorage
+        localStorage.setItem('token', response.data.token);
+        localStorage.setItem('userId', response.data.userId);
+        alert('Login Successful!');
+        // Redirect to the dashboard
+        navigate('/dashboard');
+      } else {
+        alert(response.data.message);
+      }
+    } catch (error) {
+      console.error('Error during sign-in:', error);
+      alert('Sign In failed. Please check your credentials.');
+    }
   };
 
   return (
@@ -27,7 +57,7 @@ const SignIn = () => {
       <nav className="bg-white shadow-md">
         <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
           <div className="flex items-center">
-            <img src="logo.png" alt="Logo" className="h-12" /> {/* Replace with your logo */}
+            <img src="logo.png" alt="Logo" className="h-12" />
             <h1 className="text-xl ml-4">Krishi Seva</h1>
           </div>
           <div className="flex space-x-6">
@@ -54,7 +84,7 @@ const SignIn = () => {
       {/* Green Background Div */}
       <div className="bg-[#c5f4c1] flex flex-1">
         {/* Left Half: Form */}
-        <div className="w-2/3 flex justify-center items-center px">
+        <div className="w-2/3 flex justify-center items-center">
           <form
             onSubmit={handleSubmit}
             className="p-6 rounded-xl w-full space-y-5 max-w-[80%]"
@@ -122,13 +152,16 @@ const SignIn = () => {
           </form>
         </div>
 
+        {/* Right Half: Image and Heading */}
         <div className="w-1/2">
           <div className="h-1/3">
-            <h2 className="text-3xl font-bold text-center mt-12 text-green-500">
-              Reach Your Customer Faster
-            </h2>
+            <h2 className="text-3xl font-bold text-center mt-12 text-green-500">Join Us for a Better Future</h2>
           </div>
-          <img src="signin.jpg" alt="Sign In" className="w-[500px] h-[300px]" />
+          <img
+            src="signin.jpg"
+            alt="Sign In"
+            className="w-[500px] h-[300px]"
+          />
         </div>
       </div>
     </div>

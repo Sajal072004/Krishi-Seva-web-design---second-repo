@@ -1,21 +1,44 @@
-import React from 'react'
+import React from 'react';
 
-const Card = () => {
+const Card = ({ title, downloadLink, link }) => {
   return (
-    <div className='h-[90vh] shadow'>
+    <div className='h-[50vh] shadow-md rounded-lg overflow-hidden'>
+      {/* Image at the top of the card */}
       <div 
-        className='h-[35vh] w-full relative flex items-center justify-center bg-cover bg-center'
-        style={{ backgroundImage: `url('home_image.png')` }}>
+        className='h-[25vh] w-full bg-cover bg-center'
+        style={{ backgroundImage: `url('home_image.png')` }} // Replace 'home_image.png' with your actual image path
+      >
+        {/* Alternatively, you can use an <img> tag */}
+        {/* <img src="home_image.png" alt="Card Image" className="h-full w-full object-cover" /> */}
       </div>
-      <div className='mr-3 ml-2 w-[20vw]  p-2'>
-        <h1 className='text-xl mt-6 font-semibold'>From Farm to Table, Exploring the Journey of Agro Produce</h1>
-        <p className='my-6'>
-          Exploring the journey of agro produce, delving into the intricate process of bringing agricultural products from farms to consumers' tables. This enlightening exploration traces the various stages of production including cultivation, harvesting, processing, packaging, distribution, and retail.
+
+      {/* Card content */}
+      <div className='p-4'>
+        <h1 className='text-lg font-semibold'>{title}</h1>
+        <p className='my-4'>
+          {downloadLink !== 'NA' ? (
+            <a 
+              href={downloadLink} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className='text-blue-500 underline'>
+              Download Guidelines
+            </a>
+          ) : (
+            <span>Download not available</span>
+          )}
         </p>
-        <button className='w-full bg-[#1b7a43] text-white py-2 rounded-md text-center'>Read More</button>
+        <a 
+          href={link} 
+          target="_blank" 
+          rel="noopener noreferrer">
+          <button className='w-full bg-[#1b7a43] text-white py-2 rounded-md text-center'>
+            Visit Link
+          </button>
+        </a>
       </div>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

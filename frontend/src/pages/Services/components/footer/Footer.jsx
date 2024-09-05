@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='mt-16 bg-[#d2eacf] h-[48vh]'>
+    <div className='mt-0 bg-[#d2eacf] h-[48vh]'>
       <div className='h-[30vh] flex justify-center'>
         <div className='w-[35vw] flex justify-center flex-col items-center mt-6'>
           <img 
