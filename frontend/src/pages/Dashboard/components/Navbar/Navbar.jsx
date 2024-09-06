@@ -2,10 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { MdDarkMode } from 'react-icons/md';
 import { FaRegBell } from 'react-icons/fa6';
 import { IoSearch } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const menuRef = useRef(null);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setShowMenu(prevState => !prevState);
@@ -15,8 +17,8 @@ const Navbar = () => {
     // Handle logout logic here
     localStorage.removeItem('token');
     localStorage.removeItem('userId');
-    alert('Logged out successfully!');
-    // Redirect to login or home page
+    navigate('/sign-in');
+    
   };
 
   useEffect(() => {

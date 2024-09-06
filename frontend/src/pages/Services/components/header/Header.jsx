@@ -29,7 +29,7 @@ const Header = () => {
         <ul className='flex gap-x-6 lg:gap-x-12 list-none p-0 text-gray-500 text-lg cursor-pointer'>
           <li onClick={() => handleNavigation('/dashboard')}>Dashboard</li>
           <li onClick={() => handleNavigation('', 'products')}>Mandi</li>
-          <li onClick={() => handleNavigation('', 'services')}>Services</li>
+          <li onClick={() => handleNavigation('', 'services')}>Disease Prediction</li>
           <li onClick={() => handleNavigation('', 'labs')}>Labs</li>
           <li onClick={() => handleNavigation('', 'schemes')}>Schemes</li>
           <li onClick={() => handleNavigation('/contact-us')}>Contact Us</li>

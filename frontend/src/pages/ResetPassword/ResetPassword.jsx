@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios'; // Import axios
+import { useNavigate } from 'react-router-dom';
 
 const ResetPassword = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const navigate = useNavigate();
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -13,15 +18,45 @@ const ResetPassword = () => {
     setConfirmPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    if (password === confirmPassword) {
-      console.log('Password successfully reset');
-    } else {
-      console.log('Passwords do not match');
+  
+    if (!password || !confirmPassword) {
+      toast.error('Password and confirm password fields cannot be empty.');
+      return;
+    }
+  
+    if (password !== confirmPassword) {
+      toast.error('Passwords do not match.');
+      return;
+    }
+  
+    const otp = Number(localStorage.getItem('otp'));
+    if (!otp) {
+      toast.error('OTP not found. Please request a new OTP.');
+      return;
+    }
+  
+    try {
+      const response = await axios.post('http://localhost:3000/api/v1/user/resetPassword', {
+        password : password,
+        otp,
+      }
+      );
+  
+      if (response.status === 202) {
+        toast.success('Password successfully reset.');
+        localStorage.removeItem('otp');
+        navigate('/sign-in');
+      } else {
+        toast.error('Failed to reset password. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error resetting password:', error);
+      toast.error('An error occurred. Please try again.');
     }
   };
+  
 
   return (
     <div className="flex flex-col h-screen">
@@ -92,6 +127,9 @@ const ResetPassword = () => {
           </form>
         </div>
       </div>
+
+      {/* Toast container */}
+      <ToastContainer />
     </div>
   );
 };

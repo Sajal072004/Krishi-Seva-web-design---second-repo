@@ -9,11 +9,12 @@ const SignIn = () => {
     password: '',
   });
 
+  const [email, setEmail] = useState('');
   const [url, setUrl] = useState('https://kisansevao.onrender.com/api/v1/user/signin');
   const navigate = useNavigate(); // To handle redirection
 
   useEffect(() => {
-    // Check if token exists in localStorage
+    
     const token = localStorage.getItem('token');
     if (token) {
       // If token exists, redirect to the dashboard
@@ -26,6 +27,9 @@ const SignIn = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
+    if (e.target.name === 'email') {
+      setEmail(e.target.value); // Update email state
+    }
   };
 
   const handleSubmit = async (e) => {
@@ -48,6 +52,33 @@ const SignIn = () => {
     } catch (error) {
       console.error('Error during sign-in:', error);
       alert('Sign In failed. Please check your credentials.');
+    }
+  };
+
+  const handleForgotPassword = async () => {
+    if (!email) {
+      alert('Please enter your email before requesting a password reset.');
+      return;
+    }
+
+    try {
+      const response = await axios.post('http://localhost:3000/api/v1/user/forget', {
+        email
+      });
+
+      console.log(response);
+
+      if (response.data.otp) {
+        
+        localStorage.setItem('otp', response.data.otp);
+        // Redirect to the Forgot Password page
+        navigate('/forgot-password');
+      } else {
+        alert('Failed to retrieve OTP. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error during forgot password request:', error);
+      alert('An error occurred. Please try again.');
     }
   };
 
@@ -115,9 +146,13 @@ const SignIn = () => {
 
             {/* Forgot Password Link */}
             <div className="text-left">
-              <a href="/forgot-password" className="text-green-700 hover:underline">
+              <button
+                type="button"
+                onClick={handleForgotPassword}
+                className="text-green-700 hover:underline"
+              >
                 Forgot Password?
-              </a>
+              </button>
             </div>
 
             <button

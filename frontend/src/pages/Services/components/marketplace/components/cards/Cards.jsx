@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useNavigate } from "react-router-dom";
 
 const cardData = [
 
@@ -42,6 +43,7 @@ const cardData = [
 
 const NextArrow = (props) => {
   const { onClick } = props;
+  
   return (
     <div
       className="absolute top-[42%] transform -translate-y-1/2 right-[-70px] z-10 cursor-pointer"
@@ -78,14 +80,16 @@ const Cards = () => {
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
+  const navigate = useNavigate();
 
   return (
-    <div className="w-3/4 m-auto relative h-[450px] ">
+    <div className="w-3/4 m-auto relative h-[450px]  cursor-pointer">
       <div className="mt-20 h-full"> 
         <Slider {...settings}>
           {cardData.map((d, index) => {
             return (
               <div
+              onClick={()=> navigate('/mandi')}
                 key={index}
                 className="bg-white h-full text-black rounded-xl shadow-xl "
                 

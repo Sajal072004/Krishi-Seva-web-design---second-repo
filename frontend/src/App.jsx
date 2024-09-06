@@ -21,6 +21,9 @@ import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import ResetPassword from './pages/ResetPassword/ResetPassword';
 import GovtSchemes from './pages/Govt-Schemes/GovtSchemes';
 import PrivateRoute from './components/PrivateRoute';
+import ChatBot from './pages/ChatBot/ChatBot';
+import DiseasePrediction from './pages/DiseasePrediction/DiseasePrediction';
+import LabsNearby from './pages/LabsNearby/LabsNearby';
 
 const App = () => {
   return (
@@ -46,6 +49,12 @@ const App = () => {
         {/* Protected routes */}
 
         <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
+
+        <Route path="/disease-prediction" element={<PrivateRoute element={<DiseasePrediction />} />} />
+
+        <Route path="/nearby-labs" element={<PrivateRoute element={<LabsNearby />} />} />
+
+        <Route path="/chat-bot" element={<PrivateRoute element={<ChatBot />} />} />
         <Route path="/mandi" element={<PrivateRoute element={<Mandi />} />} />
         <Route path="/educational" element={<PrivateRoute element={<Educational />} />} />
         <Route path="/latest-news" element={<PrivateRoute element={<News />} />} />

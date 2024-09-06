@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "proxy": "http://localhost:3000"
-
+    "proxy": "https://krishisevao.onrender.com"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { FaPhoneAlt } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify'; // Import ToastContainer and toast
+import 'react-toastify/dist/ReactToastify.css'; // Import toast styles
 
 const ForgotPassword = () => {
   const [otp, setOtp] = useState(new Array(6).fill('')); // Create an array for 6 digits
+  const navigate = useNavigate(); // To handle redirection
 
   // Handle the input change for each OTP box
   const handleChange = (e, index) => {
@@ -25,10 +29,17 @@ const ForgotPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Combine the OTP digits into a single string
+
     const enteredOtp = otp.join('');
-    console.log('Entered OTP:', enteredOtp);
-    // Handle OTP submission logic here
+    const storedOtp = localStorage.getItem('otp');
+
+    if (enteredOtp === storedOtp) {
+    
+      navigate('/reset-password');
+    } else {
+      
+      toast.error('The OTP you entered is incorrect. Please try again.');
+    }
   };
 
   return (
@@ -94,6 +105,9 @@ const ForgotPassword = () => {
           </form>
         </div>
       </div>
+
+      {/* Toast container */}
+      <ToastContainer />
     </div>
   );
 };
