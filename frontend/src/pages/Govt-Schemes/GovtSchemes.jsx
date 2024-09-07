@@ -51,7 +51,7 @@ const GovtSchemes = () => {
 <option value='arunachal_pradesh'>Arunachal Pradesh</option>
 <option value='assam'>Assam</option>
 <option value='bihar'>Bihar</option>
-<option value='chhattisgarh'>Chhattisgarh</option>
+<option value='chattisgarh'>Chhattisgarh</option>
 <option value='goa'>Goa</option>
 <option value='gujarat'>Gujarat</option>
 <option value='haryana'>Haryana</option>

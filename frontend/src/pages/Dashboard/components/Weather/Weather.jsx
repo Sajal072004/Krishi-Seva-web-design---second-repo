@@ -33,7 +33,7 @@ const SectionOne = () => {
 
       <p className='relative z-20 ml-[-160px] text-2xl mt-1 text-white'>Mostly Sunny</p>
 
-      <a href="https://weather-vmll.vercel.app/">
+      <a href="https://sajal072004.github.io/Weather-App/">
         <button className='relative z-20 bg-white mt-8 w-[200px] py-4 text-[#1b7a43] rounded-lg text-xl'>
           Know More
         </button>
