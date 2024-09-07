@@ -3,9 +3,11 @@ import { MdDarkMode } from "react-icons/md";
 
 import { IoSearch } from "react-icons/io5";
 import { BsBagFill } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
-  const itemCount = 2; // Example item count; update this with actual cart data
+  const itemCount = 2; 
+  const navigate = useNavigate();
 
   return (
     <>
@@ -22,7 +24,9 @@ const Navbar = () => {
         </div>
 
         <div className='ml-[-100px] hidden md:flex w-[25%] items-start justify-center mt-2'>
-          <div className='w-[320px] h-[40px] rounded-lg flex pl-10 pt-1 text-[24px] ml-20 mt-8 text-[#1b7a43] underline cursor-pointer'>
+          <div className='w-[320px] h-[40px] rounded-lg flex pl-10 pt-1 text-[24px] ml-20 mt-8 text-[#1b7a43] underline cursor-pointer'
+          onClick={()=>navigate('/mandi')}
+          >
             Back to Mandi
           </div>
         </div>

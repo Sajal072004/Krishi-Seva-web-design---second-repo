@@ -1,22 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaCommentAlt } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
+import axios from 'axios';
 
-const Thread = ({ id, profilePic, heading, hashtag, likes, comments, username, description, commentDesc }) => {
+const Thread = ({ profilePic, title, hashtag, likes, comments, content, commentDesc, username }) => {
+  
   const navigate = useNavigate();
-
+  
   const handleThreadClick = () => {
     navigate('/discussions/thread-detail', {
       state: {
+        username,
         profilePic,
-        heading,
+        title,
         hashtag,
         likes,
         comments,
-        username,
-        description,
-        commentDesc: commentDesc || [] // Ensure this is an array
+        content,
+        commentDesc: commentDesc || [] 
       }
     });
   };
@@ -34,20 +36,21 @@ const Thread = ({ id, profilePic, heading, hashtag, likes, comments, username, d
       <div className="flex-grow">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center space-x-2">
-            <h3 className="text-lg font-semibold">{heading}</h3>
+            <h3 className="text-lg font-semibold">{title}</h3>
             <p className="text-sm">{hashtag}</p>
           </div>
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-1">
               <BiSolidLike className="text-lg" />
-              <span>{likes}</span>
+              <span>{likes.length}</span>
             </div>
             <div className="flex items-center space-x-1">
               <FaCommentAlt className="text-lg" />
-              <span>{comments}</span>
+              <span>{comments.length}</span>
             </div>
           </div>
         </div>
+        {/* Display the fetched username */}
         <p className="text-sm">{username}</p>
       </div>
     </div>

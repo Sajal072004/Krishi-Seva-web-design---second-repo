@@ -6,29 +6,58 @@ import { useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const NewThread = () => {
   const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
+  const [content, setDescription] = useState('');
   const navigate = useNavigate();
 
-  const handleCreate = () => {
-    // Validate input fields
+  
+
+  const handleCreate = async () => {
     if (!title) {
       toast.error('Please fill in the title');
       return;
     }
-    if (!description) {
-      toast.error('Please fill in the description');
+    if (!content) {
+      toast.error('Please fill in the content');
       return;
     }
-
-    toast.success('Thread Created');
-
-    
-    setTimeout(() => {
-      navigate('/discussions');
-    }, 2000); 
+  
+    const userId = localStorage.getItem('userId');
+    if (!userId) {
+      toast.error('Failed to retrieve user ID');
+      return;
+    }
+    console.log(userId);
+  
+    try {
+      const response = await fetch('http://localhost:3000/api/v1/tweets', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          title,
+          content,
+          userId
+        })
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to create thread');
+      }
+  
+      toast.success('Thread Created');
+      setTimeout(() => {
+        // Redirect to discussions with 'my-threads' selected
+        navigate('/discussions', { state: { selectedOption: 'my-threads' } });
+      }, 2000);
+    } catch (error) {
+      toast.error(`Error: ${error.message}`);
+    }
   };
+  
 
   return (
     <div className="overflow-x-hidden bg-[#f9fafc] h-screen">
@@ -62,15 +91,15 @@ const NewThread = () => {
                 />
               </div>
               <div>
-                <label htmlFor="description" className="block text-lg font-semibold text-gray-700 mb-2">Description</label>
+                <label htmlFor="content" className="block text-lg font-semibold text-gray-700 mb-2">content</label>
                 <textarea
-                  id="description"
-                  value={description}
+                  id="content"
+                  value={content}
                   onChange={(e) => setDescription(e.target.value)}
                   rows="6"
                   required
                   className="block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
-                  placeholder="Enter thread description"
+                  placeholder="Enter thread content"
                 />
               </div>
             </div>

@@ -31,6 +31,8 @@ import Insecticides from './pages/Educational/components/Insecticides';
 import Irrigation from './pages/Educational/components/Irrigation';
 import Sowing from './pages/Educational/components/Sowing';
 import Weeds from './pages/Educational/components/Weeds';
+import Finance from './pages/Finance/Finance';
+import Weather from './pages/Weather/Weather';
 
 const App = () => {
   return (
@@ -82,6 +84,8 @@ const App = () => {
         <Route path="/educational/irrigation" element={<PrivateRoute element={<Irrigation/>} />} />
         <Route path="/educational/sowing" element={<PrivateRoute element={<Sowing/>} />} />
         <Route path="/educational/weeds" element={<PrivateRoute element={<Weeds/>} />} />
+        <Route path="/finance" element={<PrivateRoute element={<Finance/>} />} />
+        <Route path="/weather" element={<PrivateRoute element={<Weather/>} />} />
         
         
         

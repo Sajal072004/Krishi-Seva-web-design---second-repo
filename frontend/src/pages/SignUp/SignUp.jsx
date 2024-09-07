@@ -22,11 +22,11 @@ const SignUp = () => {
   const [url, setUrl] = useState('https://kisansevao.onrender.com/api/v1/user/signup');
   const navigate = useNavigate(); // Initialize useNavigate
 
-  // Check if the token exists and redirect to /dashboard if it does
+  
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      navigate('/dashboard'); // Redirect to dashboard if token is found
+      navigate('/dashboard'); 
     }
   }, [navigate]);
 
@@ -50,10 +50,10 @@ const SignUp = () => {
         
         if (response.data.message === 'User already exists') {
           toast.error('User already exists. Please log in.');
-          navigate('/Sign-in'); // Redirect to login if user already exists
+          navigate('/Sign-in'); 
         } else {
           toast.success('Signup successful! Redirecting to dashboard...');
-          navigate('/dashboard'); // Redirect to dashboard on successful signup
+          navigate('/dashboard');
         }
       }
     } catch (error) {

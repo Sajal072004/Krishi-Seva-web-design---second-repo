@@ -9,6 +9,7 @@ import { IoSettings } from "react-icons/io5";
 import { FaBook } from "react-icons/fa";
 import { VscCommentDiscussion } from "react-icons/vsc";
 import { useNavigate, useLocation } from 'react-router-dom';
+import { GiReceiveMoney } from "react-icons/gi";
 
 // Make sure to use correct paths for images
 const logoPath = "/logo.png";
@@ -38,6 +39,12 @@ const arr = [
     "title": "Educational",
     "icon": <FaBook />,
     "path": "/educational"
+  },
+  {
+    "id": 4,
+    "title": "Finance",
+    "icon": <GiReceiveMoney />,
+    "path": "/finance"
   },
   {
     "id": 5,

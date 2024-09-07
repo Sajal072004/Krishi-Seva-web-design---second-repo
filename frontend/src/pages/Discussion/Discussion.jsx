@@ -1,84 +1,66 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Sidebar from '../Dashboard/components/Sidebar/Sidebar';
 import Navbar from './components/Navbar';
 import Thread from './components/Thread';  // Import the Thread component
 import { FaPlus } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';  // Make sure to import axios
 
 const Discussion = () => {
   const navigate = useNavigate();
+  const [selectedOption, setSelectedOption] = useState('All'); 
+  const [threads, setThreads] = useState([]); 
+  const [loading, setLoading] = useState(true);
 
-  // Dummy JSON array with 10 entries
-  const threads = [
-    {
-      profilePic: '/farmer_profile_icon.png',
-      username: 'farmer_john',
-      heading: 'How to optimize React apps?',
-      hashtag: '#React',
-      likes: 15,
-      comments: 8,
-      description: 'Discuss various techniques to improve the performance of React applications, including code splitting and lazy loading.',
-      commentDesc: [
-        {
-          commenter: "Alice",
-          comment: "Great tips on code splitting!",
-          replies: [
-            { username: "Bob", reply: "I agree! Also, consider using React.lazy for dynamic imports." },
-            { username: "Charlie", reply: "What about code splitting for vendor libraries?" }
-          ]
-        },
-        {
-          commenter: "Bob",
-          comment: "Any recommendations on libraries for lazy loading?",
-          replies: [
-            { username: "Alice", reply: "React Loadable is a good one to start with." },
-            { username: "Charlie", reply: "I've heard good things about React Loadable too." }
-          ]
-        },
-        {
-          commenter: "Charlie",
-          comment: "What about handling large images in React?",
-          replies: [
-            { username: "Alice", reply: "Consider using responsive images and lazy loading." }
-          ]
-        }
-      ]
-    },
-    {
-      profilePic: '/farmer_profile_icon.png',
-      username: 'farmer_sue',
-      heading: 'Best practices for state management',
-      hashtag: '#StateManagement',
-      likes: 20,
-      comments: 12,
-      description: 'Share insights and strategies for effective state management in applications, including popular libraries and patterns.',
-      commentDesc: [
-        {
-          commenter: "Dave",
-          comment: "Redux is great for state management!",
-          replies: [
-            { username: "Eve", reply: "Yes, but it can be quite verbose. How about using Redux Toolkit?" }
-          ]
-        },
-        {
-          commenter: "Eve",
-          comment: "How do you handle side effects in state management?",
-          replies: [
-            { username: "Dave", reply: "Redux-Saga or Redux-Thunk are popular choices for handling side effects." }
-          ]
-        },
-        {
-          commenter: "Frank",
-          comment: "What do you think about using Context API for state management?",
-          replies: [
-            { username: "Eve", reply: "Context API is good for simpler state needs but might not scale well for complex apps." }
-          ]
-        }
-      ]
+  const userId = localStorage.getItem('userId');
+
+  const [username , setUsername] = useState('');
+
+  useEffect(() => {
+    const fetchUserData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3000/api/v1/user/${userId}`);
+        console.log(response.data); 
+        setUsername(response.data.data.name);
+      } catch (error) {
+        console.error('Error fetching user data:', error);
+      }
+    };
+
+    if (userId) {
+      fetchUserData();
     }
-  ];
+  }, [userId]);
+
   
+  const fetchThreads = async (option) => {
+    setLoading(true); 
+    try {
+      let url = '';
+      if (option === 'All') {
+        url = 'http://localhost:3000/api/v1/tweets';  
+      } else if (option === 'Latest') {
+        url = 'http://localhost:3000/api/v1/tweets'; 
+      } else if (option === 'Popular') {
+        url = 'http://localhost:3000/api/v1/threads/popular';  
+      } else {
+        url = `http://localhost:3000/api/v1/threads/mytweets/${userId}`;  
+      }
+
+      const response = await axios.get(url);
+      setThreads(response.data.data);
+      console.log(response);
+    } catch (error) {
+      console.error('Error fetching threads:', error);
+    } finally {
+      setLoading(false);  
+    }
+  };
+
   
+  useEffect(() => {
+    fetchThreads(selectedOption);
+  }, [selectedOption]);
 
   const handleNewThreadClick = () => {
     navigate('/discussions/new-thread');
@@ -103,23 +85,38 @@ const Discussion = () => {
           <div className="fixed top-[18vh] left-[20vw] md:left-[17vw] w-[calc(100vw-25vw)] md:w-[calc(100vw-17vw)] bg-white shadow-md z-2 py-4 pl-4 pr-8">
             <div className="flex justify-between items-center p-4">
               <div className="flex space-x-4">
-                <button className="px-4 py-2 bg-gray-200 rounded hover:bg-[#1b7a43] hover:text-white">Latest</button>
-                <button className="px-4 py-2 bg-gray-200 rounded hover:bg-[#1b7a43] hover:text-white">Popular</button>
-                <button className="px-4 py-2 bg-gray-200 rounded hover:bg-[#1b7a43] hover:text-white">My Threads</button>
-                {/* Category Dropdown */}
-                <select className="px-4 py-2 bg-gray-200 border border-gray-300 rounded focus:bg-green-100 focus:border-green-500 focus:outline-none">
-                  <option value="general">General</option>
-                  <option value="feedback">Feedback</option>
-                  <option value="discussion">Help</option>
-                </select>
+                <button
+                  className={`px-4 py-2 rounded ${selectedOption === 'All' ? 'bg-[#1b7a43] text-white' : 'bg-gray-200 hover:bg-[#1b7a43] hover:text-white'}`}
+                  onClick={() => setSelectedOption('All')}
+                >
+                  All
+                </button>
+                <button
+                  className={`px-4 py-2 rounded ${selectedOption === 'Latest' ? 'bg-[#1b7a43] text-white' : 'bg-gray-200 hover:bg-[#1b7a43] hover:text-white'}`}
+                  onClick={() => setSelectedOption('Latest')}
+                >
+                  Latest
+                </button>
+                <button
+                  className={`px-4 py-2 rounded ${selectedOption === 'Popular' ? 'bg-[#1b7a43] text-white' : 'bg-gray-200 hover:bg-[#1b7a43] hover:text-white'}`}
+                  onClick={() => setSelectedOption('Popular')}
+                >
+                  Popular
+                </button>
+                <button
+                  className={`px-4 py-2 rounded ${selectedOption === 'MyThreads' ? 'bg-[#1b7a43] text-white' : 'bg-gray-200 hover:bg-[#1b7a43] hover:text-white'}`}
+                  onClick={() => setSelectedOption('MyThreads')}
+                >
+                  My Threads
+                </button>
               </div>
 
               {/* New Thread Button */}
-              <button 
+              <button
                 onClick={handleNewThreadClick}
                 className="px-4 py-2 bg-[#1b7a43] text-white rounded hover:bg-green-600 flex items-center mx-2"
               >
-                <span className='mr-2'>New Thread </span>
+                <span className="mr-2">New Thread </span>
                 <FaPlus />
               </button>
             </div>
@@ -127,22 +124,26 @@ const Discussion = () => {
 
           {/* Content Below Navbar and Top Options */}
           <div className="mt-[35vh]">
-            {/* List of Threads */}
-            <div className="p-4 space-y-4">
-              {threads.map((thread, index) => (
-                <Thread
-                  key={index}
-                  profilePic={thread.profilePic}
-                  heading={thread.heading}
-                  hashtag={thread.hashtag}
-                  likes={thread.likes}
-                  comments={thread.comments}
-                  description={thread.description}
-                  username={thread.username}
-                  commentDesc={thread.commentDesc}
-                />
-              ))}
-            </div>
+            {/* Display loading spinner or threads */}
+            {loading ? (
+              <div className="text-center py-4">Loading...</div>
+            ) : (
+              <div className="p-4 space-y-4">
+                {threads.map((thread, index) => (
+                  <Thread
+                    key={index}
+                    profilePic={'/profile_icon.png'}
+                    title={thread.title}
+                    likes={thread.likes || 0}
+                    comments={thread.comments || 0}
+                    content={thread.content}
+                    username={username}
+                    
+                    
+                  />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>

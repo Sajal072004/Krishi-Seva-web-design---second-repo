@@ -6,13 +6,22 @@ import { FaCommentAlt } from "react-icons/fa";
 import { BiSolidLike } from "react-icons/bi";
 import { IoSendSharp } from "react-icons/io5";
 import { FaReplyAll } from "react-icons/fa";
+import axios from 'axios';
 
 const ThreadDetail = () => {
   const location = useLocation();
-  const { profilePic, heading, hashtag, likes, comments, username, description, commentDesc } = location.state;
+  const { username,
+    profilePic,
+    title,
+    hashtag,
+    likes,
+    comments,
+    content,
+    commentDesc } = location.state;
 
   // State for managing reply input visibility for each comment
   const [replyStates, setReplyStates] = useState({});
+  
 
   const handleReplyClick = (index) => {
     setReplyStates(prev => ({
@@ -48,23 +57,23 @@ const ThreadDetail = () => {
             <Navbar />
           </div>
           <div className="mt-[15vh] p-8 w-[50vw] ml-[13vw]">
-            <h1 className="text-4xl font-bold mb-4">{heading}</h1>
-            <p className="text-sm text-gray-600 mb-2">{`${hashtag}`}</p>
+            <h1 className="text-4xl font-bold mb-4">{title}</h1>
+            <p className="text-sm text-gray-600 mb-2">{`${hashtag || ''} `}</p>
             <div className='flex mt-4'>
               <img src={profilePic} alt="User Profile" className="w-12 h-12 rounded-full mb-4" />
               <div className='ml-4'>
                 <p className="text-2xl font-semibold mb-6">{username}</p>
-                <p className="text-lg text-gray-700 mb-6">{description}</p>
+                <p className="text-lg text-gray-700 mb-6">{content}</p>
               </div>
             </div>
             <div className="flex space-x-4 text-gray-700 mb-4">
               <div className="flex items-center space-x-1">
                 <BiSolidLike className="text-lg" />
-                <span>{likes}</span>
+                <span>{likes.length}</span>
               </div>
               <div className="flex items-center space-x-1">
                 <FaCommentAlt className="text-lg" />
-                <span>{comments}</span>
+                <span>{comments.length}</span>
               </div>
             </div>
             <div className="flex items-center mb-4">

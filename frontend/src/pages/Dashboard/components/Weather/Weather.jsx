@@ -1,5 +1,6 @@
 import React from 'react';
 import { TiWeatherPartlySunny } from "react-icons/ti";
+import { Link } from 'react-router-dom';
 
 const SectionOne = () => {
   return (
@@ -33,11 +34,11 @@ const SectionOne = () => {
 
       <p className='relative z-20 ml-[-160px] text-2xl mt-1 text-white'>Mostly Sunny</p>
 
-      <a href="https://sajal072004.github.io/Weather-App/">
+      <Link to={'/weather'}>
         <button className='relative z-20 bg-white mt-8 w-[200px] py-4 text-[#1b7a43] rounded-lg text-xl'>
           Know More
         </button>
-      </a>
+      </Link>
 
     </div>
   );
