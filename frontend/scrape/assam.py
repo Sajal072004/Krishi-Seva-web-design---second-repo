@@ -41,7 +41,7 @@ for i in ele:
 
 driver.quit()
 
-fol = Path("./jsons")
+fol = Path("./frontend/jsons")
 fol.mkdir(exist_ok=True)
 with open(fol/"assam.json","w",encoding="utf-8") as f:
     json.dump(data,f,indent=4,ensure_ascii=False)

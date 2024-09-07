@@ -41,7 +41,7 @@ for i in eles:
         
 driver.quit()
 
-fol = Path("./jsons")
+fol = Path("./frontend/jsons")
 fol.mkdir(exist_ok=True)
 with open(fol/"uttar_pradesh.json","w",encoding="utf-8") as f:
     json.dump(data,f,indent=4,ensure_ascii=False)

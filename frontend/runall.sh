@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for file in ./scrape/*.py; do
+for file in ./frontend/scrape/*.py; do
     echo "Running $file"
     python3 $file
 done
