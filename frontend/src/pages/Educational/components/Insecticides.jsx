@@ -43,12 +43,12 @@ const Insecticides = () => {
         </div>
 
         <div className="ml-[25vw] md:ml-[18vw] w-[calc(100vw-25vw)] md:w-[calc(100vw-20vw)]">
-          <div className="fixed w-[10vw] bg-[#f9fafc] z-10 -ml-4" style={{ height: '18vh' }}>
-            <NavExtra title={'Pesticides'} />
+          <div className="fixed w-[84vw] bg-[#f9fafc] z-10 -ml-4" style={{ height: '18vh' }}>
+            <NavExtra title={'Insecticides'} />
           </div>
 
           {/* Language Selector Dropdown below Navbar */}
-          <div className="fixed w-[84vw] z-10 mt-[15vh] p-4">
+          <div className="fixed w-[10vw] z-10 mt-[15vh] p-4">
             <div className="flex justify-start">
               <select
                 value={selectedLanguage}
