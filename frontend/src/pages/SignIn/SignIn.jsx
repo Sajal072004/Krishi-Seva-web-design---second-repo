@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { FaGoogle, FaPhoneAlt } from 'react-icons/fa';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify'; // Import toast
+import 'react-toastify/dist/ReactToastify.css'; // Import toast CSS
 
 const SignIn = () => {
   const [formData, setFormData] = useState({
@@ -10,14 +13,14 @@ const SignIn = () => {
   });
 
   const [email, setEmail] = useState('');
-  const [url, setUrl] = useState('https://kisansevao.onrender.com/api/v1/user/signin');
+  const [url, setUrl] = useState('http://localhost:3000/api/v1/user/signin');
   const navigate = useNavigate(); // To handle redirection
 
   useEffect(() => {
     
     const token = localStorage.getItem('token');
     if (token) {
-      // If token exists, redirect to the dashboard
+      
       navigate('/dashboard');
     }
   }, [navigate]);
@@ -40,24 +43,24 @@ const SignIn = () => {
       console.log(response);
 
       if (response.data.success) {
-        // Store token and user info in localStorage
+        
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userId', response.data.userId);
-        alert('Login Successful!');
-        // Redirect to the dashboard
-        navigate('/dashboard');
+        toast.success('Login Successful');
+        setTimeout(()=> navigate('/dashboard') , 1000);
+        
       } else {
-        alert(response.data.message);
+        toast.error(response.data.message);
       }
     } catch (error) {
       console.error('Error during sign-in:', error);
-      alert('Sign In failed. Please check your credentials.');
+      toast.error('Sign In failed. Please check your credentials.');
     }
   };
 
   const handleForgotPassword = async () => {
     if (!email) {
-      alert('Please enter your email before requesting a password reset.');
+      toast.error('Please enter your email before requesting a password reset.');
       return;
     }
 
@@ -71,14 +74,17 @@ const SignIn = () => {
       if (response.data.otp) {
         
         localStorage.setItem('otp', response.data.otp);
-        // Redirect to the Forgot Password page
-        navigate('/forgot-password');
+
+        toast.success('Otp sent successfully');
+        setTimeout(()=>navigate('/forgot-password'), 2000);
+        
+        ;
       } else {
-        alert('Failed to retrieve OTP. Please try again.');
+        toast.error('Failed to retrieve OTP. Please try again.');
       }
     } catch (error) {
       console.error('Error during forgot password request:', error);
-      alert('An error occurred. Please try again.');
+      toast.error('An error occurred. Please try again.');
     }
   };
 
@@ -88,25 +94,28 @@ const SignIn = () => {
       <nav className="bg-white shadow-md">
         <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
           <div className="flex items-center">
-            <img src="logo.png" alt="Logo" className="h-12" />
+            <img src="logo.png" alt="Logo" className="h-12 cursor-pointer" onClick={()=>navigate('/dashboard')} />
             <h1 className="text-xl ml-4">Krishi Seva</h1>
           </div>
           <div className="flex space-x-6">
-            <a href="/" className="text-gray-700 hover:text-green-700">Home</a>
-            <a href="/services" className="text-gray-700 hover:text-green-700">Services</a>
-            <a href="/about" className="text-gray-700 hover:text-green-700">About</a>
-            <a href="/contact" className="text-gray-700 hover:text-green-700">Contact</a>
+          <Link to={'/'}  className="text-gray-700 hover:text-green-700">Home</Link >
+            <Link to={'/services'}  className="text-gray-700 hover:text-green-700">Services</Link>
+            <Link to={'/about-us'}  className="text-gray-700 hover:text-green-700">About</Link >
+            <Link to={'/contact-us'}  className="text-gray-700 hover:text-green-700">Contact</Link>
           </div>
           <div>
             <div className="bg-[#f7c35f] py-4 px-8 rounded-lg flex text-white">
-              <a href="tel:+1234567890" className="text-gray-700 hover:text-green-700 flex items-center">
+              <div href="krishiseva27@gmail.com" className="text-gray-700 hover:text-green-700 flex items-center">
                 <div className="mr-2 text-white">
                   <FaPhoneAlt />
                 </div>
+                <a href="mailto:krishiseva27@gmail.com">
                 <div className="text-white">
-                  Call Us: +91 7225989023
+                  Reach Us: krishiseva27@gmail.com
                 </div>
-              </a>
+                </a>
+                
+              </div>
             </div>
           </div>
         </div>
@@ -199,6 +208,7 @@ const SignIn = () => {
           />
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };

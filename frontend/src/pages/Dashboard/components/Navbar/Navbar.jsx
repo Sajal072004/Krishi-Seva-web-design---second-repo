@@ -70,8 +70,8 @@ const Navbar = () => {
                 className='absolute right-0 mt-2 w-[200px] bg-white border border-gray-300 shadow-lg rounded-lg z-50'
               >
                 <ul className='p-2'>
-                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={() => alert('User Profile')}>
-                    User Profile
+                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={() => navigate('/profile')}>
+                    Profile
                   </li>
                   <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={handleLogout}>
                     Logout

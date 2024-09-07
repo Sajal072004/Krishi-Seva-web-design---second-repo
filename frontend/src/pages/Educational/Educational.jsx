@@ -1,136 +1,79 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar.jsx';
 import Sidebar from '../Dashboard/components/Sidebar/Sidebar.jsx';
+import { useNavigate } from 'react-router-dom';
 
-const videos = [
+const sections = [
   {
-    id: "1",
-    title: "Introduction to React",
-    videoUrl: "https://www.youtube.com/watch?v=vqTOZEQq5zM",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "Learn the basics of React, a popular JavaScript library for building user interfaces.",
-    channelName: "Code Academy",
-    views: "1.2M",
-    uploadDate: "2023-07-10",
-    duration: "12:34"
+    title: {
+      en: 'Fertilizers',
+      hi: 'उर्वरक'
+    },
+    description: {
+      en: 'Enhance crop growth and yield with the right use of fertilizers.',
+      hi: 'उर्वरकों के सही उपयोग से फसल की वृद्धि और पैदावार बढ़ाएँ।'
+    },
+    image: '/yt_fertilizer.jpg',
+    url: 'educational/fertilizers'
   },
   {
-    id: "2",
-    title: "Understanding State and Props in React",
-    videoUrl: "https://www.youtube.com/watch?v=G4V4xO9wyD8&t=2635s",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "A detailed guide on managing state and props in React components.",
-    channelName: "Tech Simplified",
-    views: "800K",
-    uploadDate: "2023-08-15",
-    duration: "15:20"
+    title: {
+      en: 'Pesticides',
+      hi: 'कीटनाशक'
+    },
+    description: {
+      en: 'Protect your crops from pests with safe and effective insecticides.',
+      hi: 'सुरक्षित और प्रभावी कीटनाशकों से अपनी फसलों को कीड़ों से बचाएं।'
+    },
+    image: '/yt_insecticides.jpeg',
+    url: 'educational/insecticides'
   },
   {
-    id: "3",
-    title: "React Hooks: A Deep Dive",
-    videoUrl: "https://www.youtube.com/watch?v=vqTOZEQq5zM",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "Explore the power of React Hooks in modern functional components.",
-    channelName: "Code with Harry",
-    views: "950K",
-    uploadDate: "2023-09-01",
-    duration: "18:45"
+    title: {
+      en: 'Irrigation',
+      hi: 'सिंचाई'
+    },
+    description: {
+      en: 'Ensure optimal water supply for healthy crops through efficient irrigation.',
+      hi: 'प्रभावी सिंचाई से स्वस्थ फसलों के लिए उपयुक्त जल आपूर्ति सुनिश्चित करें।'
+    },
+    image: '/yt_irrigation.avif',
+    url: 'educational/irrigation'
   },
   {
-    id: "4",
-    title: "Building a Todo App with React",
-    videoUrl: "https://www.youtube.com/watch?v=G4V4xO9wyD8&t=2635s",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "Step-by-step tutorial on building a functional Todo app using React.",
-    channelName: "Dev Ed",
-    views: "1.5M",
-    uploadDate: "2023-06-25",
-    duration: "22:30"
+    title: {
+      en: 'Sowing',
+      hi: 'बुवाई'
+    },
+    description: {
+      en: 'Master the art of proper sowing techniques for better germination and yield.',
+      hi: 'बेहतर अंकुरण और उपज के लिए सही बुवाई तकनीकों में महारत हासिल करें।'
+    },
+    image: '/yt_sowing.jpg',
+    url: 'educational/sowing'
   },
   {
-    id: "5",
-    title: "Optimizing React Performance",
-    videoUrl: "https://www.youtube.com/watch?v=vqTOZEQq5zM",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "Learn how to optimize the performance of your React applications.",
-    channelName: "Traversy Media",
-    views: "600K",
-    uploadDate: "2023-07-05",
-    duration: "14:50"
+    title: {
+      en: 'Weeds',
+      hi: 'खरपतवार'
+    },
+    description: {
+      en: 'Control weeds effectively to ensure maximum nutrient absorption for your crops.',
+      hi: 'अपनी फसलों के लिए अधिकतम पोषक तत्वों के अवशोषण के लिए खरपतवार को प्रभावी ढंग से नियंत्रित करें।'
+    },
+    image: '/yt_weeds.jpg',
+    url: 'educational/weeds'
   },
-  {
-    id: "6",
-    title: "React Router: Navigating Your React App",
-    videoUrl: "https://www.youtube.com/watch?v=G4V4xO9wyD8&t=2635s",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "Understand how to implement routing in your React applications using React Router.",
-    channelName: "Academind",
-    views: "1.1M",
-    uploadDate: "2023-08-20",
-    duration: "19:35"
-  },
-  {
-    id: "7",
-    title: "State Management with Redux in React",
-    videoUrl: "https://www.youtube.com/watch?v=vqTOZEQq5zM",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "Master state management in React using Redux and the Redux Toolkit.",
-    channelName: "Programming with Mosh",
-    views: "900K",
-    uploadDate: "2023-05-30",
-    duration: "21:40"
-  },
-  {
-    id: "8",
-    title: "Deploying React Apps with Netlify",
-    videoUrl: "https://www.youtube.com/watch?v=G4V4xO9wyD8&t=2635s",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "A guide to deploying your React applications to the web using Netlify.",
-    channelName: "The Net Ninja",
-    views: "1.3M",
-    uploadDate: "2023-09-10",
-    duration: "13:55"
-  },
-  {
-    id: "9",
-    title: "Styling React Components with Styled-Components",
-    videoUrl: "https://www.youtube.com/watch?v=vqTOZEQq5zM",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "Learn how to style your React components using the Styled-Components library.",
-    channelName: "Codevolution",
-    views: "750K",
-    uploadDate: "2023-08-05",
-    duration: "16:10"
-  },
-  {
-    id: "10",
-    title: "Testing React Applications with Jest",
-    videoUrl: "https://www.youtube.com/watch?v=G4V4xO9wyD8&t=2635s",
-    thumbnailUrl: "https://d14a823tufvajd.cloudfront.net/images/JommdOYvYQB3MH5YfV1b.jpg",
-    description: "Get started with testing your React applications using Jest and React Testing Library.",
-    channelName: "FreeCodeCamp",
-    views: "1.8M",
-    uploadDate: "2023-06-15",
-    duration: "20:25"
-  }
 ];
 
-// Helper function to convert YouTube URL to Embed URL
-const getEmbedUrl = (url) => {
-  const urlObj = new URL(url);
-  const videoId = urlObj.searchParams.get('v');
-  return `https://www.youtube.com/embed/${videoId}`;
-};
-
-// Sample comments array
-const comments = [
-  { id: "1", username: "JohnDoe", text: "Great video! Very informative." },
-  { id: "2", username: "JaneSmith", text: "Thanks for the tutorial!" },
-  { id: "3", username: "Coder123", text: "Helped me understand the basics of React." }
-];
 
 const Educational = () => {
-  const [selectedVideo, setSelectedVideo] = useState(videos[0]);
+  const [language, setLanguage] = useState('en'); // Default language is English
+  const navigate = useNavigate();
+
+  const handleLanguageChange = (e) => {
+    setLanguage(e.target.value); // Update the language based on dropdown selection
+  };
 
   return (
     <div className="overflow-x-hidden">
@@ -144,47 +87,43 @@ const Educational = () => {
             <Navbar />
           </div>
 
-          <div className="flex mt-[18vh] p-4">
-            {/* Video Player Section */}
-            <div className="w-full md:w-[70%] pr-4">
-              <div className="relative" style={{ paddingTop: '56.25%' /* 16:9 Aspect Ratio */ }}>
-                <iframe
-                  src={getEmbedUrl(selectedVideo.videoUrl)}
-                  title={selectedVideo.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full"
-                ></iframe>
-              </div>
-              <div className="mt-4">
-                <h2 className="text-xl font-bold">{selectedVideo.title}</h2>
-                <p className="text-sm text-gray-600">{selectedVideo.views} views • {selectedVideo.uploadDate}</p>
-                <p className="text-gray-800">{selectedVideo.description}</p>
-              </div>
+          <div className="mt-[15vh] p-6">
+            {/* Language Dropdown below the Navbar */}
+            <div className="flex justify-start mb-8">
+              <select
+                value={language}
+                onChange={handleLanguageChange}
+                className="border border-gray-300 rounded p-2"
+              >
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+              </select>
             </div>
 
-            {/* Suggested Videos Section */}
-            <div className="hidden md:block w-full md:w-[40%] h-[60vh] overflow-y-auto">
-              <h3 className="font-semibold mb-2">Suggested Videos</h3>
-              {videos.map(video => (
-                <div 
-                  key={video.id} 
-                  className="flex mb-4 cursor-pointer" 
-                  onClick={() => setSelectedVideo(video)}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {sections.map((section, index) => (
+                <div
+                  key={index}
+                  className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer"
+                  onClick={() => navigate(`/${section.url}`, { state: { language } })}  // Pass language in navigation
                 >
-                  <img src={video.thumbnailUrl} alt={video.title} className="w-[40%] h-[10vh] object-cover" />
-                  <div className="ml-2">
-                    <h4 className="text-sm font-bold truncate w-[100%]">{video.title.substring(0,30)}</h4> {/* Truncate long titles */}
-                    <p className="text-xs text-gray-600">{video.channelName}</p>
-                    <p className="text-xs text-gray-600">{video.views} views</p>
+                  <img
+                    src={section.image}
+                    alt={section.title[language]}
+                    className="w-full h-40 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-xl font-semibold text-gray-800">
+                      {section.title[language]} {/* Display title based on selected language */}
+                    </h3>
+                    <p className="text-gray-600 mt-2">
+                      {section.description[language]} {/* Display description based on selected language */}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-
-          
 
         </div>
       </div>

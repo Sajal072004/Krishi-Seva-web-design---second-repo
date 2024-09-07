@@ -27,7 +27,7 @@ const ResetPassword = () => {
     }
   
     if (password !== confirmPassword) {
-      toast.error('Passwords do not match.');
+      toast.error('Password and Confirm Password should be same');
       return;
     }
   
@@ -47,7 +47,9 @@ const ResetPassword = () => {
       if (response.status === 202) {
         toast.success('Password successfully reset.');
         localStorage.removeItem('otp');
-        navigate('/sign-in');
+        setTimeout(() => {
+          navigate('/sign-in');
+        }, 2000);
       } else {
         toast.error('Failed to reset password. Please try again.');
       }

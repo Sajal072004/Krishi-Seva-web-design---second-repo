@@ -34,8 +34,11 @@ const ForgotPassword = () => {
     const storedOtp = localStorage.getItem('otp');
 
     if (enteredOtp === storedOtp) {
+      toast.success('The OTP is verified');
     
-      navigate('/reset-password');
+      setTimeout(() => {
+          navigate('/reset-password');
+        }, 1000);
     } else {
       
       toast.error('The OTP you entered is incorrect. Please try again.');

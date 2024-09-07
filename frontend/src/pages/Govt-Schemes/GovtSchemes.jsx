@@ -46,6 +46,7 @@ const GovtSchemes = () => {
                 value={selectedOption}
                 onChange={(e) => setSelectedOption(e.target.value)}
               >
+                <option value='india'>India</option>
                 <option value='andhra_pradesh'>Andhra Pradesh</option>
 <option value='arunachal_pradesh'>Arunachal Pradesh</option>
 <option value='assam'>Assam</option>

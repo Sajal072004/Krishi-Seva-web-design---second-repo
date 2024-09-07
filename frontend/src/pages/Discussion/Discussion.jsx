@@ -100,7 +100,7 @@ const Discussion = () => {
           </div>
 
           {/* Top Options */}
-          <div className="fixed top-[18vh] left-[20vw] md:left-[17vw] w-[calc(100vw-25vw)] md:w-[calc(100vw-17vw)] bg-white shadow-md z-20 py-4 pl-4 pr-8">
+          <div className="fixed top-[18vh] left-[20vw] md:left-[17vw] w-[calc(100vw-25vw)] md:w-[calc(100vw-17vw)] bg-white shadow-md z-2 py-4 pl-4 pr-8">
             <div className="flex justify-between items-center p-4">
               <div className="flex space-x-4">
                 <button className="px-4 py-2 bg-gray-200 rounded hover:bg-[#1b7a43] hover:text-white">Latest</button>

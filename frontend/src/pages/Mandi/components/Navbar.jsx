@@ -1,11 +1,31 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { MdDarkMode } from "react-icons/md";
-
 import { IoSearch } from "react-icons/io5";
 import { BsBagFill } from "react-icons/bs";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
+  const [showDropdown, setShowDropdown] = useState(false); // State to toggle profile dropdown
   const itemCount = 2; // Example item count; update this with actual cart data
+
+  useEffect(() => {
+    const token = localStorage.getItem('token'); // Check if token exists in local storage
+    if (token) {
+      setIsLoggedIn(true); // If token is found, user is logged in
+    }
+  }, []);
+
+  const handleProfileClick = () => {
+    setShowDropdown(!showDropdown); // Toggle profile dropdown visibility
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('token'); // Remove token from local storage
+    setIsLoggedIn(false); // Update login status
+    navigate('/sign-in'); // Redirect to sign-in page
+  };
 
   return (
     <>
@@ -39,13 +59,37 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <div className='ml-4'>
-            <img src="./farmer_profile_icon.png" alt="Profile" className='w-[35px]' />
+          <div className='relative ml-4'>
+            <img
+              src="./farmer_profile_icon.png"
+              alt="Profile"
+              className='w-[35px] cursor-pointer'
+              onClick={handleProfileClick}
+            />
+
+            {showDropdown && (
+              <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10">
+                <ul className="text-gray-700">
+                  <li 
+                    className="px-4 py-2 cursor-pointer hover:bg-gray-100" 
+                    onClick={() => navigate('/profile')}
+                  >
+                    Profile
+                  </li>
+                  <li 
+                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                    onClick={handleLogout}
+                  >
+                    Logout
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

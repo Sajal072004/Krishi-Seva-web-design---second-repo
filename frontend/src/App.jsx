@@ -24,6 +24,13 @@ import PrivateRoute from './components/PrivateRoute';
 import ChatBot from './pages/ChatBot/ChatBot';
 import DiseasePrediction from './pages/DiseasePrediction/DiseasePrediction';
 import LabsNearby from './pages/LabsNearby/LabsNearby';
+import UserProfile from './pages/UserProfile/UserProfile';
+import SellerProfile from './pages/SellerProfile/SellerProfile';
+import FertilizersPage from './pages/Educational/components/Fertilizers';
+import Insecticides from './pages/Educational/components/Insecticides';
+import Irrigation from './pages/Educational/components/Irrigation';
+import Sowing from './pages/Educational/components/Sowing';
+import Weeds from './pages/Educational/components/Weeds';
 
 const App = () => {
   return (
@@ -54,6 +61,8 @@ const App = () => {
 
         <Route path="/nearby-labs" element={<PrivateRoute element={<LabsNearby />} />} />
 
+        <Route path="/seller" element={<PrivateRoute element={<Seller />} />} />
+
         <Route path="/chat-bot" element={<PrivateRoute element={<ChatBot />} />} />
         <Route path="/mandi" element={<PrivateRoute element={<Mandi />} />} />
         <Route path="/educational" element={<PrivateRoute element={<Educational />} />} />
@@ -66,6 +75,14 @@ const App = () => {
         <Route path="/discussions/:id" element={<PrivateRoute element={<ThreadDetail />} />} />
         <Route path="/latest-news/:id" element={<PrivateRoute element={<NewsDetail />} />} />
         <Route path="/settings" element={<PrivateRoute element={<Settings />} />} />
+        <Route path="/profile" element={<PrivateRoute element={<UserProfile />} />} />
+        <Route path="/seller-profile" element={<PrivateRoute element={<SellerProfile/>} />} />
+        <Route path="/educational/fertilizers" element={<PrivateRoute element={<FertilizersPage/>} />} />
+        <Route path="/educational/insecticides" element={<PrivateRoute element={<Insecticides/>} />} />
+        <Route path="/educational/irrigation" element={<PrivateRoute element={<Irrigation/>} />} />
+        <Route path="/educational/sowing" element={<PrivateRoute element={<Sowing/>} />} />
+        <Route path="/educational/weeds" element={<PrivateRoute element={<Weeds/>} />} />
+        
         
         
       </Routes>

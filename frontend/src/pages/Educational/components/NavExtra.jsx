@@ -3,9 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { MdDarkMode } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa6";
 import { IoSearch } from "react-icons/io5";
-import profileIcon from './profile_icon.png'; // Import your image here
 
-const Navbar = () => {
+const NavExtra = ({ title }) => {
   const navigate = useNavigate();
   const [showDropdown, setShowDropdown] = useState(false); // State to toggle profile dropdown
   const [isLoggedIn, setIsLoggedIn] = useState(false); // State to track login status
@@ -31,13 +30,14 @@ const Navbar = () => {
     <>
       <div className={'flex justify-between w-[70vw] md:w-full h-[17vh] ml-5 bg-[#f9fafc]'}>
         <div className='w-[90%] md:w-[28%] mt-3'>
-          <h1 className='text-2xl md:text-3xl p-4 pb-2 text-gray-700 font-semibold'>Discussion Forum</h1>
-          <p className='p-4 pt-1 text-gray-700'>Discuss your issues here</p>
+          <h1 className='text-2xl md:text-3xl p-4 pb-2 text-gray-700 font-semibold'>{title}</h1>
+          <p className='p-4 pt-1 text-gray-700'>Hello Sajal Namdeo, welcome back!</p>
         </div>
+
         <div className='hidden md:flex w-[40%] items-center mr-[-100px]'>
           <div className='w-[320px] h-[40px] shadow-lg rounded-lg flex p-3 bg-white'>
             <IoSearch />
-            <input type="text" className='p-2 outline-none w-full' placeholder='Search Hashtags' />
+            <input type="text" className='p-2 outline-none w-full' placeholder='Search Videos here' />
           </div>
         </div>
 
@@ -52,21 +52,22 @@ const Navbar = () => {
           </div>
           <div className='relative ml-4'>
             <img
-              src={profileIcon}
+              src="/farmer_profile_icon.png"
               alt="Profile"
               className='w-[35px] cursor-pointer'
               onClick={handleProfileClick}
             />
+
             {showDropdown && (
-              <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-[10]">
+              <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-100">
                 <ul className="text-gray-700">
-                  <li
-                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                  <li 
+                    className="px-4 py-2 cursor-pointer hover:bg-gray-100" 
                     onClick={() => navigate('/profile')}
                   >
                     Profile
                   </li>
-                  <li
+                  <li 
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                     onClick={handleLogout}
                   >
@@ -82,4 +83,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavExtra;

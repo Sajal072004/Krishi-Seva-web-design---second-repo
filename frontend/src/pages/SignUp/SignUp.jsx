@@ -4,6 +4,7 @@ import axios from 'axios';
 import { toast, ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import 'react-toastify/dist/ReactToastify.css';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -70,25 +71,27 @@ const SignUp = () => {
       <nav className="bg-white shadow-md">
         <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
           <div className="flex items-center">
-            <img src="logo.png" alt="Logo" className="h-12" />
+          <img src="logo.png" alt="Logo" className="h-12 cursor-pointer" onClick={()=>navigate('/dashboard')} />
             <h1 className='text-xl ml-4'>Krishi Seva</h1>
           </div>
           <div className="flex space-x-6">
-            <a href="/" className="text-gray-700 hover:text-green-700">Home</a>
-            <a href="/services" className="text-gray-700 hover:text-green-700">Services</a>
-            <a href="/about" className="text-gray-700 hover:text-green-700">About</a>
-            <a href="/contact" className="text-gray-700 hover:text-green-700">Contact</a>
+            <Link to={'/'}  className="text-gray-700 hover:text-green-700">Home</Link >
+            <Link to={'/services'}  className="text-gray-700 hover:text-green-700">Services</Link>
+            <Link to={'/about-us'}  className="text-gray-700 hover:text-green-700">About</Link >
+            <Link to={'/contact-us'}  className="text-gray-700 hover:text-green-700">Contact</Link>
           </div>
           <div>
             <div className='bg-[#f7c35f] py-4 px-8 rounded-lg flex text-white'>
-              <a href="tel:+1234567890" className="text-gray-700 hover:text-green-700 flex items-center">
+              <div href="tel:+1234567890" className="text-gray-700 hover:text-green-700 flex items-center">
                 <div className='mr-2 text-white'>
                   <FaPhoneAlt />
                 </div>
-                <div className='text-white'>
-                  Call Us: +91 7225989023
+                <a href="mailto:krishiseva27@gmail.com">
+                <div className="text-white">
+                  Reach Us: krishiseva27@gmail.com
                 </div>
-              </a>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -234,10 +237,15 @@ const SignUp = () => {
         </div>
 
         {/* Right section */}
-        <div className="w-1/3 flex items-center justify-center">
-          <div>
-            <img src="https://via.placeholder.com/600" alt="Signup" className="rounded-lg" />
+        <div className="w-1/2">
+          <div className="h-1/3">
+            <h2 className="text-3xl font-bold text-center mt-4 text-green-500">Join Us for a Better Future</h2>
           </div>
+          <img
+            src="signin.jpg"
+            alt="Sign In"
+            className="w-[500px] h-[300px]"
+          />
         </div>
       </div>
     </div>

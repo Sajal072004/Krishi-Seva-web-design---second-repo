@@ -45,38 +45,38 @@ const Settings = () => {
             {/* Account Settings Section */}
             <SettingsSection icon={<FaUser />} title="Account Settings">
               <ul>
-                <li className="py-2 border-b"><a href="#" className="hover:text-green-600">Change Password</a></li>
-                <li className="py-2 border-b"><a href="#" className="hover:text-green-600">Update Email</a></li>
-                <li className="py-2"><a href="#" className="hover:text-green-600">Delete Account</a></li>
+                <li className="py-2 border-b text-[17px] font-semibold"><a href="#" className="hover:text-green-600">Change Password</a></li>
+                <li className="py-2 border-b"><a href="#" className="hover:text-green-600 text-[17px] font-semibold">Update Email</a></li>
+                <li className="py-2 text-red-600 text-[17px] font-semibold"><a href="#" className="hover:text-red-600">Delete Account</a></li>
               </ul>
             </SettingsSection>
 
             {/* Privacy Settings Section */}
-            <SettingsSection icon={<FaShieldAlt />} title="Privacy Settings">
+            {/* <SettingsSection icon={<FaShieldAlt />} title="Privacy Settings">
               <ul>
                 <li className="py-2 border-b"><a href="#" className="hover:text-green-600">Manage Blocked Users</a></li>
                 <li className="py-2 border-b"><a href="#" className="hover:text-green-600">Set Account to Private</a></li>
                 <li className="py-2"><a href="#" className="hover:text-green-600">Two-Factor Authentication</a></li>
               </ul>
-            </SettingsSection>
+            </SettingsSection> */}
 
             {/* Notification Settings Section */}
-            <SettingsSection icon={<FaBell />} title="Notification Settings">
+            {/* <SettingsSection icon={<FaBell />} title="Notification Settings">
               <ul>
                 <li className="py-2 border-b"><a href="#" className="hover:text-green-600">Email Notifications</a></li>
                 <li className="py-2 border-b"><a href="#" className="hover:text-green-600">Push Notifications</a></li>
                 <li className="py-2"><a href="#" className="hover:text-green-600">SMS Notifications</a></li>
               </ul>
-            </SettingsSection>
+            </SettingsSection> */}
 
             {/* Security Settings Section */}
-            <SettingsSection icon={<FaLock />} title="Security Settings">
+            {/* <SettingsSection icon={<FaLock />} title="Security Settings">
               <ul>
                 <li className="py-2 border-b"><a href="#" className="hover:text-green-600">Manage Security Questions</a></li>
                 <li className="py-2 border-b"><a href="#" className="hover:text-green-600">Enable Login Alerts</a></li>
                 <li className="py-2"><a href="#" className="hover:text-green-600">Recent Login Activity</a></li>
               </ul>
-            </SettingsSection>
+            </SettingsSection> */}
           </div>
         </div>
       </div>
