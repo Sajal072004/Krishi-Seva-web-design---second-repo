@@ -4,7 +4,7 @@
       "id": "1",
       "title": "Sharbati Wheat",
       "description": "Sharbati wheat is a popular variety of wheat in India. Sharbati wheat is a popular variety of wheat in India.Sharbati wheat is a popular variety of wheat in India.",
-      "image": "apple.png",
+      "image": "https://cdn.shopaccino.com/edible-smart/products/wheat-sharbati---premium-313722_m.jpg?v=517",
       "price": 5000,
       "rating": 4,
       "category": "Crops"
@@ -13,7 +13,7 @@
       "id": "2",
       "title": "Basmati Rice",
       "description": "Basmati rice is known for its fragrance and long grains.",
-      "image": "apple.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT255Blleo4_V2CinDTWWf0L8gqsxoeaaNycQ&s",
       "price": 6000,
       "rating": 5,
       "category": "Crops"
@@ -22,7 +22,7 @@
       "id": "3",
       "title": "Maize",
       "description": "Maize is a staple food and is used in various dishes.",
-      "image": "apple.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZoyk8G8GfEgbJigFUbr7Y5BSWjLTe622lig&s",
       "price": 3000,
       "rating": 4,
       "category": "Crops"
@@ -31,7 +31,7 @@
       "id": "4",
       "title": "Barley",
       "description": "Barley is used for food, feed, and brewing purposes.",
-      "image": "apple.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Barley_Seeds.jpg/300px-Barley_Seeds.jpg",
       "price": 3500,
       "rating": 3,
       "category": "Crops"
@@ -40,7 +40,7 @@
       "id": "5",
       "title": "Barley",
       "description": "Barley is used for food, feed, and brewing purposes.",
-      "image": "apple.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw3lkeBqXx2h2pQF0fEofD7pkFvuU5G72NZw&s",
       "price": 3500,
       "rating": 3,
       "category": "Crops"
@@ -51,7 +51,7 @@
       "id": "1",
       "title": "Hybrid Rice Seeds",
       "description": "High-yielding rice seeds for better production.",
-      "image": "apple.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZDq3p6rMcvP4PHaSneoH3ahwkmW9RzSuFg&s",
       "price": 3000,
       "rating": 5,
       "category": "Seeds"
@@ -60,7 +60,7 @@
       "id": "2",
       "title": "Wheat Seeds",
       "description": "High-quality wheat seeds for robust growth.",
-      "image": "apple.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrh6bEv2pzFZ6t4RNECX06zJw5mLfyr71p1ii0yLt8r9ErB8E5ZgiZGu0WIVnLzNNK5UE&usqp=CAU",
       "price": 2800,
       "rating": 4,
       "category": "Seeds"
@@ -69,7 +69,7 @@
       "id": "3",
       "title": "Maize Seeds",
       "description": "Disease-resistant maize seeds for optimal yield.",
-      "image": "apple.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_HEZdyBOopZL0X85LkRoNcFlvWUvD_1Axg&s",
       "price": 3200,
       "rating": 5,
       "category": "Seeds"
@@ -78,7 +78,7 @@
       "id": "4",
       "title": "Cotton Seeds",
       "description": "Cotton seeds with high germination rate.",
-      "image": "apple.png",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgC5uVp_dpv2c6ryJvOGQL699bxiH6yeGkTA&s",
       "price": 4000,
       "rating": 4,
       "category": "Seeds"
@@ -89,7 +89,7 @@
       "id": "1",
       "title": "Green Gram",
       "description": "Green gram, also known as mung bean, is rich in protein.",
-      "image": "https://www.example.com/green-gram.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzH6zXIoFnYGaslYXZUVFM7xnoBZ3UUwJ_Fw&s",
       "price": 4000,
       "rating": 5,
       "category": "Pulses"
@@ -98,7 +98,7 @@
       "id": "2",
       "title": "Red Lentils",
       "description": "Red lentils are a staple in many diets, high in protein.",
-      "image": "https://www.example.com/red-lentils.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwcoj5xyxEAxBu3TVN_oZmSbQ8s4VtwKqtQ&s",
       "price": 4500,
       "rating": 4,
       "category": "Pulses"
@@ -107,7 +107,7 @@
       "id": "3",
       "title": "Chickpeas",
       "description": "Chickpeas are a versatile pulse used in various cuisines.",
-      "image": "https://www.example.com/chickpeas.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEnV325t78Ag3RW3plVDZu6Iqu-Z_9g5-hA&s",
       "price": 5000,
       "rating": 5,
       "category": "Pulses"
@@ -116,7 +116,7 @@
       "id": "4",
       "title": "Black Gram",
       "description": "Black gram is used in traditional Indian dishes like dal.",
-      "image": "https://www.example.com/black-gram.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwkT1pB69S-hAXxuNPS8zyp9l7E4_-UB9MWA&s",
       "price": 4300,
       "rating": 4,
       "category": "Pulses"
@@ -127,7 +127,7 @@
       "id": "1",
       "title": "Mango",
       "description": "Mangoes are sweet, tropical fruits loved by many.",
-      "image": "https://www.example.com/mango.jpg",
+      "image": "https://m.economictimes.com/thumb/msid-93045900,width-1200,height-1200,resizemode-4,imgsize-67762/kesar-mangoes-replacing-alphonso-in-ratnagiri-belt.jpg",
       "price": 2000,
       "rating": 5,
       "category": "Fruits"
@@ -136,7 +136,7 @@
       "id": "2",
       "title": "Banana",
       "description": "Bananas are rich in potassium and easy to eat on the go.",
-      "image": "https://www.example.com/banana.jpg",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/rockcms/2022-10/bananas-mc-221004-02-3ddd88.jpg",
       "price": 1500,
       "rating": 4,
       "category": "Fruits"
@@ -145,7 +145,7 @@
       "id": "3",
       "title": "Apple",
       "description": "Apples are crisp and can be enjoyed fresh or cooked.",
-      "image": "https://www.example.com/apple.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wsG-68QfkOkIR7Ysa_CFmpjBx1LbksAx1g&s",
       "price": 2500,
       "rating": 5,
       "category": "Fruits"
@@ -154,7 +154,7 @@
       "id": "4",
       "title": "Grapes",
       "description": "Grapes are small, juicy fruits perfect for snacking.",
-      "image": "https://www.example.com/grapes.jpg",
+      "image": "https://m.media-amazon.com/images/I/61xrIAiNe9L.jpg",
       "price": 2200,
       "rating": 4,
       "category": "Fruits"
@@ -165,7 +165,7 @@
       "id": "1",
       "title": "Tomato",
       "description": "Tomatoes are a versatile vegetable used in many dishes.",
-      "image": "https://www.example.com/tomato.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiM4iYx0KU7b-Qo0xu7DmflpZSVxUIjv1TA&s",
       "price": 1200,
       "rating": 4,
       "category": "Vegetables"
@@ -174,7 +174,7 @@
       "id": "2",
       "title": "Potato",
       "description": "Potatoes are a staple in many diets, versatile in cooking.",
-      "image": "https://www.example.com/potato.jpg",
+      "image": "https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2014/01/potatoes-411975_1280.jpg",
       "price": 1100,
       "rating": 5,
       "category": "Vegetables"
@@ -183,7 +183,7 @@
       "id": "3",
       "title": "Onion",
       "description": "Onions are essential in many recipes, providing flavor and aroma.",
-      "image": "https://www.example.com/onion.jpg",
+      "image": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202406/666810ed62645-onion-price-115507785-16x9.jpg?size=1200:675",
       "price": 1000,
       "rating": 4,
       "category": "Vegetables"
@@ -192,7 +192,7 @@
       "id": "4",
       "title": "Carrot",
       "description": "Carrots are rich in beta-carotene and good for vision.",
-      "image": "https://www.example.com/carrot.jpg",
+      "image": "https://cdn.britannica.com/70/158370-050-CC2F25D4/Carrots-Apiales-members.jpg",
       "price": 1300,
       "rating": 5,
       "category": "Vegetables"
@@ -203,7 +203,7 @@
       "id": "1",
       "title": "Alfalfa",
       "description": "Alfalfa is a high-protein fodder crop for livestock.",
-      "image": "https://www.example.com/alfalfa.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O_Nw_CIs8ZS_ggRMtN-UNemlrwbO7VQdIQ&s",
       "price": 5000,
       "rating": 5,
       "category": "Fodder Crops"
@@ -212,7 +212,7 @@
       "id": "2",
       "title": "Sorghum",
       "description": "Sorghum is a drought-resistant crop used for feeding livestock.",
-      "image": "https://www.example.com/sorghum.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtyixjdaWgav4K4ZuBaNEmtHwAiipWLQ69g&s",
       "price": 4000,
       "rating": 4,
       "category": "Fodder Crops"
@@ -221,7 +221,7 @@
       "id": "3",
       "title": "Corn Silage",
       "description": "Corn silage is an energy-rich fodder used to feed dairy cattle.",
-      "image": "https://www.example.com/corn-silage.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCq80_qD5jAMFLy8QAd2jeqbZ2OL_aSs8q2g&s",
       "price": 4500,
       "rating": 5,
       "category": "Fodder Crops"
@@ -230,7 +230,7 @@
       "id": "4",
       "title": "Oat",
       "description": "Oat is a nutritious fodder crop for horses and livestock.",
-      "image": "https://www.example.com/oat.jpg",
+      "image": "https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2018/03/oats-701299_1920.jpg",
       "price": 3000,
       "rating": 4,
       "category": "Fodder Crops"
@@ -241,7 +241,7 @@
       "id": "1",
       "title": "Milk",
       "description": "Fresh and pure milk rich in calcium.",
-      "image": "https://www.example.com/milk.jpg",
+      "image": "https://nutritionsource.hsph.harvard.edu/wp-content/uploads/2012/09/milk.jpg",
       "price": 50,
       "rating": 5,
       "category": "Dairy Products"
@@ -250,16 +250,16 @@
       "id": "2",
       "title": "Cheese",
       "description": "Creamy and flavorful cheese made from fresh milk.",
-      "image": "https://www.example.com/cheese.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-JgYnSoB-YB2HsHsw6v9ODyys0op45xsbfA&s",
       "price": 200,
       "rating": 5,
       "category": "Dairy Products"
     },
     {
       "id": "3",
-      "title": "Yogurt",
-      "description": "Natural yogurt with probiotics for a healthy gut.",
-      "image": "https://www.example.com/yogurt.jpg",
+      "title": "Curd",
+      "description": "Natural Curd with probiotics for a healthy gut.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTXM8CheR8lMtTyVdeynnkctfDqwyz0BPgA&s",
       "price": 100,
       "rating": 4,
       "category": "Dairy Products"
@@ -268,7 +268,7 @@
       "id": "4",
       "title": "Butter",
       "description": "Rich and creamy butter perfect for cooking and baking.",
-      "image": "https://www.example.com/butter.jpg",
+      "image": "https://cdn.britannica.com/27/122027-050-EAA86783/Butter.jpg",
       "price": 150,
       "rating": 5,
       "category": "Dairy Products"
@@ -279,7 +279,7 @@
       "id": "1",
       "title": "Urea",
       "description": "Urea is a widely used nitrogen fertilizer.",
-      "image": "https://www.example.com/urea.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0yuU50uNxW8D8_xonf3a9M1xi7yVgP22w_Q&s",
       "price": 1000,
       "rating": 5,
       "category": "Fertilizers"
@@ -288,7 +288,7 @@
       "id": "2",
       "title": "DAP",
       "description": "Diammonium phosphate (DAP) is a high-phosphate fertilizer.",
-      "image": "https://www.example.com/dap.jpg",
+      "image": "https://iffco-public-assets.s3.ap-south-1.amazonaws.com/s3fs-public/2020-04/18-46-0-%28DAP%29_1.png",
       "price": 1200,
       "rating": 5,
       "category": "Fertilizers"
@@ -297,7 +297,7 @@
       "id": "3",
       "title": "Potash",
       "description": "Potash is a potassium-rich fertilizer essential for plant growth.",
-      "image": "https://www.example.com/potash.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgabi-bONidqAXZCkJ4mk27DnapPhQP3wlyg&s",
       "price": 1300,
       "rating": 4,
       "category": "Fertilizers"
@@ -306,7 +306,7 @@
       "id": "4",
       "title": "NPK",
       "description": "NPK fertilizer contains nitrogen, phosphorus, and potassium.",
-      "image": "https://www.example.com/npk.jpg",
+      "image": "https://5.imimg.com/data5/SELLER/Default/2023/2/WC/FJ/NF/127511045/npk-20-10-10-fertilizer.jpg",
       "price": 1500,
       "rating": 5,
       "category": "Fertilizers"

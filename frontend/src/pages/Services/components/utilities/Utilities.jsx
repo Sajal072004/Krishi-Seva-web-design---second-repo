@@ -19,7 +19,7 @@ const Labs = () => {
       >
         <h1 className='text-4xl font-bold text-center my-2 mb-8'>Disease Prediction and Recommendations</h1>
         <button className='bg-black text-white px-12 py-3 rounded-md text-[17px] '
-        onClick={()=>navigate('/disease-prediction')}
+        onClick={()=>navigate('/explore/disease-prediction')}
         >Click Here</button>
       </div>
     </div>

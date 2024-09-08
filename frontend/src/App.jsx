@@ -59,9 +59,9 @@ const App = () => {
 
         <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
 
-        <Route path="/disease-prediction" element={<PrivateRoute element={<DiseasePrediction />} />} />
+        <Route path="/explore/disease-prediction" element={<PrivateRoute element={<DiseasePrediction />} />} />
 
-        <Route path="/nearby-labs" element={<PrivateRoute element={<LabsNearby />} />} />
+        <Route path="/explore/nearby-labs" element={<PrivateRoute element={<LabsNearby />} />} />
 
         <Route path="/seller" element={<PrivateRoute element={<Seller />} />} />
 

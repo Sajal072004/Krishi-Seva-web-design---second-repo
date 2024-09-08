@@ -3,35 +3,44 @@ import axios from 'axios';
 import Toastify from 'toastify-js';
 import 'toastify-js/src/toastify.css';
 import Sidebar from '../Dashboard/components/Sidebar/Sidebar'; // Adjust the path as necessary
-import { useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import { useNavigate } from 'react-router-dom';
 
 const Weather = () => {
-  const [inputCity, setInputCity] = useState('Ranchi'); // Use a separate state for the input value
-  const [city, setCity] = useState('Ranchi'); // City used for fetching weather
+  const [inputCity, setInputCity] = useState('Ranchi');
+  const [city, setCity] = useState('Ranchi');
   const [weatherData, setWeatherData] = useState(null);
   const [forecastData, setForecastData] = useState([]);
   const API_KEY = '447545d7ef0bfacfe791012707fed2a3';
   const navigate = useNavigate();
 
-  // Fetch weather data for the default city when the component mounts
   useEffect(() => {
     handleSearch();
   }, []);
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
+  };
 
   const handleSearch = async () => {
     if (inputCity.trim() === '') {
       alert('Please enter a city name.');
       return;
     }
-    setCity(inputCity); // Update city state with the input value
+    setCity(inputCity);
     try {
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/forecast?q=${inputCity}&appid=${API_KEY}`
       );
       const data = response.data;
-      setWeatherData(data.list[0]); // Current weather
-      setForecastData(data.list.slice(1, 6)); // Next 5 days forecast
+      setWeatherData(data.list[0]);
+
+      const dailyForecast = processForecastData(data.list);
+      setForecastData(dailyForecast);
     } catch (error) {
       console.error('Error fetching weather data:', error);
       Toastify({
@@ -48,24 +57,22 @@ const Weather = () => {
         async (position) => {
           const { latitude, longitude } = position.coords;
           try {
-            // Fetch the weather data for the current location
             const response = await axios.get(
               `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
             );
             const data = response.data;
             setWeatherData(data.list[0]);
-            setForecastData(data.list.slice(1, 6));
-    
-            // Fetch the city name from the reverse geocoding API
+
+            const dailyForecast = processForecastData(data.list);
+            setForecastData(dailyForecast);
+
             const reverseGeocodeResponse = await axios.get(
               `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`
             );
             const cityName = reverseGeocodeResponse.data.name;
-            setCity(cityName); // Update city state with the current location city
-    
-            // Clear the input city
+            setCity(cityName);
             setInputCity('');
-    
+
           } catch (error) {
             console.error('Error fetching location weather:', error);
             Toastify({
@@ -92,8 +99,27 @@ const Weather = () => {
       }).showToast();
     }
   };
-  
-  
+
+  const processForecastData = (forecastList) => {
+    const forecastData = [];
+    const dateSet = new Set();
+    forecastList.forEach(item => {
+      const date = new Date(item.dt_txt);
+      const formattedDate = `${date.getDate().toString().padStart(2, '0')}/${(date.getMonth() + 1).toString().padStart(2, '0')}/${date.getFullYear()}`;
+      if (dateSet.size < 5 && !dateSet.has(formattedDate)) {
+        dateSet.add(formattedDate);
+        forecastData.push({
+          date: formattedDate,
+          temp: (item.main.temp - 273.15).toFixed(2),
+          humidity: item.main.humidity,
+          wind: item.wind.speed,
+          icon: item.weather[0].icon,
+        });
+      }
+    });
+    console.log("Processed Forecast Data:", forecastData); // Debugging line
+    return forecastData;
+  };
 
   return (
     <div className="flex min-h-screen bg-gray-100">
@@ -116,8 +142,8 @@ const Weather = () => {
               <input
                 type="text"
                 placeholder="E.g., New York, London, Tokyo"
-                value={inputCity} // Use inputCity state
-                onChange={(e) => setInputCity(e.target.value)} // Update inputCity state
+                value={inputCity}
+                onChange={(e) => setInputCity(e.target.value)}
                 className="w-full p-2 border border-gray-300 rounded mb-4"
               />
               <button
@@ -141,8 +167,9 @@ const Weather = () => {
                 <div className="current-weather flex justify-between items-center mb-6">
                   <div className="details">
                     <h2 className="text-2xl font-semibold">
-                      {city} ({new Date(weatherData.dt_txt).toLocaleDateString()})
+                      {city} ({formatDate(weatherData.dt_txt)})
                     </h2>
+
                     <p className="text-lg">
                       Temperature: {(weatherData.main.temp - 273.15).toFixed(2)}°C
                     </p>
@@ -163,25 +190,28 @@ const Weather = () => {
                 <div className="days-forecast">
                   <h2 className="text-xl font-semibold mb-4">5-Day Forecast</h2>
                   <ul className="weather-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {forecastData.map((day, index) => (
-                      <li
-                        key={index}
-                        className="card p-4 bg-[#1b7a43] text-white rounded-lg shadow text-center"
-                      >
-                        <h3 className="font-medium mb-2">
-                          {new Date(day.dt_txt).toLocaleDateString()}
-                        </h3>
-                        
-                        <img
-                          src={`https://openweathermap.org/img/wn/${day.weather[0].icon}@4x.png`}
-                          alt="weather icon"
-                          className="w-16 h-16 mx-auto"
-                        />
-                        <p className="text-lg">Temp: {(day.main.temp - 273.15).toFixed(2)}°C</p>
-                        <p className="text-lg">Wind: {day.wind.speed} M/S</p>
-                        <p className="text-lg">Humidity: {day.main.humidity}%</p>
+                    {forecastData.length > 0 ? (
+                      forecastData.map((day, index) => (
+                        <li
+                          key={index}
+                          className="forecast-card bg-[#1b7a49] text-white p-4 rounded-lg shadow-md text-center"
+                        >
+                          <p className="text-lg font-semibold">{day.date}</p>
+                          <img
+                            src={`https://openweathermap.org/img/wn/${day.icon}@2x.png`}
+                            alt="weather icon"
+                            className="w-16 h-16 mx-auto"
+                          />
+                          <p className="text-lg">Temp: {day.temp}°C</p>
+                          <p className="text-lg">Humidity: {day.humidity}%</p>
+                          <p className="text-lg">Wind: {day.wind} M/S</p>
+                        </li>
+                      ))
+                    ) : (
+                      <li className="forecast-card bg-white p-4 rounded-lg shadow-md text-center">
+                        <p className="text-lg">No data available</p>
                       </li>
-                    ))}
+                    )}
                   </ul>
                 </div>
               </div>

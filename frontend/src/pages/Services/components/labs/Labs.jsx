@@ -19,7 +19,7 @@ const Labs = () => {
       >
         <h1 className='text-4xl font-bold text-center my-2 mb-8'>Soil Testing Labs</h1>
         <button className='bg-black text-white px-12 py-3 rounded-md text-[17px] '
-        onClick={()=>navigate('/nearby-labs')}
+        onClick={()=>navigate('/explore/nearby-labs')}
         >Near Me</button>
       </div>
     </div>

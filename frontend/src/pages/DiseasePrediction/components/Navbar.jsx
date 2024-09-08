@@ -30,7 +30,7 @@ const Navbar = () => {
     <>
       <div className={'flex justify-between w-[70vw] md:w-full h-[17vh] ml-5 bg-[#f9fafc]'}>
         <div className='w-[90%] md:w-[28%] mt-3'>
-          <h1 className='text-2xl md:text-3xl p-4 pb-2 text-gray-700 font-semibold'>KrishiBot</h1>
+          <h1 className='text-2xl md:text-3xl p-4 pb-2 text-gray-700 font-semibold'>Disease Prediction</h1>
           <p className='p-4 pt-1 text-gray-700'>Hello Sajal Namdeo, welcome back!</p>
         </div>
 

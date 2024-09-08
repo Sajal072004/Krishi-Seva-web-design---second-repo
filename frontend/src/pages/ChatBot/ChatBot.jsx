@@ -48,11 +48,11 @@ const ChatBot = () => {
 
     try {
       const response = await chat.sendMessage(longpara + userInput);
-      const botMessage = { sender: 'Bot', text: response.response.text(), time: formattedTime, date: formattedDate };
+      const botMessage = { sender: 'KrishiBot', text: response.response.text(), time: formattedTime, date: formattedDate };
       setMessages([...updatedHistory, botMessage]);
     } catch (error) {
       console.error('Error:', error);
-      setMessages([...updatedHistory, { sender: 'Bot', text: 'An error occurred', time: formattedTime, date: formattedDate }]);
+      setMessages([...updatedHistory, { sender: 'KrishiBot', text: 'An error occurred', time: formattedTime, date: formattedDate }]);
     }
 
     setUserInput('');
@@ -108,7 +108,7 @@ const ChatBot = () => {
                       className={`w-full p-3 rounded-lg max-w-xs ${
                         message.sender === 'You'
                           ? 'bg-green-100 text-left' // User's message styles
-                          : 'bg-blue-100 text-left' // Bot's message styles
+                          : 'bg-blue-100 text-left' // KrishiBot's message styles
                       }`}
                       style={{ borderRadius: '20px', padding: '10px 15px' }}
                     >
