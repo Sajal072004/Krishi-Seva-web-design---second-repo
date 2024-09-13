@@ -11,11 +11,19 @@ const Weather = () => {
   const [city, setCity] = useState('Ranchi');
   const [weatherData, setWeatherData] = useState(null);
   const [forecastData, setForecastData] = useState([]);
+  const [loading, setLoading] = useState(true); // Loader state
   const API_KEY = '447545d7ef0bfacfe791012707fed2a3';
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Show the loader for 1 second
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+
     handleSearch();
+
+    return () => clearTimeout(timer); // Clean up the timer
   }, []);
 
   const formatDate = (dateString) => {
@@ -72,7 +80,6 @@ const Weather = () => {
             const cityName = reverseGeocodeResponse.data.name;
             setCity(cityName);
             setInputCity('');
-
           } catch (error) {
             console.error('Error fetching location weather:', error);
             Toastify({
@@ -117,9 +124,24 @@ const Weather = () => {
         });
       }
     });
-    console.log("Processed Forecast Data:", forecastData); // Debugging line
     return forecastData;
   };
+
+  // Conditionally render either the loader or the main content
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="loader border-t-transparent border-solid border-blue-400 rounded-full animate-spin w-16 h-16 border-4"></div>
+        <style>
+          {`
+            .loader {
+              border-top-color: #3498db;
+            }
+          `}
+        </style>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen bg-gray-100">
@@ -132,7 +154,7 @@ const Weather = () => {
         <div className="fixed w-[84vw] bg-[#f9fafc] z-10 -ml-4" style={{ height: '18vh' }}>
           <Navbar />
         </div>
-        <div className="flex flex-col w-full items-center justify-center p-6 bg-gradient-to-r from-green-100 via-green-50 to-blue-50 mt-12">
+        <div className="flex flex-col w-full items-center justify-center p-6  mt-12">
           <h1 className="text-3xl font-bold text-center mb-8">Weather Dashboard</h1>
 
           <div className="flex flex-col md:flex-row justify-between items-start">
@@ -154,7 +176,7 @@ const Weather = () => {
               </button>
               <div className="separator my-4"></div>
               <button
-                className="w-full bg-green-500 text-white p-2 rounded hover:bg-green-600"
+                className="w-full bg-[#1b7a43] text-white p-2 rounded hover:bg-green-600"
                 onClick={handleUseCurrentLocation}
               >
                 Use Current Location
@@ -189,30 +211,23 @@ const Weather = () => {
                 {/* 5-Day Forecast */}
                 <div className="days-forecast">
                   <h2 className="text-xl font-semibold mb-4">5-Day Forecast</h2>
-                  <ul className="weather-cards grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {forecastData.length > 0 ? (
-                      forecastData.map((day, index) => (
-                        <li
-                          key={index}
-                          className="forecast-card bg-[#1b7a49] text-white p-4 rounded-lg shadow-md text-center"
-                        >
-                          <p className="text-lg font-semibold">{day.date}</p>
-                          <img
-                            src={`https://openweathermap.org/img/wn/${day.icon}@2x.png`}
-                            alt="weather icon"
-                            className="w-16 h-16 mx-auto"
-                          />
-                          <p className="text-lg">Temp: {day.temp}°C</p>
-                          <p className="text-lg">Humidity: {day.humidity}%</p>
-                          <p className="text-lg">Wind: {day.wind} M/S</p>
-                        </li>
-                      ))
-                    ) : (
-                      <li className="forecast-card bg-white p-4 rounded-lg shadow-md text-center">
-                        <p className="text-lg">No data available</p>
-                      </li>
-                    )}
-                  </ul>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {forecastData.map((forecast, index) => (
+                      <div key={index} className="forecast-day bg-[#1b7a43] text-white p-4 rounded-lg">
+                        <p className="text-lg font-semibold">{forecast.date}</p>
+                        <p className="text-md">
+                          Temperature: {forecast.temp}°C
+                        </p>
+                        <p className="text-md">Wind: {forecast.wind} M/S</p>
+                        <p className="text-md">Humidity: {forecast.humidity}%</p>
+                        <img
+                          src={`https://openweathermap.org/img/wn/${forecast.icon}@2x.png`}
+                          alt="forecast icon"
+                          className="w-16 h-16 mx-auto mt-2"
+                        />
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}

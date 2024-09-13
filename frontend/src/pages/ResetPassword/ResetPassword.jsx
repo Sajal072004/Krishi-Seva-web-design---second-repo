@@ -20,30 +20,30 @@ const ResetPassword = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     if (!password || !confirmPassword) {
       toast.error('Password and confirm password fields cannot be empty.');
       return;
     }
-  
+
     if (password !== confirmPassword) {
       toast.error('Password and Confirm Password should be same');
       return;
     }
-  
+
     const otp = Number(localStorage.getItem('otp'));
     if (!otp) {
       toast.error('OTP not found. Please request a new OTP.');
       return;
     }
-  
+
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/user/resetPassword', {
-        password : password,
+      const response = await axios.post('http://localhost:3001/api/v1/user/resetPassword', {
+        password: password,
         otp,
       }
       );
-  
+
       if (response.status === 202) {
         toast.success('Password successfully reset.');
         localStorage.removeItem('otp');
@@ -58,7 +58,7 @@ const ResetPassword = () => {
       toast.error('An error occurred. Please try again.');
     }
   };
-  
+
 
   return (
     <div className="flex flex-col h-screen">

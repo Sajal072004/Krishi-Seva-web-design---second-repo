@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { IoBagCheck } from "react-icons/io5";
 import { FaStar, FaRegStar } from "react-icons/fa"; 
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
-// Function to truncate text to a maximum number of words, optionally adding ellipses
+
 const truncateText = (text, wordLimit, addEllipsis = true) => {
   const words = text.split(' ');
   if (words.length > wordLimit) {
@@ -28,7 +29,7 @@ const renderStars = (rating) => {
   );
 };
 
-const Card = ({ title, description, image, price, rating }) => {
+const Card = ({category,id, title, description, image, price, rating }) => {
   const [quantity, setQuantity] = useState(1); // Default quantity is 1
 
   const handleQuantityIncrease = () => {
@@ -39,14 +40,18 @@ const Card = ({ title, description, image, price, rating }) => {
     setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
   };
 
+  const navigate = useNavigate();
+
   return (
-    <div className="flex flex-col justify-between border rounded-lg shadow-md overflow-hidden mt-5 bg-white mr-12" style={{ height: '450px', width: '260px' }}>
+    <div className="flex flex-col justify-between border rounded-lg shadow-md overflow-hidden mt-5 bg-white mr-12" style={{ height: '450px', width: '260px' }}
+    onClick={()=>navigate(`/mandi/${category}/${id}`)}
+    >
       <img src={image} alt={title} className="object-cover" style={{ height: '56%', width: '100%' }} />
       
       <div className="flex-grow flex flex-col justify-between">
         <div>
           <div className="flex justify-between w-full px-4 mt-2">
-            <p className="text-left text-lg font-medium">{truncateText(title, 3, false)}</p>
+            <p className="text-left text-lg font-medium">{truncateText(title, 2, false)}</p>
             <div className="text-right text-lg font-medium mt-1">
               {renderStars(rating)}
             </div>

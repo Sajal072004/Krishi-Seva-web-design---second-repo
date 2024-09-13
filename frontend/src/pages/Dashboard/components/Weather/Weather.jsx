@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 const SectionOne = () => {
   return (
+    <div>
+      
     <div
       className='relative mt-10 w-[25vw] h-[280px] flex flex-col items-center rounded-lg border-2 overflow-hidden'
       style={{
@@ -39,6 +41,8 @@ const SectionOne = () => {
           Know More
         </button>
       </Link>
+
+    </div>
 
     </div>
   );

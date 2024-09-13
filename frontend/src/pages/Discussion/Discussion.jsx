@@ -8,19 +8,19 @@ import axios from 'axios';  // Make sure to import axios
 
 const Discussion = () => {
   const navigate = useNavigate();
-  const [selectedOption, setSelectedOption] = useState('All'); 
-  const [threads, setThreads] = useState([]); 
+  const [selectedOption, setSelectedOption] = useState('All');
+  const [threads, setThreads] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const userId = localStorage.getItem('userId');
 
-  const [username , setUsername] = useState('');
+  const [username, setUsername] = useState('');
 
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/v1/user/${userId}`);
-        console.log(response.data); 
+        const response = await axios.get(`http://localhost:3001/api/v1/user/${userId}`);
+        console.log(response.data);
         setUsername(response.data.data.name);
       } catch (error) {
         console.error('Error fetching user data:', error);
@@ -32,19 +32,19 @@ const Discussion = () => {
     }
   }, [userId]);
 
-  
+
   const fetchThreads = async (option) => {
-    setLoading(true); 
+    setLoading(true);
     try {
       let url = '';
       if (option === 'All') {
-        url = 'http://localhost:3000/api/v1/tweets';  
+        url = 'http://localhost:3001/api/v1/tweets';
       } else if (option === 'Latest') {
-        url = 'http://localhost:3000/api/v1/tweets'; 
+        url = 'http://localhost:3001/api/v1/tweets';
       } else if (option === 'Popular') {
-        url = 'http://localhost:3000/api/v1/threads/popular';  
+        url = 'http://localhost:3001/api/v1/threads/popular';
       } else {
-        url = `http://localhost:3000/api/v1/threads/mytweets/${userId}`;  
+        url = `http://localhost:3001/api/v1/threads/mytweets/${userId}`;
       }
 
       const response = await axios.get(url);
@@ -53,11 +53,11 @@ const Discussion = () => {
     } catch (error) {
       console.error('Error fetching threads:', error);
     } finally {
-      setLoading(false);  
+      setLoading(false);
     }
   };
 
-  
+
   useEffect(() => {
     fetchThreads(selectedOption);
   }, [selectedOption]);
@@ -138,8 +138,8 @@ const Discussion = () => {
                     comments={thread.comments || 0}
                     content={thread.content}
                     username={username}
-                    
-                    
+
+
                   />
                 ))}
               </div>

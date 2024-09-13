@@ -34,22 +34,22 @@ const DiseasePrediction = () => {
 
       const rawResult = response.data.candidates[0].content.parts[0].text;
       console.log(rawResult);
-    
+
       // Remove the ```json and ``` around the JSON data
       const cleanResult = rawResult.replace('```json', '').replace('```', '').trim();
-  
+
       // Extract JSON part from the cleaned result
       const jsonStartIndex = cleanResult.indexOf('{');
       const jsonEndIndex = cleanResult.lastIndexOf('}') + 1;
-      
+
       // Slice the JSON part and parse it
       const jsonData = cleanResult.slice(jsonStartIndex, jsonEndIndex);
       const parsedJson = JSON.parse(jsonData);
-      
+
       // Set the parsed disease and cure
       setDisease(parsedJson.Disease);  // Disease
       setCure(parsedJson.Cure);        // Cure
-  
+
       console.log('Disease:', parsedJson.Disease);
       console.log('Cure:', parsedJson.Cure);
 

@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
           <div className='relative ml-4'>
             <img
-              src="./farmer_profile_icon.png"
+              src="/profile_icon.png"
               alt="Profile"
               className='w-[35px] cursor-pointer'
               onClick={handleProfileClick}

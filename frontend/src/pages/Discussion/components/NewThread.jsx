@@ -12,7 +12,7 @@ const NewThread = () => {
   const [content, setDescription] = useState('');
   const navigate = useNavigate();
 
-  
+
 
   const handleCreate = async () => {
     if (!title) {
@@ -23,16 +23,16 @@ const NewThread = () => {
       toast.error('Please fill in the content');
       return;
     }
-  
+
     const userId = localStorage.getItem('userId');
     if (!userId) {
       toast.error('Failed to retrieve user ID');
       return;
     }
     console.log(userId);
-  
+
     try {
-      const response = await fetch('http://localhost:3000/api/v1/tweets', {
+      const response = await fetch('http://localhost:3001/api/v1/tweets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -43,11 +43,11 @@ const NewThread = () => {
           userId
         })
       });
-  
+
       if (!response.ok) {
         throw new Error('Failed to create thread');
       }
-  
+
       toast.success('Thread Created');
       setTimeout(() => {
         // Redirect to discussions with 'my-threads' selected
@@ -57,7 +57,7 @@ const NewThread = () => {
       toast.error(`Error: ${error.message}`);
     }
   };
-  
+
 
   return (
     <div className="overflow-x-hidden bg-[#f9fafc] h-screen">

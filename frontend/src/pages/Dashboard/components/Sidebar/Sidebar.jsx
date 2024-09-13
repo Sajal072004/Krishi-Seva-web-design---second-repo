@@ -129,7 +129,7 @@ const Sidebar = () => {
           <img src={helpCenterPath} alt="Help Center" className='w-[85%] h-[100%] absolute z-0' />
           <p className='text-gray-700 z-20 mt-16 font-semibold'>Help Center</p>
           <p className='w-[80%] text-gray-700 z-20 mt-10 font-semibold'>Having trouble? Contact us for more questions.</p>
-          <button className='z-20 mt-8 px-4 py-2 bg-[#1b7a43] text-white rounded-lg'>
+          <button onClick={()=>navigate('/chat-bot')} className='z-20 mt-8 px-4 py-2 bg-[#1b7a43] text-white rounded-lg'>
             Go to Help Center
           </button>
         </div>

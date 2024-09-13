@@ -33,6 +33,7 @@ import Sowing from './pages/Educational/components/Sowing';
 import Weeds from './pages/Educational/components/Weeds';
 import Finance from './pages/Finance/Finance';
 import Weather from './pages/Weather/Weather';
+import CardInfo from './pages/Mandi/components/CardInfo';
 
 const App = () => {
   return (
@@ -67,6 +68,7 @@ const App = () => {
 
         <Route path="/chat-bot" element={<PrivateRoute element={<ChatBot />} />} />
         <Route path="/mandi" element={<PrivateRoute element={<Mandi />} />} />
+        <Route path="/mandi/:category/:id" element={<PrivateRoute element={<CardInfo />} />} />
         <Route path="/educational" element={<PrivateRoute element={<Educational />} />} />
         <Route path="/latest-news" element={<PrivateRoute element={<News />} />} />
         

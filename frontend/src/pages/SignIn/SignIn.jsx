@@ -13,14 +13,14 @@ const SignIn = () => {
   });
 
   const [email, setEmail] = useState('');
-  const [url, setUrl] = useState('http://localhost:3000/api/v1/user/signin');
+  const [url, setUrl] = useState('http://localhost:3001/api/v1/user/signin');
   const navigate = useNavigate(); // To handle redirection
 
   useEffect(() => {
-    
+
     const token = localStorage.getItem('token');
     if (token) {
-      
+
       navigate('/dashboard');
     }
   }, [navigate]);
@@ -37,18 +37,18 @@ const SignIn = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       const response = await axios.post(url, formData);
       console.log(response);
 
       if (response.data.success) {
-        
+
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userId', response.data.userId);
         toast.success('Login Successful');
-        setTimeout(()=> navigate('/dashboard') , 1000);
-        
+        setTimeout(() => navigate('/dashboard'), 1000);
+
       } else {
         toast.error(response.data.message);
       }
@@ -65,19 +65,19 @@ const SignIn = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/api/v1/user/forget', {
+      const response = await axios.post('http://localhost:3001/api/v1/user/forget', {
         email
       });
 
       console.log(response);
 
       if (response.data.otp) {
-        
+
         localStorage.setItem('otp', response.data.otp);
 
         toast.success('Otp sent successfully');
-        setTimeout(()=>navigate('/forgot-password'), 2000);
-        
+        setTimeout(() => navigate('/forgot-password'), 2000);
+
         ;
       } else {
         toast.error('Failed to retrieve OTP. Please try again.');
@@ -94,14 +94,14 @@ const SignIn = () => {
       <nav className="bg-white shadow-md">
         <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
           <div className="flex items-center">
-            <img src="logo.png" alt="Logo" className="h-12 cursor-pointer" onClick={()=>navigate('/dashboard')} />
+            <img src="logo.png" alt="Logo" className="h-12 cursor-pointer" onClick={() => navigate('/dashboard')} />
             <h1 className="text-xl ml-4">Krishi Seva</h1>
           </div>
           <div className="flex space-x-6">
-          <Link to={'/'}  className="text-gray-700 hover:text-green-700">Home</Link >
-            <Link to={'/services'}  className="text-gray-700 hover:text-green-700">Services</Link>
-            <Link to={'/about-us'}  className="text-gray-700 hover:text-green-700">About</Link >
-            <Link to={'/contact-us'}  className="text-gray-700 hover:text-green-700">Contact</Link>
+            <Link to={'/'} className="text-gray-700 hover:text-green-700">Home</Link >
+            <Link to={'/services'} className="text-gray-700 hover:text-green-700">Services</Link>
+            <Link to={'/about-us'} className="text-gray-700 hover:text-green-700">About</Link >
+            <Link to={'/contact-us'} className="text-gray-700 hover:text-green-700">Contact</Link>
           </div>
           <div>
             <div className="bg-[#f7c35f] py-4 px-8 rounded-lg flex text-white">
@@ -110,11 +110,11 @@ const SignIn = () => {
                   <FaPhoneAlt />
                 </div>
                 <a href="mailto:krishiseva27@gmail.com">
-                <div className="text-white">
-                  Reach Us: krishiseva27@gmail.com
-                </div>
+                  <div className="text-white">
+                    Reach Us: krishiseva27@gmail.com
+                  </div>
                 </a>
-                
+
               </div>
             </div>
           </div>
@@ -208,7 +208,7 @@ const SignIn = () => {
           />
         </div>
       </div>
-      <ToastContainer/>
+      <ToastContainer />
     </div>
   );
 };
