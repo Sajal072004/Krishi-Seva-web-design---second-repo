@@ -32,7 +32,10 @@ const Header = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Remove token from local storage
+    localStorage.removeItem('token');
+    localStorage.removeItem('userId');
+    localStorage.removeItem('isSeller');
+    localStorage.removeItem('otp');
     setIsLoggedIn(false); // Update login status
     navigate('/sign-in'); // Redirect to sign-in page
   };

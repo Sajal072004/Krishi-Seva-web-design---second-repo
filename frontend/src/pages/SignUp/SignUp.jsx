@@ -19,7 +19,7 @@ const SignUp = () => {
     postalCode: '',
   });
 
-  const [url, setUrl] = useState('https://kisansevao.onrender.com/api/v1/user/signup');
+  const [url, setUrl] = useState('http://localhost:3001/api/v1/user/signup');
   const navigate = useNavigate(); // Initialize useNavigate
 
   
@@ -47,6 +47,8 @@ const SignUp = () => {
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userId', response.data.userId);
+        localStorage.setItem('userName' , response.data.name );
+        if(response.data.isSeller == true) localStorage.setItem('isSeller' , true);
         
         if (response.data.message === 'User already exists') {
           toast.error('User already exists. Please log in.');

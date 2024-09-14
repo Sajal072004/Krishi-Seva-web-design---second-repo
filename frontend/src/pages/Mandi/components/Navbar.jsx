@@ -22,10 +22,18 @@ const Navbar = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Remove token from local storage
+    localStorage.removeItem('token');
+    localStorage.removeItem('userId');
+    localStorage.removeItem('isSeller');
+    localStorage.removeItem('otp');
     setIsLoggedIn(false); // Update login status
     navigate('/sign-in'); // Redirect to sign-in page
   };
+
+  const handleBecomeASellerClick = () => {
+    if(localStorage.getItem('isSeller')) navigate('/mandi/seller');
+    else navigate('/mandi/seller-signup');
+  }
 
   return (
     <>
@@ -43,7 +51,7 @@ const Navbar = () => {
 
         <div className='ml-[-100px] hidden md:flex w-[25%] items-start justify-center mt-2'>
           <div className='w-[320px] h-[40px] rounded-lg flex pl-10 pt-1 text-[24px] ml-20 mt-8 text-[#1b7a43] underline cursor-pointer'
-          onClick={()=>navigate('/seller')}>
+          onClick={()=>handleBecomeASellerClick()}>
             Become a Seller
           </div>
         </div>

@@ -211,7 +211,7 @@ const Weather = () => {
                 {/* 5-Day Forecast */}
                 <div className="days-forecast">
                   <h2 className="text-xl font-semibold mb-4">5-Day Forecast</h2>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                     {forecastData.map((forecast, index) => (
                       <div key={index} className="forecast-day bg-[#1b7a43] text-white p-4 rounded-lg">
                         <p className="text-lg font-semibold">{forecast.date}</p>

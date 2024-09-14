@@ -14,7 +14,7 @@ const SignIn = () => {
 
   const [email, setEmail] = useState('');
   const [url, setUrl] = useState('http://localhost:3001/api/v1/user/signin');
-  const navigate = useNavigate(); // To handle redirection
+  const navigate = useNavigate();
 
   useEffect(() => {
 
@@ -40,12 +40,14 @@ const SignIn = () => {
 
     try {
       const response = await axios.post(url, formData);
-      console.log(response);
+      console.log( response);
 
       if (response.data.success) {
 
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userId', response.data.userId);
+        localStorage.setItem('userName' , response.data.data.name );
+        if(response.data.data.isSeller == true) localStorage.setItem('isSeller' , true);
         toast.success('Login Successful');
         setTimeout(() => navigate('/dashboard'), 1000);
 

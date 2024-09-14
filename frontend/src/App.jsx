@@ -34,6 +34,8 @@ import Weeds from './pages/Educational/components/Weeds';
 import Finance from './pages/Finance/Finance';
 import Weather from './pages/Weather/Weather';
 import CardInfo from './pages/Mandi/components/CardInfo';
+import BecomeASeller from './pages/BecomeASeller/BecomeASeller';
+import SellerSignUp from './pages/SellerSignUp/SellerSignUp';
 
 const App = () => {
   return (
@@ -64,7 +66,7 @@ const App = () => {
 
         <Route path="/explore/nearby-labs" element={<PrivateRoute element={<LabsNearby />} />} />
 
-        <Route path="/seller" element={<PrivateRoute element={<Seller />} />} />
+        <Route path="/seller/sell" element={<PrivateRoute element={<Seller />} />} />
 
         <Route path="/chat-bot" element={<PrivateRoute element={<ChatBot />} />} />
         <Route path="/mandi" element={<PrivateRoute element={<Mandi />} />} />
@@ -73,7 +75,7 @@ const App = () => {
         <Route path="/latest-news" element={<PrivateRoute element={<News />} />} />
         
         
-        <Route path="/mandi-seller" element={<PrivateRoute element={<Seller />} />} />
+        <Route path="/sell-item" element={<PrivateRoute element={<Seller />} />} />
         <Route path="/discussions" element={<PrivateRoute element={<Discussion />} />} />
         <Route path="/discussions/new-thread" element={<PrivateRoute element={<NewThread />} />} />
         <Route path="/discussions/:id" element={<PrivateRoute element={<ThreadDetail />} />} />
@@ -88,6 +90,8 @@ const App = () => {
         <Route path="/educational/weeds" element={<PrivateRoute element={<Weeds/>} />} />
         <Route path="/finance" element={<PrivateRoute element={<Finance/>} />} />
         <Route path="/weather" element={<PrivateRoute element={<Weather/>} />} />
+        <Route path="/mandi/seller" element={<PrivateRoute element={<BecomeASeller/>} />} />
+        <Route path="/mandi/seller-signup" element={<PrivateRoute element={<SellerSignUp/>} />} />
         
         
         

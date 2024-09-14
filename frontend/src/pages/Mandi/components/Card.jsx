@@ -4,7 +4,7 @@ import { FaStar, FaRegStar } from "react-icons/fa";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 
-
+// Utility functions
 const truncateText = (text, wordLimit, addEllipsis = true) => {
   const words = text.split(' ');
   if (words.length > wordLimit) {
@@ -29,38 +29,46 @@ const renderStars = (rating) => {
   );
 };
 
-const Card = ({category,id, title, description, image, price, rating }) => {
-  const [quantity, setQuantity] = useState(1); // Default quantity is 1
+// Updated Card component
+const Card = ({ category, id, name, description, image, price, quantity, unit }) => {
+  const [cartQuantity, setCartQuantity] = useState(1); // Default cart quantity is 1
 
   const handleQuantityIncrease = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
+    setCartQuantity(prevQuantity => prevQuantity + 1);
   };
 
   const handleQuantityDecrease = () => {
-    setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+    setCartQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
   };
 
   const navigate = useNavigate();
 
   return (
-    <div className="flex flex-col justify-between border rounded-lg shadow-md overflow-hidden mt-5 bg-white mr-12" style={{ height: '450px', width: '260px' }}
-    onClick={()=>navigate(`/mandi/${category}/${id}`)}
+    <div
+      className="flex flex-col justify-between border rounded-lg shadow-md overflow-hidden mt-5 bg-white mr-12"
+      style={{ height: '450px', width: '260px' }}
+      onClick={() => navigate(`/mandi/${category}/${id}`)}
     >
-      <img src={image} alt={title} className="object-cover" style={{ height: '56%', width: '100%' }} />
-      
+      <img
+        src={image[0]} // Display the first image
+        alt={name}
+        className="object-cover"
+        style={{ height: '56%', width: '100%' }}
+      />
+
       <div className="flex-grow flex flex-col justify-between">
         <div>
           <div className="flex justify-between w-full px-4 mt-2">
-            <p className="text-left text-lg font-medium">{truncateText(title, 2, false)}</p>
+            <p className="text-left text-lg font-medium">{truncateText(name, 2, false)}</p>
             <div className="text-right text-lg font-medium mt-1">
-              {renderStars(rating)}
+              {renderStars(4)} {/* Assuming a default rating */}
             </div>
           </div>
 
           <p className="text-left text-[14px] px-2 pl-4 mt-2">{truncateText(description, 10)}</p>
 
           <div className="flex justify-between w-full px-3 mt-2 items-center">
-            <p className="text-left ml-1 text-lg text-gray-500">1U = 25kg</p>
+            <p className="text-left ml-1 text-lg text-gray-500">1U = {unit}</p>
             <div className="flex items-center bg-transparent">
               <button
                 onClick={handleQuantityDecrease}
@@ -68,7 +76,7 @@ const Card = ({category,id, title, description, image, price, rating }) => {
               >
                 <FaMinus />
               </button>
-              <p className="px-2 py-1 text-lg text-gray-500">{quantity}</p>
+              <p className="px-2 py-1 text-lg text-gray-500">{cartQuantity}</p>
               <button
                 onClick={handleQuantityIncrease}
                 className="w-7 h-7 flex items-center justify-center text-lg text-white bg-green-500 rounded-full hover:bg-green-600"

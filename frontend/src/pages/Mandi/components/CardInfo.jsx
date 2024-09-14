@@ -1,23 +1,49 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import axios from 'axios';  // Axios for making the GET request
 import Navbar from './Navbar';
 import Sidebar from '../../Dashboard/components/Sidebar/Sidebar';
-import productData from './productData.json'; // Assuming the file is at this path
 
 const CardInfo = () => {
-  const { id, category } = useParams(); // Extracting id and category from the URL
+  const { id, category } = useParams();
   const [card, setCard] = useState(null);
-  const [mainImage, setMainImage] = useState(''); // State for the main image
-  const [quantity, setQuantity] = useState(1); // State for quantity
+  const [mainImage, setMainImage] = useState('');
+  const [quantity, setQuantity] = useState(1);
+  const [loading, setLoading] = useState(true); // State to handle loading
+  const [error, setError] = useState(null); // State to handle error
 
-  // Fetch the card data based on the ID and category from the params
   useEffect(() => {
-    const categoryData = productData[category]; // Access the category from the JSON
-    if (categoryData) {
-      const selectedCard = categoryData.find((item) => item.id === id); // Find card with matching ID
-      setCard(selectedCard);
-      setMainImage(selectedCard.image); // Set initial main image
-    }
+    
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        console.log('this is category' ,category);
+        const response = await axios.get('http://localhost:3001/api/v1/crops');
+        const categoryData = response.data.data; 
+        console.log('this is data' , response.data.data);
+        console.log('category data' , categoryData);
+
+        if (categoryData) {
+          const selectedCard = categoryData.find((item) => item._id === id);
+          console.log('selectedCard' , selectedCard);
+          if (selectedCard) {
+            setCard(selectedCard); 
+            setMainImage(selectedCard.image); // Set the initial main image
+          } else {
+            setError('Item not found');
+          }
+        } else {
+          setError('Category not found');
+        }
+      } catch (err) {
+        setError('Failed to fetch data');
+        console.error(err);
+      } finally {
+        setLoading(false); // Set loading to false after the request is complete
+      }
+    };
+
+    fetchData();
   }, [id, category]);
 
   // Function to handle small image clicks
@@ -27,26 +53,28 @@ const CardInfo = () => {
 
   // Functions to increment and decrement quantity
   const incrementQuantity = () => {
-    setQuantity(prevQuantity => prevQuantity + 1);
+    setQuantity((prevQuantity) => prevQuantity + 1);
   };
 
   const decrementQuantity = () => {
-    setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+    setQuantity((prevQuantity) => (prevQuantity > 1 ? prevQuantity - 1 : 1));
   };
 
+  if (loading) {
+    return <p>Loading card information...</p>; // Loading state while fetching data
+  }
+
+  if (error) {
+    return <p>{error}</p>; // Error state if there's an issue
+  }
+
   if (!card) {
-    return <p>Loading card information...</p>; // Loading state or in case the card is not found
+    return <p>No card found.</p>; // If the card is not found in the API response
   }
 
   // Dummy small images (you can replace with actual images if needed)
-  const smallImages = [
-    card.image, // Include the main image in the small image gallery
-    'https://via.placeholder.com/100x100?text=Img1',
-    'https://via.placeholder.com/100x100?text=Img2',
-    'https://via.placeholder.com/100x100?text=Img3',
-    'https://via.placeholder.com/100x100?text=Img4',
-    'https://via.placeholder.com/100x100?text=Img5'
-  ];
+  const smallImages = card.image || [];
+    
 
   // Calculate the weight based on the quantity
   const weight = quantity * 25; // 25kg per quantity
@@ -57,13 +85,11 @@ const CardInfo = () => {
   return (
     <div className='overflow-x-hidden'>
       <div className='flex bg-[#f9fafc] w-[100vw] overflow-x-hidden'>
-        
         <div className='fixed h-screen w-[25vw] md:w-[20vw]'>
           <Sidebar />
         </div>
 
         <div className='ml-[25vw] md:ml-[18vw] w-[calc(100vw-25vw)] md:w-[calc(100vw-20vw)]'>
-          
           <div className='fixed w-[84vw] bg-[#f9fafc] z-10 -ml-4' style={{ height: '18vh' }}>
             <Navbar />
           </div>
@@ -87,9 +113,9 @@ const CardInfo = () => {
 
               <div>
                 {/* Main Image with border and shadow */}
-                <div 
-                  className="mb-4 border-2 border-gray-200 rounded-lg overflow-hidden shadow-md" 
-                  style={{ width: '500px', height: '300px' }} 
+                <div
+                  className="mb-4 border-2 border-gray-200 rounded-lg overflow-hidden shadow-md"
+                  style={{ width: '500px', height: '300px' }}
                 >
                   <img
                     src={mainImage}
@@ -113,15 +139,15 @@ const CardInfo = () => {
 
             {/* Right Section with the content */}
             <div className='ml-8'>
-              <h1 className="text-4xl font-bold mb-4 text-gray-800">{card.title}</h1>
+              <h1 className="text-4xl font-bold mb-4 text-gray-800">{card.name}</h1>
               <p className="text-xl mb-8 text-gray-600 leading-relaxed">{card.description}</p>
               <p className="text-2xl font-semibold mb-6 text-gray-700">Price: ₹{card.price} per Kg</p>
               <p className="text-lg text-yellow-500 font-medium">Rating: {card.rating} stars</p>
 
               {/* Quantity Selector */}
               <div className="flex items-center mt-6">
-                <button 
-                  onClick={decrementQuantity} 
+                <button
+                  onClick={decrementQuantity}
                   className="bg-red-500 text-white w-12 h-12 rounded-l-lg border border-red-600 text-lg font-semibold transition-transform duration-300 hover:bg-red-600"
                 >
                   -
@@ -132,8 +158,8 @@ const CardInfo = () => {
                   readOnly
                   className="text-center w-20 h-12 border-t border-b border-gray-400 text-lg font-semibold"
                 />
-                <button 
-                  onClick={incrementQuantity} 
+                <button
+                  onClick={incrementQuantity}
                   className="bg-green-500 text-white w-12 h-12 rounded-r-lg border border-green-600 text-lg font-semibold transition-transform duration-300 hover:bg-green-600"
                 >
                   +
@@ -141,22 +167,18 @@ const CardInfo = () => {
               </div>
 
               <div className='flex gap-52'>
+                {/* Weight Display */}
+                <div className="mt-6 ml-8">
+                  <p className="text-lg font-medium">Weight:</p>
+                  <p className="text-xl font-semibold">{weight} kg</p>
+                </div>
 
-                 {/* Weight Display */}
-              <div className="mt-6 ml-8">
-                <p className="text-lg font-medium">Weight:</p>
-                <p className="text-xl font-semibold">{weight} kg</p>
+                {/* Total Price Display */}
+                <div className="mt-6 mr-20">
+                  <p className="text-lg font-medium">Total Price:</p>
+                  <p className="text-xl font-semibold">₹{totalPrice}</p>
+                </div>
               </div>
-
-              {/* Total Price Display */}
-              <div className="mt-6 mr-20">
-                <p className="text-lg font-medium">Total Price:</p>
-                <p className="text-xl font-semibold">₹{totalPrice}</p>
-              </div>
-
-              </div>
-
-             
             </div>
           </div>
         </div>

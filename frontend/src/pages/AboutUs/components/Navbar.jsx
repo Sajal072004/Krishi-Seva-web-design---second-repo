@@ -13,7 +13,10 @@ const Navbar = () => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('token'); // Remove the token
+    localStorage.removeItem('token');
+    localStorage.removeItem('userId');
+    localStorage.removeItem('isSeller');
+    localStorage.removeItem('otp'); // Remove the token
     navigate('/sign-in'); // Redirect to sign-in page
   };
 

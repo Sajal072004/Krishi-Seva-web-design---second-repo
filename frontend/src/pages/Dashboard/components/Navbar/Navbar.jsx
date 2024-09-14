@@ -17,6 +17,8 @@ const Navbar = () => {
     // Handle logout logic here
     localStorage.removeItem('token');
     localStorage.removeItem('userId');
+    localStorage.removeItem('otp');
+    localStorage.removeItem('isSeller');
     navigate('/sign-in');
     
   };
