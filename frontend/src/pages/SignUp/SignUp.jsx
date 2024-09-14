@@ -47,8 +47,8 @@ const SignUp = () => {
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userId', response.data.userId);
-        localStorage.setItem('userName' , response.data.name );
-        if(response.data.isSeller == true) localStorage.setItem('isSeller' , true);
+        localStorage.setItem('userName' , response.data.data.name );
+        if(response.data.data.isSeller == true) localStorage.setItem('isSeller' , true);
         
         if (response.data.message === 'User already exists') {
           toast.error('User already exists. Please log in.');

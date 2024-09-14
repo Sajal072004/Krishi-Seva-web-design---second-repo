@@ -7,11 +7,16 @@ import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { useNavigate } from 'react-router-dom';
 
 // Register the required components for Chart.js
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
 const BecomeASeller = () => {
+
+  const navigate = useNavigate();
+
+
   // Dummy Data for 12 months of orders
   const data = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
@@ -153,7 +158,7 @@ const BecomeASeller = () => {
               {/* Sell Items Card */}
               <div className='bg-white p-6 rounded-lg shadow-md mb-6 w-[300px] h-[200px] flex flex-col items-center justify-center'>
                 <h1 className='text-3xl mb-4'>Sell Items</h1>
-                <button className='bg-[#1b7a43] py-2 px-8 mt-4 text-white text-xl hover:bg-green-500 rounded-lg'>Sell</button>
+                <button onClick={()=>navigate('/mandi/sell-item')} className='bg-[#1b7a43] py-2 px-8 mt-4 text-white text-xl hover:bg-green-500 rounded-lg'>Sell</button>
                 
               </div>
 

@@ -5,6 +5,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { MdCloudUpload } from "react-icons/md";
 import { useDropzone } from 'react-dropzone';
+import { useNavigate } from 'react-router-dom';
 
 const Seller = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ const Seller = () => {
     price: '',
     weight: '',
   });
+
+  const navigate = useNavigate();
 
   const onDrop = (acceptedFiles) => {
     setFormData((prevState) => ({
@@ -65,6 +68,10 @@ const Seller = () => {
       });
     }
   };
+
+  const handleAddToMandi = () => {
+    navigate('/mandi/seller-profile');
+  }
 
   return (
     <div className='overflow-x-hidden'>
@@ -162,12 +169,20 @@ const Seller = () => {
                     </div>
                   </div>
 
-                  <div className='flex items-center justify-end mt-6'>
+                  <div className='flex items-center justify-end  mt-6'>
                     <button
+                    onClick={()=>handleAddToMandi()}
                       type='submit'
-                      className='bg-[#1b7a49] hover:bg-[#145a36] text-white font-bold py-2 px-4 rounded'
+                      className='bg-[#1b7a49] hover:bg-[#145a36] text-white font-bold py-2 px-4 rounded mr-2'
                     >
                       Add to Mandi
+                    </button>
+                    <button
+                    onClick={()=>navigate('/mandi/seller-profile')}
+                      type='submit'
+                      className='bg-red-600 hover:bg-red-400 text-white font-bold py-2 px-4 rounded'
+                    >
+                      Cancel
                     </button>
                   </div>
                 </div>

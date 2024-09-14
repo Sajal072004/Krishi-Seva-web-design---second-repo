@@ -28,7 +28,7 @@ const SellerSignUp = () => {
       alert('Seller information saved successfully!');
 
       localStorage.setItem('isSeller' , true);
-      navigate('/mandi/seller');
+      navigate('/mandi/seller-profile');
 
 
     } catch (error) {

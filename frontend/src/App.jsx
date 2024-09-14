@@ -75,14 +75,13 @@ const App = () => {
         <Route path="/latest-news" element={<PrivateRoute element={<News />} />} />
         
         
-        <Route path="/sell-item" element={<PrivateRoute element={<Seller />} />} />
+        <Route path="/mandi/sell-item" element={<PrivateRoute element={<Seller />} />} />
         <Route path="/discussions" element={<PrivateRoute element={<Discussion />} />} />
         <Route path="/discussions/new-thread" element={<PrivateRoute element={<NewThread />} />} />
         <Route path="/discussions/:id" element={<PrivateRoute element={<ThreadDetail />} />} />
         <Route path="/latest-news/:id" element={<PrivateRoute element={<NewsDetail />} />} />
         <Route path="/settings" element={<PrivateRoute element={<Settings />} />} />
         <Route path="/profile" element={<PrivateRoute element={<UserProfile />} />} />
-        <Route path="/seller-profile" element={<PrivateRoute element={<SellerProfile/>} />} />
         <Route path="/educational/fertilizers" element={<PrivateRoute element={<FertilizersPage/>} />} />
         <Route path="/educational/insecticides" element={<PrivateRoute element={<Insecticides/>} />} />
         <Route path="/educational/irrigation" element={<PrivateRoute element={<Irrigation/>} />} />
@@ -90,8 +89,9 @@ const App = () => {
         <Route path="/educational/weeds" element={<PrivateRoute element={<Weeds/>} />} />
         <Route path="/finance" element={<PrivateRoute element={<Finance/>} />} />
         <Route path="/weather" element={<PrivateRoute element={<Weather/>} />} />
-        <Route path="/mandi/seller" element={<PrivateRoute element={<BecomeASeller/>} />} />
+        <Route path="/mandi/seller-profile" element={<PrivateRoute element={<BecomeASeller/>} />} />
         <Route path="/mandi/seller-signup" element={<PrivateRoute element={<SellerSignUp/>} />} />
+        <Route path="/seller-profile" element={<PrivateRoute element={<SellerProfile/>} />} />
         
         
         

@@ -31,7 +31,7 @@ const Navbar = () => {
   };
 
   const handleBecomeASellerClick = () => {
-    if(localStorage.getItem('isSeller')) navigate('/mandi/seller');
+    if(localStorage.getItem('isSeller')) navigate('/mandi/seller-profile');
     else navigate('/mandi/seller-signup');
   }
 
