@@ -19,7 +19,7 @@ const SignUp = () => {
     postalCode: '',
   });
 
-  const [url, setUrl] = useState('https://kisanseva-backend.onrender.com/api/v1/user/signup');
+  const [url, setUrl] = useState('https://kisanseva-backend-69pe.onrender.com/api/v1/user/signup');
   const navigate = useNavigate(); // Initialize useNavigate
 
 

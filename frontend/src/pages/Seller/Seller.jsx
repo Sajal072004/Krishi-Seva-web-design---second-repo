@@ -79,7 +79,7 @@ const Seller = () => {
     });
 
     try {
-      const response = await axios.post('https://kisanseva-backend.onrender.com/api/v1/crops', formDataToSend, {
+      const response = await axios.post('https://kisanseva-backend-69pe.onrender.com/api/v1/crops', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

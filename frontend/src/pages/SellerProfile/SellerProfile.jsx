@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CountUp from 'react-countup'; // Import react-countup
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'
 
 const SellerProfile = () => {
   const [isEditing, setIsEditing] = useState(false);
@@ -32,6 +33,10 @@ const SellerProfile = () => {
       [name]: value
     }));
   };
+
+  const getUser = async() => {
+    const response = axios.get('https://localhost:3001/api/v1/user/')
+  }
 
   const handleEdit = () => {
     setIsEditing(!isEditing);

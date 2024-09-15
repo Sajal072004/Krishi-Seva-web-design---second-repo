@@ -9,7 +9,7 @@ const CardSection = ({ title }) => {
     // Fetch data from the API
     const fetchData = async () => {
       try {
-        const response = await fetch('https://kisanseva-backend.onrender.com/api/v1/crops');
+        const response = await fetch('https://kisanseva-backend-69pe.onrender.com/api/v1/crops');
         const result = await response.json();
 
         if (result.success) {

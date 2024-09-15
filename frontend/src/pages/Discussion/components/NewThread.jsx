@@ -32,7 +32,7 @@ const NewThread = () => {
     console.log(userId);
 
     try {
-      const response = await fetch('https://kisanseva-backend.onrender.com/api/v1/tweets', {
+      const response = await fetch('https://kisanseva-backend-69pe.onrender.com/api/v1/tweets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

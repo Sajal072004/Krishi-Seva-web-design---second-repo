@@ -13,7 +13,7 @@ const SignIn = () => {
   });
 
   const [email, setEmail] = useState('');
-  const [url, setUrl] = useState('https://kisanseva-backend.onrender.com/api/v1/user/signin');
+  const [url, setUrl] = useState('https://kisanseva-backend-69pe.onrender.com/api/v1/user/signin');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const SignIn = () => {
     }
 
     try {
-      const response = await axios.post('https://kisanseva-backend.onrender.com/api/v1/user/forget', {
+      const response = await axios.post('https://kisanseva-backend-69pe.onrender.com/api/v1/user/forget', {
         email
       });
 
