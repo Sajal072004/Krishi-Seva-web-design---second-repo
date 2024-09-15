@@ -23,6 +23,12 @@ const Navbar = () => {
     
   };
 
+  const handleSellerProfile = () => {
+    const isSeller = localStorage.getItem('isSeller');
+    if(isSeller) navigate('/mandi/seller-profile');
+    else navigate('/mandi/seller-signup');
+  }
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -74,6 +80,9 @@ const Navbar = () => {
                 <ul className='p-2'>
                   <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={() => navigate('/profile')}>
                     Profile
+                  </li>
+                  <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={() => handleSellerProfile()}>
+                    Seller Profile
                   </li>
                   <li className='px-4 py-2 hover:bg-gray-100 cursor-pointer' onClick={handleLogout}>
                     Logout

@@ -29,6 +29,12 @@ const Navbar = () => {
     navigate('/sign-in'); // Redirect to sign-in page
   };
 
+  const handleSellerProfile = () => {
+    const isSeller = localStorage.getItem('isSeller');
+    if(isSeller) navigate('/mandi/seller-profile');
+    else navigate('/mandi/seller-signup');
+  }
+
   return (
     <>
       <div className={'flex justify-between w-[70vw] md:w-full h-[17vh] ml-5 bg-[#f9fafc]'}>
@@ -68,6 +74,12 @@ const Navbar = () => {
                     onClick={() => navigate('/profile')}
                   >
                     Profile
+                  </li>
+                  <li
+                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
+                    onClick={() => handleSellerProfile()}
+                  >
+                    Seller Profile
                   </li>
                   <li
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"

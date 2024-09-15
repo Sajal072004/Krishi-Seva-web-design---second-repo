@@ -12,6 +12,12 @@ const Navbar = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const handleSellerProfile = () => {
+    const isSeller = localStorage.getItem('isSeller');
+    if(isSeller) navigate('/mandi/seller-profile');
+    else navigate('/mandi/seller-signup');
+  }
+
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('userId');
@@ -56,6 +62,7 @@ const Navbar = () => {
               <div className="absolute right-0 mt-2 w-[200px] bg-white border border-gray-300 rounded-lg shadow-lg z-10">
                 <ul className="py-2">
                   <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer" onClick={() => navigate('/profile')}>Profile</li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer" onClick={() => handleSellerProfile()}>Seller Profile</li>
                   <li 
                     className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
                     onClick={handleLogout}

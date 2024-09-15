@@ -287,6 +287,14 @@ const Seller = () => {
                   >
                     {isLoading ? 'Submitting...' : 'Add to Mandi'} {/* Show loader text */}
                   </button>
+
+                  <button
+                    onClick={() => navigate('/mandi/seller-profile')}
+                    className={`bg-red-600 text-white hover:bg-red-400 px-6 py-2 rounded ml-2 `}
+
+                  >
+                    Cancel
+                  </button>
                 </div>
               </div>
             </form>

@@ -15,19 +15,20 @@ const WebsiteOverview = () => (
       agricultural products, our website has something for you.
     </p>
 
-    {/* Video Player Section */}
-    <div className="mt-8 mb-8">
-      <h3 className="text-xl font-semibold text-gray-700 mb-4">Watch a Demo of Our Platform</h3>
-      <div className="relative w-full pb-[56.25%] h-0">
-  <iframe
-    className="absolute top-0 left-0 w-full h-[75%] rounded-lg shadow-md"
-    src="https://www.youtube.com/embed/Wezg66EQ1PQ"
-    title="Platform Demo"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  ></iframe>
+   {/* Video Player Section */}
+<div className="mt-8 mb-8">
+  <h3 className="text-xl font-semibold text-gray-700 mb-4">Watch a Demo of Our Platform</h3>
+  <div className="relative w-full pb-[56.25%] h-0">
+    <iframe
+      className="absolute top-0 left-0 w-full h-[75%] rounded-lg shadow-md"
+      src="https://www.youtube.com/embed/S7ehMmF--MQ"
+      title="Platform Demo"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
 </div>
-    </div>
+
 
     {/* Detailed Features Section */}
     <div className="mt-8">

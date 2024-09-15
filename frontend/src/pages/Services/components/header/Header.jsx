@@ -31,6 +31,12 @@ const Header = () => {
     setShowDropdown(!showDropdown); // Toggle profile dropdown visibility
   };
 
+  const handleSellerProfile = () => {
+    const isSeller = localStorage.getItem('isSeller');
+    if(isSeller) navigate('/mandi/seller-profile');
+    else navigate('/mandi/seller-signup');
+  }
+
   const handleLogout = () => {
     localStorage.removeItem('token');
     localStorage.removeItem('userId');
@@ -72,6 +78,12 @@ const Header = () => {
                     onClick={() => navigate('/profile')}
                   >
                     Profile
+                  </li>
+                  <li 
+                    className="px-4 py-2 cursor-pointer hover:bg-gray-100" 
+                    onClick={() => handleSellerProfile()}
+                  >
+                    Seller Profile
                   </li>
                   <li 
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
