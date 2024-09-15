@@ -19,14 +19,14 @@ const SignUp = () => {
     postalCode: '',
   });
 
-  const [url, setUrl] = useState('http://localhost:3001/api/v1/user/signup');
+  const [url, setUrl] = useState('https://kisanseva-backend.onrender.com/api/v1/user/signup');
   const navigate = useNavigate(); // Initialize useNavigate
 
-  
+
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      navigate('/dashboard'); 
+      navigate('/dashboard');
     }
   }, [navigate]);
 
@@ -47,12 +47,12 @@ const SignUp = () => {
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userId', response.data.userId);
-        localStorage.setItem('userName' , response.data.data.name );
-        if(response.data.data.isSeller == true) localStorage.setItem('isSeller' , true);
-        
+        localStorage.setItem('userName', response.data.data.name);
+        if (response.data.data.isSeller == true) localStorage.setItem('isSeller', true);
+
         if (response.data.message === 'User already exists') {
           toast.error('User already exists. Please log in.');
-          navigate('/Sign-in'); 
+          navigate('/Sign-in');
         } else {
           toast.success('Signup successful! Redirecting to dashboard...');
           navigate('/dashboard');
@@ -73,14 +73,14 @@ const SignUp = () => {
       <nav className="bg-white shadow-md">
         <div className="flex justify-between items-center p-4 max-w-7xl mx-auto">
           <div className="flex items-center">
-          <img src="logo.png" alt="Logo" className="h-12 cursor-pointer" onClick={()=>navigate('/dashboard')} />
+            <img src="logo.png" alt="Logo" className="h-12 cursor-pointer" onClick={() => navigate('/dashboard')} />
             <h1 className='text-xl ml-4'>Krishi Seva</h1>
           </div>
           <div className="flex space-x-6">
-            <Link to={'/'}  className="text-gray-700 hover:text-green-700">Home</Link >
-            <Link to={'/services'}  className="text-gray-700 hover:text-green-700">Services</Link>
-            <Link to={'/about-us'}  className="text-gray-700 hover:text-green-700">About</Link >
-            <Link to={'/contact-us'}  className="text-gray-700 hover:text-green-700">Contact</Link>
+            <Link to={'/'} className="text-gray-700 hover:text-green-700">Home</Link >
+            <Link to={'/services'} className="text-gray-700 hover:text-green-700">Services</Link>
+            <Link to={'/about-us'} className="text-gray-700 hover:text-green-700">About</Link >
+            <Link to={'/contact-us'} className="text-gray-700 hover:text-green-700">Contact</Link>
           </div>
           <div>
             <div className='bg-[#f7c35f] py-4 px-8 rounded-lg flex text-white'>
@@ -89,9 +89,9 @@ const SignUp = () => {
                   <FaPhoneAlt />
                 </div>
                 <a href="mailto:krishiseva27@gmail.com">
-                <div className="text-white">
-                  Reach Us: krishiseva27@gmail.com
-                </div>
+                  <div className="text-white">
+                    Reach Us: krishiseva27@gmail.com
+                  </div>
                 </a>
               </div>
             </div>

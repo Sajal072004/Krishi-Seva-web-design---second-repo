@@ -13,7 +13,7 @@ const SignIn = () => {
   });
 
   const [email, setEmail] = useState('');
-  const [url, setUrl] = useState('http://localhost:3001/api/v1/user/signin');
+  const [url, setUrl] = useState('https://kisanseva-backend.onrender.com/api/v1/user/signin');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -40,14 +40,14 @@ const SignIn = () => {
 
     try {
       const response = await axios.post(url, formData);
-      console.log( response);
+      console.log(response);
 
       if (response.data.success) {
 
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('userId', response.data.userId);
-        localStorage.setItem('userName' , response.data.data.name );
-        if(response.data.data.isSeller == true) localStorage.setItem('isSeller' , true);
+        localStorage.setItem('userName', response.data.data.name);
+        if (response.data.data.isSeller == true) localStorage.setItem('isSeller', true);
         toast.success('Login Successful');
         setTimeout(() => navigate('/dashboard'), 1000);
 
@@ -67,7 +67,7 @@ const SignIn = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3001/api/v1/user/forget', {
+      const response = await axios.post('https://kisanseva-backend.onrender.com/api/v1/user/forget', {
         email
       });
 

@@ -23,11 +23,11 @@ const SellerSignUp = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3001/api/v1/seller', sellerData);
+      const response = await axios.post('https://kisanseva-backend.onrender.com/api/v1/seller', sellerData);
       console.log('Response:', response.data);
       alert('Seller information saved successfully!');
 
-      localStorage.setItem('isSeller' , true);
+      localStorage.setItem('isSeller', true);
       navigate('/mandi/seller-profile');
 
 

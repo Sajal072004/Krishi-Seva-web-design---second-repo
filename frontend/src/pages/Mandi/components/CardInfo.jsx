@@ -13,21 +13,21 @@ const CardInfo = () => {
   const [error, setError] = useState(null); // State to handle error
 
   useEffect(() => {
-    
+
     const fetchData = async () => {
       try {
         setLoading(true);
-        console.log('this is category' ,category);
-        const response = await axios.get('http://localhost:3001/api/v1/crops');
-        const categoryData = response.data.data; 
-        console.log('this is data' , response.data.data);
-        console.log('category data' , categoryData);
+        console.log('this is category', category);
+        const response = await axios.get('https://kisanseva-backend.onrender.com/api/v1/crops');
+        const categoryData = response.data.data;
+        console.log('this is data', response.data.data);
+        console.log('category data', categoryData);
 
         if (categoryData) {
           const selectedCard = categoryData.find((item) => item._id === id);
-          console.log('selectedCard' , selectedCard);
+          console.log('selectedCard', selectedCard);
           if (selectedCard) {
-            setCard(selectedCard); 
+            setCard(selectedCard);
             setMainImage(selectedCard.image); // Set the initial main image
           } else {
             setError('Item not found');
@@ -74,7 +74,7 @@ const CardInfo = () => {
 
   // Dummy small images (you can replace with actual images if needed)
   const smallImages = card.image || [];
-    
+
 
   // Calculate the weight based on the quantity
   const weight = quantity * 25; // 25kg per quantity
