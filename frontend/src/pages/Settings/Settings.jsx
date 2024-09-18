@@ -22,9 +22,10 @@ const SettingsSection = ({ icon, title, children }) => (
     <div className="text-gray-600">{children}</div>
   </div>
 );
+const userName = localStorage.getItem('userName');
 
 const Settings = () => {
-  const userName = localStorage.getItem('userName')};
+  
 
   return (
     <div className="overflow-x-hidden">
