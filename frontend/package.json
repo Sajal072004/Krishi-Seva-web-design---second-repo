@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "proxy": "https://kisanseva-backend-69pe.onrender.com"
+    "proxy": "https://krishisevabackendnew.onrender.com"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

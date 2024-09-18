@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className={'flex justify-between w-[70vw] md:w-full h-[17vh] ml-0 bg-[#f9fafc] z-10'}>
         <div className='w-[90%] md:w-[28%] mt-3'>
           <h1 className='text-2xl md:text-3xl p-4 pb-2 text-gray-700 font-semibold'>Schemes</h1>
-          <p className='p-4 pt-1 text-gray-700'>Hello Sajal Namdeo, welcome back!</p>
+          <p className='p-4 pt-1 text-gray-700'>Hello {localStorage.getItem('userName')}, welcome back!</p>
         </div>
         <div className=' hidden md:flex w-[40%] items-center mr-[-100px] '>
           <div className=' w-[320px] h-[40px] shadow-lg  rounded-lg flex p-3 bg-white'>

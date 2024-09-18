@@ -15,19 +15,19 @@ const WebsiteOverview = () => (
       agricultural products, our website has something for you.
     </p>
 
-   {/* Video Player Section */}
-<div className="mt-8 mb-8">
-  <h3 className="text-xl font-semibold text-gray-700 mb-4">Watch a Demo of Our Platform</h3>
-  <div className="relative w-full pb-[56.25%] h-0">
-    <iframe
-      className="absolute top-0 left-0 w-full h-[75%] rounded-lg shadow-md"
-      src="https://www.youtube.com/embed/S7ehMmF--MQ"
-      title="Platform Demo"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-</div>
+    {/* Video Player Section */}
+    <div className="mt-8 mb-8">
+      <h3 className="text-xl font-semibold text-gray-700 mb-4">Watch a Demo of Our Platform</h3>
+      <div className="relative w-full pb-[56.25%] h-0">
+        <iframe
+          className="absolute top-0 left-0 w-full h-[75%] rounded-lg shadow-md"
+          src="https://www.youtube.com/embed/S7ehMmF--MQ"
+          title="Platform Demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
 
 
     {/* Detailed Features Section */}
@@ -133,7 +133,7 @@ const CreatorInfo = () => (
       and my commitment to helping others.
     </p>
     <p className="text-gray-600 leading-relaxed mt-4">
-      Feel free to connect with me on <a href="https://www.linkedin.com/in/sajalnamdeo" className="text-green-600 underline">LinkedIn</a> or view my work on 
+      Feel free to connect with me on <a href="https://www.linkedin.com/in/sajalnamdeo" className="text-green-600 underline">LinkedIn</a> or view my work on
       <a href="https://github.com/sajalnamdeo" className="text-green-600 underline ml-1">GitHub</a>.
     </p>
   </div>

@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const handleSellerProfile = () => {
     const isSeller = localStorage.getItem('isSeller');
-    if(isSeller) navigate('/mandi/seller-profile');
+    if (isSeller) navigate('/mandi/seller-profile');
     else navigate('/mandi/seller-signup');
   }
 
@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className={'flex justify-between w-[70vw] md:w-full h-[17vh] ml-5 bg-[#f9fafc]'}>
         <div className='w-[90%] md:w-[28%] mt-3'>
           <h1 className='text-2xl md:text-3xl p-4 pb-2 text-gray-700 font-semibold'>Settings</h1>
-          <p className='p-4 pt-1 text-gray-700'>Hello Sajal Namdeo, welcome back!</p>
+          <p className='p-4 pt-1 text-gray-700'>Hello {localStorage.getItem('userName')}, welcome back!</p>
         </div>
         <div className='hidden md:flex w-[40%] items-center mr-[-100px]'>
           <div className='w-[320px] h-[40px] shadow-lg rounded-lg flex p-3 bg-white'>
@@ -52,9 +52,9 @@ const Navbar = () => {
             <FaRegBell style={{ width: '22px', height: '50px' }} />
           </div>
           <div className='relative ml-4'>
-            <img 
-              src="/profile_icon.png" 
-              alt="Profile" 
+            <img
+              src="/profile_icon.png"
+              alt="Profile"
               className='w-[35px] cursor-pointer'
               onClick={toggleDropdown}
             />
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <ul className="py-2">
                   <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer" onClick={() => navigate('/profile')}>Profile</li>
                   <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer" onClick={() => handleSellerProfile()}>Seller Profile</li>
-                  <li 
+                  <li
                     className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer"
                     onClick={handleLogout}
                   >

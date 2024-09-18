@@ -18,7 +18,7 @@ const CardInfo = () => {
       try {
         setLoading(true);
         console.log('this is category', category);
-        const response = await axios.get('https://kisanseva-backend-69pe.onrender.com/api/v1/crops');
+        const response = await axios.get('https://krishisevabackendnew.onrender.com/api/v1/crops');
         const categoryData = response.data.data;
         console.log('this is data', response.data.data);
         console.log('category data', categoryData);

@@ -11,7 +11,6 @@ const UserProfile = () => {
   const [userInfo, setUserInfo] = useState({
     name: '',
     email: '',
-    password: '********',
     city: '',
     street: '',
     state: '',
@@ -38,24 +37,33 @@ const UserProfile = () => {
     setIsEditing(!isEditing);
   };
 
-  const handleSave = () => {
-    // Check if any field is empty
-    for (let key in userInfo) {
-      if (userInfo[key].trim() === '') {
-        toast.error(`${key} cannot be empty`);
-        return; // Stop the function if any field is empty
+  const handleSave = async () => {
+
+    try {
+
+
+      console.log('handlesave');
+      for (let key in userInfo) {
+        if (userInfo[key] === '') {
+          toast.error(`${key} cannot be empty`);
+          return;
+        }
       }
+      const userId = localStorage.getItem('userId');
+      const response = await axios.patch(`https://krishisevabackendnew.onrender.com/api/v1/user/${userId}`, userInfo);
+      console.log(response.data);
+      toast.success('Profile updated successfully!');
+      setIsEditing(false);
     }
-    
-    // Show success message
-    toast.success('Profile updated successfully!');
-    setIsEditing(false);
+    catch (error) {
+      toast.error(error);
+    }
   };
 
   const getUser = async () => {
     try {
       const userId = localStorage.getItem('userId')
-      const response = await axios.get(`http://localhost:3001/api/v1/user/${userId}`);
+      const response = await axios.get(`https://krishisevabackendnew.onrender.com/api/v1/user/${userId}`);
       // Assuming the API response is structured as response.data.data
       setUserInfo({
         name: response.data.data.name,
@@ -90,11 +98,11 @@ const UserProfile = () => {
       {/* Main Content */}
       <div className="flex flex-col w-full items-center justify-center p-6 bg-gradient-to-r from-green-100 via-green-50 to-blue-50 ml-48">
         <div className="bg-white shadow-lg rounded-lg flex overflow-hidden w-[85%] md:w-[85%] lg:w-[85%]">
-          
+
           {/* Left Section - Profile Image and Info */}
           <div className="flex flex-col items-center justify-start bg-green-600 text-white w-[40%] p-8">
             <img
-              src={'./apple.png'} 
+              src={'./apple.png'}
               alt="Profile"
               className="w-32 h-32 rounded-full object-cover mb-4 shadow-lg"
             />
@@ -152,7 +160,7 @@ const UserProfile = () => {
                       type="text"
                       name={key}
                       value={userInfo[key]}
-                      disabled={!isEditing || key === 'phone' || key === 'gender'}
+                      disabled={!isEditing || key === 'email' || key === 'gender'}
                       onChange={handleChange}
                       className={`p-3 border ${isEditing && key !== 'phone' && key !== 'gender' ? 'border-gray-300' : 'border-transparent'} rounded-lg focus:outline-none focus:ring-2 focus:ring-green-300 transition`}
                     />

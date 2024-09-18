@@ -31,13 +31,13 @@ const Navbar = () => {
   };
 
   const handleBecomeASellerClick = () => {
-    if(localStorage.getItem('isSeller')) navigate('/mandi/seller-profile');
+    if (localStorage.getItem('isSeller')) navigate('/mandi/seller-profile');
     else navigate('/mandi/seller-signup');
   }
 
   const handleSellerProfile = () => {
     const isSeller = localStorage.getItem('isSeller');
-    if(isSeller) navigate('/mandi/seller-profile');
+    if (isSeller) navigate('/mandi/seller-profile');
     else navigate('/mandi/seller-signup');
   }
 
@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className={'flex justify-between w-[70vw] md:w-full h-[17vh] ml-5'}>
         <div className='w-[90%] md:w-[28%] mt-3'>
           <h1 className='text-2xl md:text-3xl p-4 pb-2 text-gray-700 font-semibold'>Welcome to Mandi</h1>
-          <p className='p-4 pt-1 text-gray-700'>Hello Sajal Namdeo, welcome back!</p>
+          <p className='p-4 pt-1 text-gray-700'>Hello {localStorage.getItem('userName')}, welcome back!</p>
         </div>
         <div className='hidden md:flex w-[40%] items-center mr-[-100px]'>
           <div className='w-[320px] h-[40px] shadow-lg rounded-lg flex p-3 bg-white'>
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         <div className='ml-[-100px] hidden md:flex w-[25%] items-start justify-center mt-2'>
           <div className='w-[320px] h-[40px] rounded-lg flex pl-10 pt-1 text-[24px] ml-20 mt-8 text-[#1b7a43] underline cursor-pointer'
-          onClick={()=>handleBecomeASellerClick()}>
+            onClick={() => handleBecomeASellerClick()}>
             Become a Seller
           </div>
         </div>
@@ -85,19 +85,19 @@ const Navbar = () => {
             {showDropdown && (
               <div className="absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg z-10">
                 <ul className="text-gray-700">
-                  <li 
-                    className="px-4 py-2 cursor-pointer hover:bg-gray-100" 
+                  <li
+                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                     onClick={() => navigate('/profile')}
                   >
                     Profile
                   </li>
-                  <li 
-                    className="px-4 py-2 cursor-pointer hover:bg-gray-100" 
+                  <li
+                    className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                     onClick={() => handleSellerProfile()}
                   >
                     Seller Profile
                   </li>
-                  <li 
+                  <li
                     className="px-4 py-2 cursor-pointer hover:bg-gray-100"
                     onClick={handleLogout}
                   >
