@@ -24,7 +24,7 @@ const SettingsSection = ({ icon, title, children }) => (
 );
 
 const Settings = () => {
-  const userName = "{localStorage.getItem('userName')}";
+  const userName = localStorage.getItem('userName')};
 
   return (
     <div className="overflow-x-hidden">
