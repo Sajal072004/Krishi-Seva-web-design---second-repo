@@ -191,9 +191,9 @@ const SignIn = () => {
 
             <div className="text-center mt-4">
               <span className="text-gray-700">Don't have an account? </span>
-              <a href="/sign-up" className="text-green-700 hover:underline">
+              <Link to="/sign-up" className="text-green-700 hover:underline">
                 Sign Up
-              </a>
+              </Link>
             </div>
           </form>
         </div>
