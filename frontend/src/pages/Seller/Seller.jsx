@@ -227,6 +227,7 @@ const Seller = () => {
                     <option value='Pulses'>Pulses</option>
                     <option value='Fruits'>Fruits</option>
                     <option value='Vegetables'>Vegetables</option>
+                    <option value='Fertilizers'>Fertilizers</option>
                     <option value='Dairy Products'>Dairy Products</option>
                     <option value='Fodder Crops'>Fodder Crops</option>
                   </select>
