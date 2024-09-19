@@ -12,7 +12,7 @@ const RecentActivity = () => {
     if (usernames[userId]) return usernames[userId]; // Return if already fetched
 
     try {
-      const response = await axios.get(`https://krishisevabackendnew.onrender.com/api/v1/user/${userId}`);
+      const response = await axios.get(`http://localhost:3001/api/v1/user/${userId}`);
       const username = response.data.data.name;
 
       // Update state with new username
@@ -31,7 +31,7 @@ const RecentActivity = () => {
   const getTransactions = async () => {
     const userId = localStorage.getItem('userId'); // Assuming userId is stored in localStorage
     try {
-      const response = await axios.get(`https://krishisevabackendnew.onrender.com/api/v1/transaction/last-10/${userId}`);
+      const response = await axios.get(`http://localhost:3001/api/v1/transaction/last-10/${userId}`);
       const transactionsData = response.data.data;
 
       // Fetch usernames for buyers and sellers in parallel

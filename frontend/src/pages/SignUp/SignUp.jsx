@@ -19,7 +19,7 @@ const SignUp = () => {
     postalCode: '',
   });
 
-  const [url, setUrl] = useState('https://krishisevabackendnew.onrender.com/api/v1/user/signup');
+  const [url, setUrl] = useState('http://localhost:3001/api/v1/user/signup');
   const navigate = useNavigate(); // Initialize useNavigate
 
 
