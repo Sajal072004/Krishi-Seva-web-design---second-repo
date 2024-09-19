@@ -68,7 +68,7 @@ const Card = ({ category, id, name, description, image, price, quantity, unit })
           <p className="text-left text-[14px] px-2 pl-4 mt-2">{truncateText(description, 10)}</p>
 
           <div className="flex justify-between w-full px-3 mt-2 items-center">
-            <p className="text-left ml-1 text-lg text-gray-500">1U = {unit}</p>
+            <p className="text-left ml-1 text-lg text-gray-500">1U = 25kg</p>
             <div className="flex items-center bg-transparent">
               <button
                 onClick={handleQuantityDecrease}
