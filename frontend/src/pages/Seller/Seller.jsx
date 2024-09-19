@@ -79,7 +79,7 @@ const Seller = () => {
     });
 
     try {
-      const response = await axios.post('http://localhost:3001/api/v1/crops', formDataToSend, {
+      const response = await axios.post('https://krishisevabackendnew.onrender.com/api/v1/crops', formDataToSend, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

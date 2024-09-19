@@ -50,7 +50,7 @@ const UserProfile = () => {
         }
       }
       const userId = localStorage.getItem('userId');
-      const response = await axios.patch(`http://localhost:3001/api/v1/user/${userId}`, userInfo);
+      const response = await axios.patch(`https://krishisevabackendnew.onrender.com/api/v1/user/${userId}`, userInfo);
       console.log(response.data);
       toast.success('Profile updated successfully!');
       setIsEditing(false);
@@ -63,7 +63,7 @@ const UserProfile = () => {
   const getUser = async () => {
     try {
       const userId = localStorage.getItem('userId')
-      const response = await axios.get(`http://localhost:3001/api/v1/user/${userId}`);
+      const response = await axios.get(`https://krishisevabackendnew.onrender.com/api/v1/user/${userId}`);
       // Assuming the API response is structured as response.data.data
       setUserInfo({
         name: response.data.data.name,

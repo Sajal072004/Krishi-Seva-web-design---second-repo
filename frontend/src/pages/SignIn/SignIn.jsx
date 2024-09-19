@@ -13,7 +13,7 @@ const SignIn = () => {
   });
 
   const [email, setEmail] = useState('');
-  const [url, setUrl] = useState('http://localhost:3001/api/v1/user/signin');
+  const [url, setUrl] = useState('https://krishisevabackendnew.onrender.com/api/v1/user/signin');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -67,7 +67,7 @@ const SignIn = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3001/api/v1/user/forget', {
+      const response = await axios.post('https://krishisevabackendnew.onrender.com/api/v1/user/forget', {
         email
       });
 

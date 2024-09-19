@@ -37,7 +37,7 @@ const SellerProfile = () => {
   const getSeller = async () => {
     try {
       const userId = localStorage.getItem('userId');
-      const response = await axios.get(`http://localhost:3001/api/v1/seller/${userId}`);
+      const response = await axios.get(`https://krishisevabackendnew.onrender.com/api/v1/seller/${userId}`);
       console.log(response);
 
       setUserInfo((prevState) => ({
@@ -55,7 +55,7 @@ const SellerProfile = () => {
   const getUser = async () => {
     try {
       const userId = localStorage.getItem('userId');
-      const response = await axios.get(`http://localhost:3001/api/v1/user/${userId}`);
+      const response = await axios.get(`https://krishisevabackendnew.onrender.com/api/v1/user/${userId}`);
       console.log(response);
 
       setUserInfo((prevState) => ({
@@ -99,7 +99,7 @@ const SellerProfile = () => {
       }
       const userId = localStorage.getItem('userId');
       console.log(userInfo);
-      const response = await axios.patch(`http://localhost:3001/api/v1/seller/${userId}`, {
+      const response = await axios.patch(`https://krishisevabackendnew.onrender.com/api/v1/seller/${userId}`, {
         bank: userInfo.bank,
         accountNo: userInfo.Account,
         ifscCode: userInfo.IFSC,
