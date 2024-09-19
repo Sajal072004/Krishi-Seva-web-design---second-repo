@@ -168,9 +168,9 @@ const CreatorDetails = [
     name: 'Pratham Dwivedi ',
     desc2: "a third-year B.Tech student at IIIT Ranchi, specializing in computer science and full-stack development. Driven by a passion for both technology and agriculture, I am excited to be part of this project. My goal is to help modernize traditional farming practices by integrating innovative tech solutions, creating a platform that empowers farmers with the tools and knowledge they need in today's digital age.",
 
-    desc3: "I have worked on the backend of this website with hard work and dedication, ensuring a seamless and visually appealing user experience. My focus was on creating a user-friendly platform that meets the needs of the farming community while maintaining high-quality design standards.",
-    github: "www.github.com/Sajal072004",
-    linkedin: "www.linkedin.com/in/sajaln",
+    desc3: "I have dedicated my efforts to the backend development of this website, focusing on delivering a seamless and efficient user experience. My aim was to create a platform that is not only user-friendly but also tailored to meet the unique needs of the farming community. Throughout the process, I ensured that the design remains intuitive while upholding high standards of functionality and performance.",
+    github: "www.github.com/Pratham27",
+    linkedin: "www.linkedin.com/in/prathamdwivedi",
     image: "sajal.jpg"
   }
 ];
