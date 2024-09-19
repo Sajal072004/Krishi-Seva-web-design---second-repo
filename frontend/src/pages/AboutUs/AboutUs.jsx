@@ -21,7 +21,7 @@ const WebsiteOverview = () => (
     {/* Video Player Section */}
     <div className="mt-8 mb-4">
       <h3 className="text-xl font-semibold text-gray-700 mb-4">Watch a Demo of Our Platform</h3>
-      <div className="relative w-full pb-[60%] h-0">
+      <div className="relative w-full  h-[100vh]">
         <iframe
           className="absolute top-0 left-0 w-full h-[75%] rounded-lg shadow-md"
           src="https://www.youtube.com/embed/S7ehMmF--MQ"
@@ -34,7 +34,7 @@ const WebsiteOverview = () => (
 
 
     {/* Detailed Features Section */}
-    <div className="mt-8">
+    <div className="mt-0">
       <h3 className="text-xl font-semibold text-gray-700 mb-4">Key Features</h3>
       <div className="space-y-6">
         <FeatureItem
