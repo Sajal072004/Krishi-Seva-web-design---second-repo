@@ -137,7 +137,7 @@ const Discussion = () => {
                     likes={thread.likes || 0}
                     comments={thread.comments || 0}
                     content={thread.content}
-                    username={username}
+                    username={thread.username}
 
 
                   />
