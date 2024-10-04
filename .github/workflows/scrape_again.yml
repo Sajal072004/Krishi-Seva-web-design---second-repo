@@ -26,6 +26,7 @@ jobs:
 
       - name: Run the bash script
         run: ./frontend/runall.sh
+        continue-on-error: true
 
       - name: Commit and push changes
         run: |
