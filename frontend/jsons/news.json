@@ -42,13 +42,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-114053700,width-100,height-75,resizemode-4/news/elections/assembly-elections/haryana/haryana-elections-pm-modi-accuses-congress-its-chatte-batte-of-hatching-conspiracies-globally-to-weaken-indias-economy.jpg"
     },
     {
-        "title": "India, UAE to set up food corridor at $2 billion investment: Piyush Goyal",
-        "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-uae-to-set-up-food-corridor-at-2-billion-investment-piyush-goyal/articleshow/114015728.cms",
-        "desc": "India and the UAE will jointly create a food corridor with a USD 2 billion investment, enhancing Indian farmers' incomes and job opportunities. A small working group will oversee the establishment of food parks and processing facilities to ensure food security for the UAE, slated for completion within two-and-a-half years.",
-        "time": "07 Oct, 2024, 05:59 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-114015728,width-100,height-75,resizemode-4/news/economy/foreign-trade/india-uae-to-set-up-food-corridor-at-2-billion-investment-piyush-goyal.jpg"
-    },
-    {
         "title": "Indian farmers get just one-third of the price we pay for fruits and vegetables",
         "link": "https://economictimes.indiatimes.com/news/economy/agriculture/indian-farmers-get-just-one-third-of-the-price-we-pay-for-fruits-and-vegetables/articleshow/114008554.cms",
         "desc": "Indian farmers earn only about one-third of the final selling price for fruits and vegetables. Research suggests enhancing private markets, using e-NAM, and promoting farmer collectives to address this. Building cold storage and improving processing capacities are also advised. For dairy and poultry sectors, creating feed banks and promoting artificial insemination can boost productivity.",
@@ -140,13 +133,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-113577507,width-100,height-75,resizemode-4/news/politics-and-nation/elections-to-pivot-around-jobs-farmer-protests-agniveer-dalit-votes.jpg"
     },
     {
-        "title": "Farmer groups urge people to defeat BJP in Haryana assembly polls",
-        "link": "https://economictimes.indiatimes.com/news/elections/assembly-elections/haryana/farmer-groups-urge-people-to-defeat-bjp-in-haryana-assembly-polls/articleshow/113574135.cms",
-        "desc": "Farmers under Samyukt Kisan Morcha and Kisan Mazdoor Morcha held a 'Kisan Mahapanchayat' in Pipli, urging people to defeat the BJP in Haryana's upcoming assembly polls. They have been protesting for a legal guarantee of minimum support price for crops and plan a 'rail roko' protest on October 3.",
-        "time": "22 Sep, 2024, 08:07 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-113574135,width-100,height-75,resizemode-4/news/elections/assembly-elections/haryana/farmer-groups-urge-people-to-defeat-bjp-in-haryana-assembly-polls.jpg"
-    },
-    {
         "title": "My three generations never paid farm electricity bills: Shiv Sena MP",
         "link": "https://economictimes.indiatimes.com/news/politics-and-nation/my-three-generations-never-paid-farm-electricity-bills-shiv-sena-mp/articleshow/113558193.cms",
         "desc": "Union minister Prataprao Jadhav revealed that his family has not paid farm electricity bills for three generations. Speaking at an event for the Chief Minister Baliraja Free Electricity Scheme 2024, he mentioned giving money to engineers to replace burnt distribution panels. The scheme offers free electricity to farmers using pumps up to 7.5 horsepower.",
@@ -201,5 +187,19 @@
         "desc": "AAP Punjab's farmers wing protested against BJP MP Kangana Ranaut’s remarks on the farmers' protest and demanded her expulsion from the party. The protesters accused her of spreading hatred and called for legal action. The police detained protesters near the BJP office. The Himachal Pradesh Assembly also condemned her comments.",
         "time": "28 Aug, 2024, 06:17 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-112869617,width-100,height-75,resizemode-4/news/politics-and-nation/aap-punjab-farmers-wing-holds-protest-demands-kangana-ranauts-termination-from-lok-sabha.jpg"
+    },
+    {
+        "title": "'BJP's script': SP chief Akhilesh Yadav on Kangana Ranaut's remarks on farmers' protests",
+        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/bjps-script-sp-chief-akhilesh-yadav-on-kangana-ranauts-remarks-on-farmers-protests/articleshow/112852011.cms",
+        "desc": "Samajwadi Party chief Akhilesh Yadav criticized BJP MP Kangana Ranaut for her comments on the farmers' protests, claiminig that her remarks were scripted by the BJP. The BJP, distancing itself from Ranaut's statements, emphasized that she is not authorized to speak on party policies and urged her not to make such comments again.",
+        "time": "28 Aug, 2024, 08:24 AM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-112852011,width-100,height-75,resizemode-4/news/politics-and-nation/bjps-script-sp-chief-akhilesh-yadav-on-kangana-ranauts-remarks-on-farmers-protests.jpg"
+    },
+    {
+        "title": "Rahul Gandhi slams BJP over Kangana Ranaut's remarks, calls it grave insult to farmers of India",
+        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/rahul-gandhi-slams-bjp-over-kangana-ranauts-remarks-calls-it-grave-insult-to-farmers-of-india/articleshow/112814867.cms",
+        "desc": "Kangana Ranaut had posted a clip of her interview with Hindi daily Dainik Bhaskar in which she suggested that a \"Bangladesh-like situation\" could have erupted in India but for the country's strong leadership. She then alleged that bodies were hanging and rapes were taking place during the farmers' protest against the now-repealed three farm laws.",
+        "time": "27 Aug, 2024, 03:49 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-112814867,width-100,height-75,resizemode-4/news/politics-and-nation/rahul-gandhi-slams-bjp-over-kangana-ranauts-remarks-calls-it-grave-insult-to-farmers-of-india.jpg"
     }
 ]
