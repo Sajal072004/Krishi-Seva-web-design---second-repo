@@ -1,5 +1,33 @@
 [
     {
+        "title": "BJP alleges Rahul Gandhi colluding with 'anti-India forces'",
+        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/bjp-alleges-rahul-gandhi-colluding-with-anti-india-forces/articleshow/116019786.cms",
+        "desc": "The BJP has accused Rahul Gandhi of collaborating with \"anti-India international forces,\" citing a Mediapart report on OCCRP's funding and Gandhi's meetings with alleged Modi government critics. The party highlighted the timing of reports critical of India coinciding with parliamentary sessions, including those on farmers, Pegasus, Hindenburg, and the BBC documentary.",
+        "time": "06 Dec, 2024, 12:39 AM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-116019786,width-100,height-75,resizemode-4/news/politics-and-nation/bjp-alleges-rahul-gandhi-colluding-with-anti-india-forces.jpg"
+    },
+    {
+        "title": "ITC to increase FPOs to 4,000 in next 4 years linking a crore farmers, scale up MAARS ecosystem",
+        "link": "https://economictimes.indiatimes.com/industry/cons-products/fmcg/itc-to-increase-fpos-to-4000-in-next-4-years-linking-a-crore-farmers-scale-up-super-app-maars/articleshow/116003598.cms",
+        "desc": "ITC is expanding its farmer connect through Farmer Producer Organizations (FPOs), aiming to reach 10 million farmers in 4-5 years. The company is leveraging its 'phygital' platform, MAARS, to provide personalized advisories, enhance agricultural practices, and expand sourcing of fruits and vegetables. This initiative integrates technology, AI, and e-marketplaces to empower small farmers and improve their economic activity.",
+        "time": "05 Dec, 2024, 08:29 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-116003598,width-100,height-75,resizemode-4/industry/cons-products/fmcg/itc-to-increase-fpos-to-4000-in-next-4-years-linking-a-crore-farmers-scale-up-super-app-maars.jpg"
+    },
+    {
+        "title": "Rs 1.47-crore fine collected from Punjab, Haryana farmers for stubble burning: Government",
+        "link": "https://economictimes.indiatimes.com/news/india/rs-1-47-crore-fine-collected-from-punjab-haryana-farmers-for-stubble-burning-government/articleshow/116013897.cms",
+        "desc": "Over Rs 1.47 crore collected as penalties from farmers for stubble burning in Punjab and Haryana. Inspections conducted in thousands of fields. Fines increased due to Delhi-NCR's worsening air quality. Stubble burning is a major pollution source. Begusarai and Hanumangarh experienced more severely polluted days than Delhi in 2023. 46 cities faced severely high air pollution levels.",
+        "time": "05 Dec, 2024, 08:23 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-116013897,width-100,height-75,resizemode-4/news/india/rs-1-47-crore-fine-collected-from-punjab-haryana-farmers-for-stubble-burning-government.jpg"
+    },
+    {
+        "title": "Farmers' 'jatha' will march to Delhi from Shambhu border on Friday, says leader Sarwan Pandher",
+        "link": "https://economictimes.indiatimes.com/news/india/farmers-jatha-will-march-to-delhi-from-shambhu-border-on-friday-says-leader-sarwan-pandher/articleshow/116008766.cms",
+        "desc": "101 farmers will march to Delhi from the Shambhu border on Friday at 1 pm, demanding legal guarantee for MSP and other issues. Heavy police presence and barricades are in place, with a previous clash and farmer fatality at the Khanauri border highlighting tensions.",
+        "time": "05 Dec, 2024, 05:24 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-116008766,width-100,height-75,resizemode-4/news/india/farmers-jatha-will-march-to-delhi-from-shambhu-border-on-friday-says-leader-sarwan-pandher.jpg"
+    },
+    {
         "title": "Congress rakes up Jagdeep Dhankhar’s remarks to raise farmers’ protest issue in Rajya Sabha",
         "link": "https://economictimes.indiatimes.com/news/politics-and-nation/congress-rakes-up-jagdeep-dhankhars-remarks-to-raise-farmers-protest-issue-in-rs/articleshow/115983441.cms",
         "desc": "Opposition members in the Rajya Sabha protested against the government's handling of farmer demands, citing Chairman Dhankhar's recent remarks on the issue. They shouted slogans, staged a walkout, and demanded action on Minimum Support Price (MSP) guarantees. Dhankhar criticized the Opposition's timing, claiming their concern was disingenuous. The House eventually resumed normal function.",
@@ -112,13 +140,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-115519158,width-100,height-75,resizemode-4/news/india/punjab-farmers-from-shambhu-to-march-towards-delhi-on-december-6.jpg"
     },
     {
-        "title": "Samunnati ties up with Northern Farmers Mega FPO to boost sustainable agriculture",
-        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/samunnati-ties-up-with-northern-farmers-mega-fpo-to-boost-sustainable-agriculture/articleshow/115407782.cms",
-        "desc": "Samunnati has partnered with Northern Farmers Mega FPO to empower over 50 Farmer Producer Organizations in northern India. The collaboration will focus on sustainable farming practices, market access, and converting paddy straw waste into clean energy, addressing pollution concerns and boosting agricultural prosperity.",
-        "time": "18 Nov, 2024, 12:37 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-115407782,width-100,height-75,resizemode-4/news/economy/agriculture/samunnati-ties-up-with-northern-farmers-mega-fpo-to-boost-sustainable-agriculture.jpg"
-    },
-    {
         "title": "Rahul forced Centre to hear everyone in Parliament, says Surjewala; bats for soybean farmers",
         "link": "https://economictimes.indiatimes.com/news/politics-and-nation/rahul-forced-centre-to-hear-everyone-in-parliament-says-surjewala-bats-for-soybean-farmers/articleshow/115360924.cms",
         "desc": "Congress leader Randeep Singh Surjewala accused the BJP of stifling parliamentary discussions and stated that Rahul Gandhi had compelled the government to engage with all parties. Surjewala also criticized the government's handling of soybean procurement in Maharashtra, claiming that farmers were facing significant losses due to low Minimum Support Prices.",
@@ -180,26 +201,5 @@
         "desc": "Jagdambika Pal, Chairman of the Joint Committee of Parliament on the Waqf (Amendment) Bill, will be visiting Karnataka. He will meet with farmers who were served notices over alleged encroachment on Waqf properties. The notices have since been withdrawn. Pal will also meet with Karnataka BJP leaders. The BJP has raised concerns over the issue.",
         "time": "05 Nov, 2024, 02:04 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-114973614,width-100,height-75,resizemode-4/news/politics-and-nation/jpc-chairman-jagdambika-pal-to-visit-ktaka-on-nov-7-to-meet-farmers-protesting-waqf-notices.jpg"
-    },
-    {
-        "title": "Karnataka CM trying to distract farmers during by-elections: BJP's Bommai on retraction of notices related to Waqf land",
-        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/karnataka-cm-trying-to-distract-farmers-during-by-elections-bjps-bommai-on-retraction-of-notices-related-to-waqf-land/articleshow/114911186.cms",
-        "desc": "Former Karnataka Chief Minister Basavraj Bommai criticizes state government's retraction of waqf land notices, calling it a diversion during by-elections. BJP's Shehzad Poonawalla and LoP Chalavadi Narayanaswamy also term the move as an attempt to win votes, urging the withdrawal of the 1974 gazette.",
-        "time": "03 Nov, 2024, 04:11 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-114911186,width-100,height-75,resizemode-4/news/politics-and-nation/karnataka-cm-trying-to-distract-farmers-during-by-elections-bjps-bommai-on-retraction-of-notices-related-to-waqf-land.jpg"
-    },
-    {
-        "title": "Congress government ended 'darkness' in 11 months of rule in Telangana: CM Revanth Reddy rebuts PM Modi's remark",
-        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/congress-government-ended-darkness-in-11-months-of-rule-in-telangana-cm-revanth-reddy-rebuts-pm-modis-remark/articleshow/114875835.cms",
-        "desc": "The Congress government in Telangana has transformed the state in the last 11 months. Key initiatives include free bus travel for women, a healthcare cover of Rs 10 lakhs, a massive farmer loan waiver, free electricity for women, and significant job recruitment. The government is also rejuvenating water bodies and ensuring overall development.",
-        "time": "02 Nov, 2024, 01:00 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-114875835,width-100,height-75,resizemode-4/news/politics-and-nation/congress-government-ended-darkness-in-11-months-of-rule-in-telangana-cm-revanth-reddy-rebuts-pm-modis-remark.jpg"
-    },
-    {
-        "title": "My statement was twisted, says DK Shivkumar after Kharge pulls up Karnataka govt",
-        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/my-statement-was-twisted-says-dk-shivkumar-after-kharge-pulls-up-karnataka-govt/articleshow/114839627.cms",
-        "desc": "DK Shivakumar retracted his remarks about possibly reviewing Karnataka's 'Shakti' scheme, which offers free bus travel to women, following criticism from Congress President Mallikarjun Kharge. Shivakumar claimed his statement was twisted and emphasized his respect for elders' decisions. The 'Shakti' scheme is part of the Congress government's initiatives in Karnataka.",
-        "time": "01 Nov, 2024, 12:23 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-114839627,width-100,height-75,resizemode-4/news/politics-and-nation/my-statement-was-twisted-says-dk-shivkumar-after-kharge-pulls-up-karnataka-govt.jpg"
     }
 ]
