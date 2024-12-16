@@ -38,7 +38,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await axios.post('https://krishisevabackendnew.onrender.com/api/v1/user/resetPassword', {
+      const response = await axios.post('https://krishisevabackendnew-tfhz.onrender.com/api/v1/user/resetPassword', {
         password: password,
         otp,
       }
