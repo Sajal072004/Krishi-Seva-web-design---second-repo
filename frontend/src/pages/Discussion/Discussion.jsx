@@ -19,7 +19,7 @@ const Discussion = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get(`https://krishisevabackendnew.onrender.com/api/v1/user/${userId}`);
+        const response = await axios.get(`https://krishisevabackendnew-tfhz.onrender.com/api/v1/user/${userId}`);
         console.log(response.data);
         setUsername(response.data.data.name);
       } catch (error) {
@@ -38,13 +38,13 @@ const Discussion = () => {
     try {
       let url = '';
       if (option === 'All') {
-        url = 'https://krishisevabackendnew.onrender.com/api/v1/tweets';
+        url = 'https://krishisevabackendnew-tfhz.onrender.com/api/v1/tweets';
       } else if (option === 'Latest') {
-        url = 'https://krishisevabackendnew.onrender.com/api/v1/tweets';
+        url = 'https://krishisevabackendnew-tfhz.onrender.com/api/v1/tweets';
       } else if (option === 'Popular') {
-        url = 'https://krishisevabackendnew.onrender.com/api/v1/threads/popular';
+        url = 'https://krishisevabackendnew-tfhz.onrender.com/api/v1/threads/popular';
       } else {
-        url = `https://krishisevabackendnew.onrender.com/api/v1/threads/mytweets/${userId}`;
+        url = `https://krishisevabackendnew-tfhz.onrender.com/api/v1/threads/mytweets/${userId}`;
       }
 
       const response = await axios.get(url);
