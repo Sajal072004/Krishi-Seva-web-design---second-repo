@@ -23,7 +23,7 @@ const Discussion = () => {
         console.log(response.data);
         setUsername(response.data.data.name);
       } catch (error) {
-        console.error('Error fetching user data:', error);
+        console.error('Error fetching the user data:', error);
       }
     };
 
