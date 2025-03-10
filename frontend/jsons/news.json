@@ -1,5 +1,54 @@
 [
     {
+        "title": "India produced record rice, wheat, maize in 2024-25, estimates Centre",
+        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/india-produced-record-rice-wheat-maize-in-2024-25-estimates-centre/articleshow/118845275.cms",
+        "desc": "India achieved record rice, wheat, and maize production in the 2024-25 kharif season, according to the Ministry of Agriculture and Farmers' Welfare's second advance estimates. Kharif foodgrains production reached 1,663.91 lakh tonnes, while rabi foodgrains amounted to 1,645.27 lakh tonnes. These estimates provide significant insights into the country's agricultural output for major crops.",
+        "time": "10 Mar, 2025, 09:23 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-118845275,width-100,height-75,resizemode-4/news/economy/agriculture/india-produced-record-rice-wheat-maize-in-2024-25-estimates-centre.jpg"
+    },
+    {
+        "title": "Jumla, nothing special for farmers: Uddhav Thackery slams Maharashtra Budget",
+        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/jumla-nothing-special-for-farmers-uddhav-thackery-slams-maharashtra-budget/articleshow/118852654.cms",
+        "desc": "Uddhav Thackeray criticizes the Maharashtra Budget 2025-26 for lacking substantial support for farmers and deems it filled with election gimmicks. Deputy CM Ajit Pawar defended it, emphasizing significant provisions for various sectors and ambitious growth targets. The budget focuses on enhancing infrastructure, boosting investments, and increasing employment opportunities.",
+        "time": "10 Mar, 2025, 09:17 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-118852654,width-100,height-75,resizemode-4/news/politics-and-nation/jumla-nothing-special-for-farmers-uddhav-thackery-slams-maharashtra-budget.jpg"
+    },
+    {
+        "title": "Who is Brooke Rollins, US Secretary of Agriculture",
+        "link": "https://economictimes.indiatimes.com/news/international/global-trends/brooke-rollins-secretary-of-agriculture/articleshow/118846877.cms",
+        "desc": "Brooke Rollins has been sworn in as the 33rd U.S. Secretary of Agriculture, with significant support from the Senate. She is set to focus on strengthening rural America, supporting farmers, and ensuring food security. Rollins brings extensive experience in public policy and administration to her new role.",
+        "time": "10 Mar, 2025, 06:19 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-118846877,width-100,height-75,resizemode-4/news/international/global-trends/brooke-rollins-secretary-of-agriculture.jpg"
+    },
+    {
+        "title": "SOPA urges govt to safeguard Indian soybean industry amidst bilateral trade with the US",
+        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/sopa-urges-govt-to-safeguard-indian-soybean-industry-amidst-bilateral-trade-with-the-us/articleshow/118844392.cms",
+        "desc": "SOPA has requested the government to protect the interests of the Indian soybean industry amid ongoing India-USA trade negotiations. They suggest maintaining current import duties on soybean products and exploring concessional duty arrangements for value-added soy products. Additionally, they emphasized on prioritizing negotiations to reduce the countervailing duty imposed by the US on Indian organic soybean meal.",
+        "time": "10 Mar, 2025, 04:40 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-118844392,width-100,height-75,resizemode-4/news/economy/agriculture/sopa-urges-govt-to-safeguard-indian-soybean-industry-amidst-bilateral-trade-with-the-us.jpg"
+    },
+    {
+        "title": "Farmers put plans, investments on hold under Trump USDA spending freeze",
+        "link": "https://economictimes.indiatimes.com/news/international/global-trends/farmers-put-plans-investments-on-hold-under-trump-usda-spending-freeze/articleshow/118844044.cms",
+        "desc": "USDA's grant freeze under the Trump administration has left farmers across the U.S. facing financial instability, halting projects and risking bankruptcy. Farmers like Nate Powell-Palm in Montana are directly impacted, with significant investments on hold. The freeze, along with new tariffs, is straining the agricultural sector while USDA and White House reviews continue.",
+        "time": "10 Mar, 2025, 04:38 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-118844044,width-100,height-75,resizemode-4/news/international/global-trends/farmers-put-plans-investments-on-hold-under-trump-usda-spending-freeze.jpg"
+    },
+    {
+        "title": "India should protect its national interest while negotiating with US: Swadeshi Jagran Manch",
+        "link": "https://economictimes.indiatimes.com/news/india/india-should-protect-its-national-interest-while-negotiating-with-us-swadeshi-jagran-manch/articleshow/118839027.cms",
+        "desc": "The Swadeshi Jagran Manch (SJM) urges India to focus on bilateral trade agreements to protect national interests, especially for farmers and small entrepreneurs. At a meeting in Chhattisgarh, the SJM highlighted the need to enhance foreign trade amid the Trump administration's policy of reciprocal tariffs, which aim to boost US manufacturing.",
+        "time": "10 Mar, 2025, 02:21 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-118839027,width-100,height-75,resizemode-4/news/india/india-should-protect-its-national-interest-while-negotiating-with-us-swadeshi-jagran-manch.jpg"
+    },
+    {
+        "title": "US push for grand trade agreement; opening agri sector: An explainer",
+        "link": "https://economictimes.indiatimes.com/small-biz/trade/exports/insights/us-push-for-grand-trade-agreement-opening-agri-sector-an-explainer/articleshow/118830000.cms",
+        "desc": "The US is urging India to negotiate a comprehensive trade agreement, with a key focus on opening India's agriculture sector. This would involve reducing import tariffs, potentially impacting 700 million rural livelihoods. India currently imposes tariffs ranging from zero to 150% to protect its farmers. US seeks to export heavily subsidised farm products, which India views as sensitive.",
+        "time": "10 Mar, 2025, 09:38 AM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-118830000,width-100,height-75,resizemode-4/small-biz/trade/exports/insights/us-push-for-grand-trade-agreement-opening-agri-sector-an-explainer.jpg"
+    },
+    {
         "title": "Patanjali inaugurates Asia's largest orange processing unit in Nagpur",
         "link": "https://economictimes.indiatimes.com/industry/cons-products/food/patanjali-inaugurates-asias-largest-orange-processing-unit-in-nagpur/articleshow/118817443.cms",
         "desc": "Patanjali has inaugurated Asia's largest orange processing plant in Nagpur, Maharashtra, with a capacity of 800 tonnes per day. The project, costing Rs 1500 crore, aims to benefit farmers and create numerous jobs, focusing on zero-waste operations and producing export-quality products.",
@@ -98,32 +147,11 @@
         "img_src": "https://img.etimg.com/thumb/msid-118739784,width-100,height-75,resizemode-4/news/india/big-step-towards-better-animal-health-pm-modi-on-cabinets-approval-for-revised-livestock-program.jpg"
     },
     {
-        "title": "Cabinet okays supply of generic veterinary medicines at affordable rates under Livestock Health program",
-        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/cabinet-okays-supply-of-generic-veterinary-medicines-at-affordable-rates-under-livestock-health-program/articleshow/118733646.cms",
-        "desc": "The Cabinet has approved modifications to the Livestock Health and Disease Control Programme, allocating Rs 75 crore for distributing affordable, high-quality generic veterinary medicines under the new Pashu Aushadhi component. These medicines will be distributed through PM Kisan Samridhi Kendras and cooperatives, aiming to support farmers. Traditional veterinary medicine knowledge will also be documented and revived.",
-        "time": "05 Mar, 2025, 05:16 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-118733646,width-100,height-75,resizemode-4/news/economy/agriculture/cabinet-okays-supply-of-generic-veterinary-medicines-at-affordable-rates-under-livestock-health-program.jpg"
-    },
-    {
         "title": "Amid protests, CM Bhagwant Mann calls Punjab 'dharna' state",
         "link": "https://economictimes.indiatimes.com/news/politics-and-nation/amid-protests-cm-bhagwant-mann-calls-punjab-dharna-state/articleshow/118717509.cms",
         "desc": "Punjab Chief Minister Bhagwant Mann expressed concern over the state becoming a 'dharna state' after inconclusive talks with Samyukta Kisan Morcha leaders. The ongoing protests are resulting in significant economic losses for the state. Farmer leaders, who plan to protest in Chandigarh, claimed multiple detentions and criticized Mann's handling of their concerns as disrespectful.",
         "time": "05 Mar, 2025, 12:24 AM IST",
         "img_src": "https://img.etimg.com/thumb/msid-118717509,width-100,height-75,resizemode-4/news/politics-and-nation/amid-protests-cm-bhagwant-mann-calls-punjab-dharna-state.jpg"
-    },
-    {
-        "title": "Mizoram govt presents Rs15,198 crore budget, allocates 75% more in flagship scheme",
-        "link": "https://economictimes.indiatimes.com/news/india/mizoram-govt-presents-rs15198-crore-budget-allocates-75-more-in-flagship-scheme/articleshow/118712271.cms",
-        "desc": "Mizoram Chief Minister Lalduhoma presented a Rs 15,198.76 crore budget for 2025-2026, with a significant increase in fund allocation for the 'Bana Kaih' scheme and a new health insurance scheme. No new taxes were introduced, and the state's GSDP for the next fiscal year is projected at Rs 36,088.82 crore.",
-        "time": "04 Mar, 2025, 06:53 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-118712271,width-100,height-75,resizemode-4/news/india/mizoram-govt-presents-rs15198-crore-budget-allocates-75-more-in-flagship-scheme.jpg"
-    },
-    {
-        "title": "'Dhobi ka kutta': Shama Mohamed shares Kangana Ranaut's old tweet on Rohit Sharma, says #JustAsking",
-        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/dhobi-ka-kutta-shama-mohamed-shares-kangana-ranauts-old-tweet-on-rohit-sharma-says-justasking/articleshow/118697225.cms",
-        "desc": "Congress spokesperson Shama Mohamed faced backlash for calling Indian cricket captain Rohit Sharma \"fat\" and \"unimpressive.\" After deleting her tweet, she highlighted an old critical tweet from BJP MP Kangana Ranaut about Sharma. The controversy has sparked political debate, with BJP and Congress accusing each other of double standards regarding comments made by their members.",
-        "time": "04 Mar, 2025, 09:44 AM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-118697225,width-100,height-75,resizemode-4/news/politics-and-nation/dhobi-ka-kutta-shama-mohamed-shares-kangana-ranauts-old-tweet-on-rohit-sharma-says-justasking.jpg"
     },
     {
         "title": "Andhra govt spending over Rs 12,400 cr on free power to farmers: Energy Minister Ravi Kumar",
@@ -154,13 +182,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-118644687,width-100,height-75,resizemode-4/news/economy/agriculture/andhra-pradeshs-araku-coffee-earns-organic-certification-secures-buyers-from-europe-tata-group.jpg"
     },
     {
-        "title": "Andhra Govt unveils Rs 3.22 lakh crore budget with focus on farmers, students, fishermen",
-        "link": "https://economictimes.indiatimes.com/news/india/andhra-govt-unveils-rs-3-22-lakh-crore-budget-with-focus-on-farmers-students-fishermen/articleshow/118635888.cms",
-        "desc": "The Andhra Pradesh government, led by N Chandrababu Naidu, presented a ₹3.22 lakh crore budget focusing on school education and key electoral promises. The budget includes ₹20,000 annual aid per farmer, ₹15,000 yearly for school children under the 'Talliki Vandanam' scheme, and free electricity to schools. It also allocates significant funds to health, rural development, and irrigation projects.",
-        "time": "28 Feb, 2025, 11:55 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-118635888,width-100,height-75,resizemode-4/news/india/andhra-govt-unveils-rs-3-22-lakh-crore-budget-with-focus-on-farmers-students-fishermen.jpg"
-    },
-    {
         "title": "Govt says achieved goal of setting up of 10,000 farmer producer organisations",
         "link": "https://economictimes.indiatimes.com/news/economy/agriculture/govt-says-achieved-goal-of-setting-up-of-10000-farmer-producer-organisations/articleshow/118628591.cms",
         "desc": "The government announced the achievement of establishing 10,000 farmer producer organisations (FPOs) under a central scheme, aimed at boosting agricultural productivity and income. This milestone involves significant financial and handholding support, positively impacting millions of farmers, including a substantial proportion of women.",
@@ -180,26 +201,5 @@
         "desc": "The unity talks between farmer bodies SKM, SKM (Non-political), and KMM remain inconclusive after four rounds, as significant differences persist. Despite detailed discussions and a focus on common programmes, complete unity is unattainable. Efforts continue to reconcile demands, including the legal guarantee of MSP for crops.",
         "time": "27 Feb, 2025, 10:29 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-118609179,width-100,height-75,resizemode-4/news/india/another-round-of-unity-talks-among-farmer-bodies-remains-inconclusive.jpg"
-    },
-    {
-        "title": "Ridiculous to say farmers' stubble burning causing Delhi pollution: Piyush Goyal",
-        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/ridiculous-to-say-farmers-stubble-burning-causing-delhi-pollution-piyush-goyal/articleshow/118601637.cms",
-        "desc": "Union Minister Piyush Goyal called it \"ridiculous\" to blame Punjab farmers for Delhi's pollution. He emphasized that the main causes are construction activities and vehicle emissions. Speaking at an industry event, Goyal advocated for precast construction and electric mobility to address urban pollution. He encouraged a collective effort to adopt cleaner practices rather than shifting blame.",
-        "time": "27 Feb, 2025, 03:35 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-118601637,width-100,height-75,resizemode-4/news/politics-and-nation/ridiculous-to-say-farmers-stubble-burning-causing-delhi-pollution-piyush-goyal.jpg"
-    },
-    {
-        "title": "Not received PM Kisan 19th instalment? Get this money in your bank account after doing e-KYC",
-        "link": "https://economictimes.indiatimes.com/wealth/save/not-received-pm-kisan-19th-instalment-get-this-money-in-your-bank-account-after-doing-e-kyc/articleshow/118575616.cms",
-        "desc": "Prime Minister Narendra Modi announced the 19th instalment of the PM Kisan Yojana. The PM-Kisan scheme provides Rs 6,000 annually in three installments. Farmers can now complete e-KYC via OTP, biometric, or face authentication methods. The process ensures transparency and prevents misuse.",
-        "time": "26 Feb, 2025, 02:06 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-118575616,width-100,height-75,resizemode-4/wealth/save/not-received-pm-kisan-19th-instalment-get-this-money-in-your-bank-account-after-doing-e-kyc.jpg"
-    },
-    {
-        "title": "Operative Kisan Credit Card amount crosses Rs 10 lakh crore benefiting 7.72 crore farmers",
-        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/operative-kisan-credit-card-amount-crosses-rs-10-lakh-crore-benefiting-7-72-crore-farmers/articleshow/118563643.cms",
-        "desc": "The finance ministry announced that the Kisan Credit Card (KCC) scheme has provided over Rs 10 lakh crore in affordable loans to 7.72 crore farmers as of December 31, 2024, up from Rs 4.26 lakh crore in 2014. The government also offers interest subventions and plans to increase the loan limit to further benefit farmers.",
-        "time": "25 Feb, 2025, 10:22 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-118563643,width-100,height-75,resizemode-4/news/economy/agriculture/operative-kisan-credit-card-amount-crosses-rs-10-lakh-crore-benefiting-7-72-crore-farmers.jpg"
     }
 ]
