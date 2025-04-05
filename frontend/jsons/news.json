@@ -49,11 +49,25 @@
         "img_src": "https://img.etimg.com/thumb/msid-119912063,width-100,height-75,resizemode-4/industry/energy/oil-gas/reliance-kicks-off-rs-139-crore-cbg-plant-in-andhra-pradesh.jpg"
     },
     {
+        "title": "Amul brand's FY25 revenue rises 12 pc to Rs 90,000 cr; GCMMF turnover up 11 pc at Rs 66,000 cr",
+        "link": "https://economictimes.indiatimes.com/industry/cons-products/food/amul-brands-fy25-revenue-rises-12-pc-to-rs-90000-cr-gcmmf-turnover-up-11-pc-at-rs-66000-cr/articleshow/119908218.cms",
+        "desc": "Gujarat Co-operative Milk Marketing Federation Ltd (GCMMF), known for the 'Amul' brand, saw an 11% rise in revenue to Rs 65,911 crore in the last fiscal year, driven mainly by increased volumes across all categories. Managing Director Jayen Mehta highlighted strong consumer demand and minimal price hikes, with Amul's total revenue now around Rs 90,000 crore.",
+        "time": "02 Apr, 2025, 06:17 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-119908218,width-100,height-75,resizemode-4/industry/cons-products/food/amul-brands-fy25-revenue-rises-12-pc-to-rs-90000-cr-gcmmf-turnover-up-11-pc-at-rs-66000-cr.jpg"
+    },
+    {
         "title": "Odisha makes first-ever global export of Moringa, Parwal to Dubai",
         "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/odisha-makes-first-ever-global-export-of-moringa-parwal-to-dubai/articleshow/119905151.cms",
         "desc": "Odisha exported drumstick (moringa) and pointed gourd (parwal) internationally for the first time, shipping 910 kg to Dubai via Bhubaneswar airport. The state has exported over 52 MT of fresh produce in FY25, supported by FPOs and government initiatives. Odisha is enhancing cold storage and logistics to boost agri-exports and integrate farmers into global markets.",
         "time": "02 Apr, 2025, 04:38 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-119905151,width-100,height-75,resizemode-4/news/economy/foreign-trade/odisha-makes-first-ever-global-export-of-moringa-parwal-to-dubai.jpg"
+    },
+    {
+        "title": "GCMMF revenue rises 11% in FY25 to Rs 65,911 cr on higher demand for Amul products: MD Mehta",
+        "link": "https://economictimes.indiatimes.com/news/company/corporate-trends/gcmmf-revenue-rises-11-in-fy25-to-rs-65911-cr-on-higher-demand-for-amul-products-md-mehta/articleshow/119904415.cms",
+        "desc": "Gujarat Co-operative Milk Marketing Federation Ltd (GCMMF), which sells dairy products under the 'Amul' brand, reported an 11% revenue growth in FY 2024-25, reaching ₹65,911 crore. The increase was primarily driven by higher sales volumes across all categories, according to MD Jayen Mehta.",
+        "time": "02 Apr, 2025, 04:15 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-119904415,width-100,height-75,resizemode-4/news/company/corporate-trends/gcmmf-revenue-rises-11-in-fy25-to-rs-65911-cr-on-higher-demand-for-amul-products-md-mehta.jpg"
     },
     {
         "title": "Bengaluru: After milk and diesel price hikes, Shivakumar hints at water tariff increase",
@@ -187,19 +201,5 @@
         "desc": "Bhagirath Choudhary, Union Minister of State for Agriculture and Farmers Welfare, focused on the crucial role of soil testing in helping farmers understand the unique requirements of their land.",
         "time": "25 Mar, 2025, 07:35 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-119484389,width-100,height-75,resizemode-4/small-biz/sustainability/farmers-should-use-tech-to-enhance-soil-quality-boost-agricultural-productivity-union-minister-bhagirath-choudhary.jpg"
-    },
-    {
-        "title": "Agritech startup Grow Indigo raises $10 million from British International Investment",
-        "link": "https://economictimes.indiatimes.com/tech/funding/agritech-startup-grow-indigo-raises-10-million-from-british-international-investment/articleshow/119483685.cms",
-        "desc": "The funds will be used for expanding sustainability programmes across India, accelerating farmer enrolment and scaling carbon farming initiatives. The company last raised $8 million from Indigo Ag and Mahyco.",
-        "time": "25 Mar, 2025, 07:19 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119483685,width-100,height-75,resizemode-4/tech/funding/agritech-startup-grow-indigo-raises-10-million-from-british-international-investment.jpg"
-    },
-    {
-        "title": "Removal of 20pc export duty on onion to boost farmers' income: Agriculture Minister",
-        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/removal-of-20pc-export-duty-on-onion-to-boost-farmers-income-agriculture-minister/articleshow/119417081.cms",
-        "desc": "The government's decision to remove the 20 per cent customs duty on onion exports starting April 1 aims to enhance farmers' income by allowing them better access to global markets. Agriculture Minister Shivraj Singh Chouhan stated that this step is part of the Narendra Modi government's commitment to ensuring remunerative prices for farmers and protecting them from falling onion prices.",
-        "time": "24 Mar, 2025, 02:21 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119417081,width-100,height-75,resizemode-4/news/economy/agriculture/removal-of-20pc-export-duty-on-onion-to-boost-farmers-income-agriculture-minister.jpg"
     }
 ]
