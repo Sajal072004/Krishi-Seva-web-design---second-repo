@@ -1,5 +1,40 @@
 [
     {
+        "title": "Pay Commission math doesn't work",
+        "link": "https://economictimes.indiatimes.com/opinion/et-commentary/pay-commission-math-doesnt-work/articleshow/120136582.cms",
+        "desc": "\"Historically, pay commission recommendations have led to a fitment factor of around 2.8, implying that salaries could rise nearly 3x. To pre-empt accusations of bias, comparisons are often made between incomes of lower-grade gov employees and those of farmers.\"",
+        "time": "09 Apr, 2025, 11:40 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120136582,width-100,height-75,resizemode-4/opinion/et-commentary/pay-commission-math-doesnt-work.jpg"
+    },
+    {
+        "title": "Cabinet gives Rs 1,600 cr for sub-scheme of Pradhan Mantri Krishi Sinchayee Yojana",
+        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/cabinet-gives-rs-1600-cr-for-sub-scheme-of-pradhan-mantri-krishi-sinchayee-yojana/articleshow/120123634.cms",
+        "desc": "The Indian Union Cabinet has approved the Modernization of Command Area Development and Water Management (M-CADWM) sub-scheme of the Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) for 2025-26. The scheme aims to improve water use efficiency among farmers by modernizing irrigation water supply infrastructure, creating robust backend infrastructure for micro-irrigation systems, and leveraging SCADA systems and IoT technologies for real-time water accounting and management.",
+        "time": "09 Apr, 2025, 03:26 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120123634,width-100,height-75,resizemode-4/news/economy/agriculture/cabinet-gives-rs-1600-cr-for-sub-scheme-of-pradhan-mantri-krishi-sinchayee-yojana.jpg"
+    },
+    {
+        "title": "MrBeast criticises Trump tariffs, highlights impact on his chocolate brand Feastables",
+        "link": "https://economictimes.indiatimes.com/tech/technology/mrbeast-criticises-trump-tariffs-highlights-impact-on-his-chocolate-brand-feastables/articleshow/120120798.cms",
+        "desc": "Feastables is currently produced in both Peru and the US, but the company sources its cocoa internationally and ensures fair pay for farmers. “We pay our farmers a living income, use fair trade certified beans, etc. so I was already spending a lot on cocoa,” he said. “A random price hike was pretty brutal ngl.”",
+        "time": "09 Apr, 2025, 01:08 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120120798,width-100,height-75,resizemode-4/tech/technology/mrbeast-criticises-trump-tariffs-highlights-impact-on-his-chocolate-brand-feastables.jpg"
+    },
+    {
+        "title": "Revolution in the barn: AI-Powered agritech tackles India’s Rs 1.5-lakh crore post-harvest storage woes",
+        "link": "https://economictimes.indiatimes.com/small-biz/sme-sector/revolution-in-the-barn-ai-powered-agritech-tackles-indias-rs-1-5-lakh-crore-post-harvest-storage-woes/articleshow/120117857.cms",
+        "desc": "India loses 10% of its total food grain production post-harvest. The Delhi-based agri-logistic firm looks to minimise it through its digital warehouse management solution—Agri Reach",
+        "time": "09 Apr, 2025, 12:18 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120117857,width-100,height-75,resizemode-4/small-biz/sme-sector/revolution-in-the-barn-ai-powered-agritech-tackles-indias-rs-1-5-lakh-crore-post-harvest-storage-woes.jpg"
+    },
+    {
+        "title": "Congress passes seven-point resolution on Sardar Vallabhbhai Patel",
+        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/congress-passes-seven-point-resolution-on-sardar-vallabhbhai-patel/articleshow/120103677.cms",
+        "desc": "The Congress Working Committee, convening at the Sardar Vallabhbhai Patel Memorial, has resolved to emulate Patel's principles. The resolution highlights the differences between the BJP's policies and Patel's ideals, particularly concerning farmers' rights. Congress accuses the BJP government of mirroring oppressive British tactics against farmers and pledges to follow Patel's path of advocating for their rights.",
+        "time": "09 Apr, 2025, 09:58 AM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120103677,width-100,height-75,resizemode-4/news/politics-and-nation/congress-passes-seven-point-resolution-on-sardar-vallabhbhai-patel.jpg"
+    },
+    {
         "title": "Agritech startup AgroStar raises $6.7 million from Accel India, other existing backers",
         "link": "https://economictimes.indiatimes.com/tech/funding/agritech-startup-agrostar-raises-6-7-million-from-accel-india-other-existing-backers/articleshow/120090947.cms",
         "desc": "Founded in 2013 by Sitanshu Sheth and Shardul Sheth, Pune-based AgroStar leverages data and technology to provide good quality agri-inputs to farmers and bridge the knowledge gap in farming practices. The company board has passed a resolution to issue 1,45,385 compulsory convertible non-cumulative preference shares at Rs 3,965 each, to raise Rs 57.6 crore, as per filings sourced from business intelligence platform Tofler.",
@@ -40,13 +75,6 @@
         "desc": "Farmer leader Jagjit Singh Dallewal stated that the farmers' agitation will persist until the government concedes to their demands, including a legal MSP guarantee. Despite security challenges, farmers are determined to press their demands in the proposed May 4 talks with the Centre. 'Kisan Mahapanchayats' are being organized across Punjab to sustain the momentum.",
         "time": "07 Apr, 2025, 04:00 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120061728,width-100,height-75,resizemode-4/news/politics-and-nation/stir-to-go-on-till-demands-met-farmer-leaders-to-attend-may-4-talks-with-centre-dallewal.jpg"
-    },
-    {
-        "title": "Amul brand's total revenue may touch Rs 1 lakh cr by FY26; GCMMF's share likely at Rs 75,000 cr",
-        "link": "https://economictimes.indiatimes.com/industry/cons-products/food/amul-brands-total-revenue-may-touch-rs-1-lakh-cr-by-fy26-gcmmfs-share-likely-at-rs-75k-cr/articleshow/120036367.cms",
-        "desc": "India's leading dairy brand Amul is projected to see a revenue rise of over 10% to Rs 1 lakh crore this fiscal due to increased demand for milk and related products. GCMMF managing director Jayen Mehta expects the cooperative to achieve significant growth driven by rising volumes across all categories.",
-        "time": "06 Apr, 2025, 07:05 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120036367,width-100,height-75,resizemode-4/industry/cons-products/food/amul-brands-total-revenue-may-touch-rs-1-lakh-cr-by-fy26-gcmmfs-share-likely-at-rs-75k-cr.jpg"
     },
     {
         "title": "Punjab farmer leader Jagjit Singh Dallewal ends his indefinite hunger strike",
@@ -98,13 +126,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-119950831,width-100,height-75,resizemode-4/news/economy/agriculture/govt-expands-oil-palm-scheme-to-assams-tea-estates-say-planters.jpg"
     },
     {
-        "title": "Australia says US tariffs 'not act of a friend' but rules out reciprocal move",
-        "link": "https://economictimes.indiatimes.com/news/international/global-trends/australia-says-us-tariffs-not-act-of-a-friend-but-rules-out-reciprocal-move/articleshow/119924564.cms",
-        "desc": "U.S. President Donald Trump's decision to impose a 10% tariff on Australian goods has been criticized by Australian Prime Minister Anthony Albanese, calling it \"not the act of a friend.\" Despite the tariffs, Australia ruled out reciprocal duties to avoid higher prices for households.",
-        "time": "03 Apr, 2025, 04:54 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119924564,width-100,height-75,resizemode-4/news/international/global-trends/australia-says-us-tariffs-not-act-of-a-friend-but-rules-out-reciprocal-move.jpg"
-    },
-    {
         "title": "Citi, SBI announce $295 million facility for small farmers",
         "link": "https://economictimes.indiatimes.com/industry/banking/finance/banking/citi-sbi-announce-295-million-facility-for-small-farmers/articleshow/119933217.cms",
         "desc": "Citi and State Bank of India (SBI) launched a $295 million social loan facility to support India's small farmers by improving their productivity and income. Citi's Trade & Working Capital Solutions will provide the loan, which SBI will use to finance its Kisan Credit Card loans, targeting financial inclusion for farmers with small landholdings.",
@@ -147,13 +168,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-119872454,width-100,height-75,resizemode-4/magazines/panache/a-simple-farmer-taught-madhavan-meaning-of-life-actor-grew-beard-took-a-break-from-movies-and-travelled-across-india.jpg"
     },
     {
-        "title": "India must firmly assess each demand of US through lens of its national priorities: GTRI",
-        "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-must-firmly-assess-each-demand-of-us-through-lens-of-its-national-priorities-gtri/articleshow/119858957.cms",
-        "desc": "India must critically evaluate US trade demands based on its own national goals, asserts think tank GTRI. Proposed changes in agriculture, digital governance, and public health could jeopardize food safety, small farmers, and data security. USTR's report emphasizes various trade disputes, with major areas of contention being tariffs, dairy import restrictions, and data localization rules.",
-        "time": "01 Apr, 2025, 03:03 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119858957,width-100,height-75,resizemode-4/news/economy/foreign-trade/india-must-firmly-assess-each-demand-of-us-through-lens-of-its-national-priorities-gtri.jpg"
-    },
-    {
         "title": "Bengaluru techie from farming background urges city people not to waste food: Know the 'pain of farmers who grow it'",
         "link": "https://economictimes.indiatimes.com/magazines/panache/bengaluru-techie-from-farming-background-urges-city-people-not-to-waste-food-know-the-pain-of-farmers-who-grow-it/articleshow/119843314.cms",
         "desc": "An engineer from Bengaluru shared his anguish on social media, urging people to avoid wasting food and highlighting the struggles of farmers. He recounted his family's dedication to agriculture and the harsh realities they face, including being forced to sell crops at a loss. This plea emphasizes the dire conditions and exploitation in the farming sector.",
@@ -175,13 +189,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-119701105,width-100,height-75,resizemode-4/news/politics-and-nation/jagjit-singh-dallewal-has-not-ended-indefinite-fast-says-farmer-leader.jpg"
     },
     {
-        "title": "Cabinet approves Rs 37,216 cr subsidy on phosphatic, potassic fertilisers",
-        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/cabinet-approves-rs-37216-cr-subsidy-on-phosphatic-potassic-fertilisers/articleshow/119657418.cms",
-        "desc": "The Union Cabinet approved a Rs 37,216 crore subsidy on phosphatic and potassic fertilisers for the Kharif season 2025. This will ensure that farmers receive soil nutrients at affordable prices. The subsidy is aimed at maintaining current retail prices of fertilisers like DAP. This move supports nutrient availability based on international price trends.",
-        "time": "28 Mar, 2025, 07:23 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119657418,width-100,height-75,resizemode-4/news/economy/agriculture/cabinet-approves-rs-37216-cr-subsidy-on-phosphatic-potassic-fertilisers.jpg"
-    },
-    {
         "title": "Farmers Protest: SC calls for status reports from Punjab, Haryana govts; says not detached from realities",
         "link": "https://economictimes.indiatimes.com/news/india/farmers-protest-sc-calls-for-status-reports-from-punjab-haryana-govts-says-not-detached-from-realities/articleshow/119636765.cms",
         "desc": "The Supreme Court acknowledges it is aware of the ground realities of the farmers' protest. It requests detailed reports from Punjab and Haryana and notes positive progress, praising Jagjit Singh Dallewal for his leadership. Key highways and roads have been reopened, indicating a potential resolution.",
@@ -194,12 +201,5 @@
         "desc": "Farmer leader Sarwan Singh Pandher was released from Muktsar Sahib prison and condemned the AAP-led Punjab government for suppressing farmers' protests. Pandher, along with other detained leaders, plans to discuss further actions. Tensions rose as the Punjab administration allegedly used excessive force against protestors, leading to more farmers being released from custody recently.",
         "time": "28 Mar, 2025, 08:52 AM IST",
         "img_src": "https://img.etimg.com/thumb/msid-119629112,width-100,height-75,resizemode-4/news/india/farmer-leader-sarwan-singh-pandher-released-from-jail-to-hold-press-conference.jpg"
-    },
-    {
-        "title": "Deceiving farmers is for nobody's good: FM Nirmala Sitharaman in Rajya Sabha",
-        "link": "https://economictimes.indiatimes.com/news/india/deceiving-farmers-is-for-nobodys-good-fm-nirmala-sitharaman-in-rajya-sabha/articleshow/119546793.cms",
-        "desc": "Finance Minister Nirmala Sitharaman criticized the Congress for allegedly deceiving farmers with their loan waiver promises that were not fully implemented and left many farmers ineligible for new loans. She contrasted this with Prime Minister Modi's transparent Direct Benefit Transfer scheme, which provides direct financial aid to small farmers.",
-        "time": "26 Mar, 2025, 08:53 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119546793,width-100,height-75,resizemode-4/news/india/deceiving-farmers-is-for-nobodys-good-fm-nirmala-sitharaman-in-rajya-sabha.jpg"
     }
 ]
