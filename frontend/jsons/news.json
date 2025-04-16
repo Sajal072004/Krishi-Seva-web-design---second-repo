@@ -1,5 +1,54 @@
 [
     {
+        "title": "Trump says China 'reneged' on Boeing deal as tensions flare",
+        "link": "https://economictimes.indiatimes.com/news/international/business/trump-says-china-reneged-on-boeing-deal-as-tensions-flare/articleshow/120317775.cms",
+        "desc": "US President Donald Trump said Tuesday that China has gone back on a major Boeing deal, after a news report that Beijing ordered airlines not to take further deliveries of the US aviation giant's jets. Trump took aim at Beijing again on Tuesday, saying on Truth Social that China did not fully fulfil an earlier trade deal.",
+        "time": "16 Apr, 2025, 05:56 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120317775,width-100,height-75,resizemode-4/news/international/business/trump-says-china-reneged-on-boeing-deal-as-tensions-flare.jpg"
+    },
+    {
+        "title": "SOPA urges delay on soybean stock sale to protect prices ahead of kharif sowing",
+        "link": "https://economictimes.indiatimes.com/industry/cons-products/food/sopa-urges-delay-on-soybean-stock-sale-to-protect-prices-ahead-of-kharif-sowing/articleshow/120341437.cms",
+        "desc": "The Soybean Processors Association of India (SOPA) has urged the Union Agriculture Ministry to further delay the sale of soybean stocks by NAFED and NCCF until after the kharif sowing season concludes. SOPA fears that releasing the stock prematurely will depress prices, harming farmers and causing losses for the government, reversing the positive price movement seen after the initial postponement.",
+        "time": "16 Apr, 2025, 03:47 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120341437,width-100,height-75,resizemode-4/industry/cons-products/food/sopa-urges-delay-on-soybean-stock-sale-to-protect-prices-ahead-of-kharif-sowing.jpg"
+    },
+    {
+        "title": "India's organic product exports up 34.6 pc in 2024-25 to USD 665.96 mn in 2024-25",
+        "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/indias-organic-product-exports-up-34-6-pc-in-2024-25-to-usd-665-96-mn-in-2024-25/articleshow/120340750.cms",
+        "desc": "India's organic product exports witnessed a significant surge, climbing by 34.6% to reach USD 665.96 million in 2024-25, driven by heightened demand for pulses, essential oils, and fresh produce in developed nations. This growth is supported by a 4% increase in volume, totaling 368,155 tonnes. APEDA's revised NPOP regulations aim to further boost exports, targeting USD 2 billion by 2030.",
+        "time": "16 Apr, 2025, 03:41 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120340750,width-100,height-75,resizemode-4/news/economy/foreign-trade/indias-organic-product-exports-up-34-6-pc-in-2024-25-to-usd-665-96-mn-in-2024-25.jpg"
+    },
+    {
+        "title": "Delhi govt approves 3-month extension of EV policy, continues power subsidy",
+        "link": "https://economictimes.indiatimes.com/industry/renewables/delhi-govt-approves-3-month-extension-of-ev-policy-continues-power-subsidy/articleshow/120315851.cms",
+        "desc": "The Delhi government has extended its Electric Vehicle (EV) policy for three months and will continue providing power subsidies to domestic consumers, farmers, lawyers, and 1984 riot victims. Transport Minister Pankaj Singh clarified that there will be no ban on autos or any other vehicle category.",
+        "time": "15 Apr, 2025, 08:18 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120315851,width-100,height-75,resizemode-4/industry/renewables/delhi-govt-approves-3-month-extension-of-ev-policy-continues-power-subsidy.jpg"
+    },
+    {
+        "title": "Andhra Pradesh mulls pooling 30,000 more acres for Amaravati; no decision yet: Minister",
+        "link": "https://economictimes.indiatimes.com/news/india/andhra-pradesh-mulls-pooling-30000-more-acres-for-amaravati-no-decision-yet-minister/articleshow/120314917.cms",
+        "desc": "The Andhra Pradesh government is contemplating acquiring 30,000 acres around Amaravati via land pooling to develop a mega city, complete with an international airport. While no final decision has been made, Chief Minister Naidu is eager to integrate nearby areas. Reconstruction in Amaravati has commenced, with tenders finalized for numerous projects and a timeline set for completion of key infrastructure.",
+        "time": "15 Apr, 2025, 07:46 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120314917,width-100,height-75,resizemode-4/news/india/andhra-pradesh-mulls-pooling-30000-more-acres-for-amaravati-no-decision-yet-minister.jpg"
+    },
+    {
+        "title": "India to receive above normal rainfall in 2025 with neutral El Nino conditions, IMD says",
+        "link": "https://economictimes.indiatimes.com/news/india/india-to-receive-above-normal-rainfall-in-2025-with-neutral-el-nino-conditions-imd-says/articleshow/120307740.cms",
+        "desc": "India is expected to receive above-average monsoon rains in 2025, according to the India Meteorological Department. The monsoon is projected to be 105% of the long-term average, potentially boosting the agricultural sector. While most of the country will experience above-normal rainfall, some regions in Northwest, Northeast, and South Peninsular India may receive below-normal rainfall.",
+        "time": "15 Apr, 2025, 03:39 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120307740,width-100,height-75,resizemode-4/news/india/india-to-receive-above-normal-rainfall-in-2025-with-neutral-el-nino-conditions-imd-says.jpg"
+    },
+    {
+        "title": "Farming meets the future: This AI-powered app equips farmers for a changing climate",
+        "link": "https://economictimes.indiatimes.com/small-biz/sustainability/farming-meets-the-future-this-ai-powered-app-equips-farmers-for-a-changing-climate/articleshow/120300010.cms",
+        "desc": "Farmers using Digital Green’s Farmer.Chat app receive valuable insights on pest and disease outbreaks, weather updates, and market access.",
+        "time": "15 Apr, 2025, 01:48 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120300010,width-100,height-75,resizemode-4/small-biz/sustainability/farming-meets-the-future-this-ai-powered-app-equips-farmers-for-a-changing-climate.jpg"
+    },
+    {
         "title": "India harvests 38% of wheat area so far in 2025–26 season, says agriculture minister Chouhan",
         "link": "https://economictimes.indiatimes.com/news/economy/agriculture/india-harvests-38-of-wheat-area-so-far-in-202526-season-says-agriculture-minister-chouhan/articleshow/120261788.cms",
         "desc": "India has harvested 38% of its estimated 32 million hectares of wheat for the 2025-26 marketing season, according to Agriculture Minister Shivraj Singh Chouhan. Harvesting conditions are reportedly favorable across key wheat-producing states. The government has set a procurement target of 31 million metric tons of wheat for this season.",
@@ -42,13 +91,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-120237470,width-100,height-75,resizemode-4/industry/banking/finance/banking/punjab-national-bank-launches-34-new-products-on-its-131st-foundation-day.jpg"
     },
     {
-        "title": "Pink Moon: When to watch first full moon of spring",
-        "link": "https://economictimes.indiatimes.com/news/new-updates/pink-moon-when-to-watch-first-full-moon-of-spring/articleshow/120231557.cms",
-        "desc": "Indians can witness the pink moon, the first full moon of spring, on April 12 and 13 between 3:21 am and 5:51 am. This full moon, named after pink phlox flowers, will rise in the eastern sky at dusk. Observers can also spot Spica, the brightest star in the Virgo constellation, alongside the Pink Moon throughout the night.",
-        "time": "12 Apr, 2025, 04:09 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120231557,width-100,height-75,resizemode-4/news/new-updates/pink-moon-when-to-watch-first-full-moon-of-spring.jpg"
-    },
-    {
         "title": "Time for India’s agri-exporters to look beyond US to mitigate Trump’s tariffs, say experts, stakeholders",
         "link": "https://economictimes.indiatimes.com/small-biz/trade/exports/insights/time-for-indias-agri-exporters-to-look-beyond-us-to-mitigate-trumps-tariffs-say-experts-stakeholders/articleshow/120195826.cms",
         "desc": "Diversification into new markets and value-added products, along with infrastructure upgrades and support for MSMEs, are crucial for mitigating the impact and ensuring long-term competitiveness.",
@@ -84,25 +126,11 @@
         "img_src": "https://img.etimg.com/thumb/msid-120184002,width-100,height-75,resizemode-4/news/international/global-trends/trump-touts-self-deport-campaign-for-migrants.jpg"
     },
     {
-        "title": "BSF to undertake mega IED detection drive along India-Pakistan border in Punjab",
-        "link": "https://economictimes.indiatimes.com/news/defence/bsf-to-undertake-mega-ied-detection-drive-along-india-pakistan-border-in-punjab/articleshow/120163499.cms",
-        "desc": "Following the unprecedented discovery of IEDs along the Punjab border, which injured a BSF jawan, the Border Security Force will conduct extensive anti-IED sweeps across hundreds of kilometers. This action comes alongside the jurisdictional shift of 20.3 kilometers to the Jammu frontier for enhanced security coordination in riverine areas near Pathankot.",
-        "time": "10 Apr, 2025, 07:18 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120163499,width-100,height-75,resizemode-4/news/defence/bsf-to-undertake-mega-ied-detection-drive-along-india-pakistan-border-in-punjab.jpg"
-    },
-    {
         "title": "Pay Commission math doesn't work",
         "link": "https://economictimes.indiatimes.com/opinion/et-commentary/pay-commission-math-doesnt-work/articleshow/120136582.cms",
         "desc": "\"Historically, pay commission recommendations have led to a fitment factor of around 2.8, implying that salaries could rise nearly 3x. To pre-empt accusations of bias, comparisons are often made between incomes of lower-grade gov employees and those of farmers.\"",
         "time": "09 Apr, 2025, 11:40 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120136582,width-100,height-75,resizemode-4/opinion/et-commentary/pay-commission-math-doesnt-work.jpg"
-    },
-    {
-        "title": "Cabinet gives Rs 1,600 cr for sub-scheme of Pradhan Mantri Krishi Sinchayee Yojana",
-        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/cabinet-gives-rs-1600-cr-for-sub-scheme-of-pradhan-mantri-krishi-sinchayee-yojana/articleshow/120123634.cms",
-        "desc": "The Indian Union Cabinet has approved the Modernization of Command Area Development and Water Management (M-CADWM) sub-scheme of the Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) for 2025-26. The scheme aims to improve water use efficiency among farmers by modernizing irrigation water supply infrastructure, creating robust backend infrastructure for micro-irrigation systems, and leveraging SCADA systems and IoT technologies for real-time water accounting and management.",
-        "time": "09 Apr, 2025, 03:26 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120123634,width-100,height-75,resizemode-4/news/economy/agriculture/cabinet-gives-rs-1600-cr-for-sub-scheme-of-pradhan-mantri-krishi-sinchayee-yojana.jpg"
     },
     {
         "title": "MrBeast criticises Trump tariffs, highlights impact on his chocolate brand Feastables",
@@ -173,33 +201,5 @@
         "desc": "US farmers are facing lower crop prices due to President Trump's new global tariffs, which went into effect this weekend. The resultant higher costs and threats of retaliation from trading partners, particularly China, are poised to significantly hurt American agriculture and its market competitiveness.",
         "time": "06 Apr, 2025, 10:11 AM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120031538,width-100,height-75,resizemode-4/news/international/world-news/anxious-us-farmers-see-tariffs-threaten-earnings.jpg"
-    },
-    {
-        "title": "“Menstrual cycles in transgender men”? Donald Trump’s USDA head kills $600K grant with one misleading post",
-        "link": "https://economictimes.indiatimes.com/news/international/global-trends/menstrual-cycles-in-transgender-men-donald-trumps-usda-head-kills-600k-grant-with-one-misleading-post/articleshow/120030525.cms",
-        "desc": "A $600,000 grant awarded to Southern University to develop sustainable menstrual products has been abruptly revoked after officials misrepresented it as transgender-focused research. The project aimed to replace synthetic hygiene items with natural fibres like regenerative cotton and support local farmers in Louisiana. But a single line in the application mentioning transgender men was weaponised by Trump’s cost-cutting agency DOGE, led by Elon Musk. The fallout has endangered researchers, ignited backlash, and fuelled fears about the politicisation of science and women's health.",
-        "time": "06 Apr, 2025, 09:04 AM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120030525,width-100,height-75,resizemode-4/news/international/global-trends/menstrual-cycles-in-transgender-men-donald-trumps-usda-head-kills-600k-grant-with-one-misleading-post.jpg"
-    },
-    {
-        "title": "NABARD extends Rs 5,830 cr assistance to Jharkhand in FY25 to augment rural infra",
-        "link": "https://economictimes.indiatimes.com/news/economy/infrastructure/nabard-extends-rs-5830-cr-assistance-to-jharkhand-in-fy25-to-augment-rural-infra/articleshow/119983153.cms",
-        "desc": "NABARD has extended record assistance of Rs 5,830 crore to Jharkhand in the 2024-25 fiscal year, significantly boosting rural infrastructure. The support included funds for irrigation projects, rural development, financial inclusion, and tribal empowerment, impacting over two lakh farmers and 50,000 rural families.",
-        "time": "04 Apr, 2025, 07:01 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119983153,width-100,height-75,resizemode-4/news/economy/infrastructure/nabard-extends-rs-5830-cr-assistance-to-jharkhand-in-fy25-to-augment-rural-infra.jpg"
-    },
-    {
-        "title": "Citi, SBI announce $295 million facility for small farmers",
-        "link": "https://economictimes.indiatimes.com/industry/banking/finance/banking/citi-sbi-announce-295-million-facility-for-small-farmers/articleshow/119933217.cms",
-        "desc": "Citi and State Bank of India (SBI) launched a $295 million social loan facility to support India's small farmers by improving their productivity and income. Citi's Trade & Working Capital Solutions will provide the loan, which SBI will use to finance its Kisan Credit Card loans, targeting financial inclusion for farmers with small landholdings.",
-        "time": "03 Apr, 2025, 12:02 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119933217,width-100,height-75,resizemode-4/industry/banking/finance/banking/citi-sbi-announce-295-million-facility-for-small-farmers.jpg"
-    },
-    {
-        "title": "Bengaluru techie from farming background urges city people not to waste food: Know the 'pain of farmers who grow it'",
-        "link": "https://economictimes.indiatimes.com/magazines/panache/bengaluru-techie-from-farming-background-urges-city-people-not-to-waste-food-know-the-pain-of-farmers-who-grow-it/articleshow/119843314.cms",
-        "desc": "An engineer from Bengaluru shared his anguish on social media, urging people to avoid wasting food and highlighting the struggles of farmers. He recounted his family's dedication to agriculture and the harsh realities they face, including being forced to sell crops at a loss. This plea emphasizes the dire conditions and exploitation in the farming sector.",
-        "time": "01 Apr, 2025, 09:45 AM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-119843314,width-100,height-75,resizemode-4/magazines/panache/bengaluru-techie-from-farming-background-urges-city-people-not-to-waste-food-know-the-pain-of-farmers-who-grow-it.jpg"
     }
 ]
