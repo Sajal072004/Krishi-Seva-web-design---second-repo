@@ -1,5 +1,47 @@
 [
     {
+        "title": "Punjab govt to provide 33% subsidy on BT cotton hybrid seeds",
+        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/punjab-govt-to-provide-33-subsidy-on-bt-cotton-hybrid-seeds/articleshow/120434737.cms",
+        "desc": "The Punjab government is set to provide a 33% subsidy on BT cotton hybrid seeds recommended by PAU, Ludhiana, allocating ₹20 crore for the initiative. This move aims to alleviate financial strain on cotton farmers, discourage non-recommended hybrids, and expand cotton cultivation to 1.25 lakh hectares, promoting crop diversification and sustainable practices.",
+        "time": "19 Apr, 2025, 07:22 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120434737,width-100,height-75,resizemode-4/news/economy/agriculture/punjab-govt-to-provide-33-subsidy-on-bt-cotton-hybrid-seeds.jpg"
+    },
+    {
+        "title": "High tariffs once criticised by rich nations now back in global trade debate: Sources",
+        "link": "https://economictimes.indiatimes.com/news/economy/foreign-trade/high-tariffs-once-criticised-by-rich-nations-now-back-in-global-trade-debate-sources/articleshow/120432990.cms",
+        "desc": "Developed nations, once critical of tariffs, are now employing them to protect domestic industries, echoing arguments previously made by developing countries. The US, for example, has imposed tariffs on steel and aluminum. This shift signals a change in global trade dynamics, with advanced economies prioritizing livelihood protection and questioning established principles like special treatment for developing nations.",
+        "time": "19 Apr, 2025, 05:31 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120432990,width-100,height-75,resizemode-4/news/economy/foreign-trade/high-tariffs-once-criticised-by-rich-nations-now-back-in-global-trade-debate-sources.jpg"
+    },
+    {
+        "title": "Kashmir experiences fresh snow and heavy rainfall; Road closures, school suspensions as weather takes a turn",
+        "link": "https://economictimes.indiatimes.com/news/india/kashmir-experiences-fresh-snow-and-heavy-rainfall-road-closures-school-suspensions-as-weather-takes-a-turn/articleshow/120427907.cms",
+        "desc": "Kashmir experienced varied weather conditions as higher altitudes received fresh snowfall, disrupting transportation on key routes like Gurez-Bandipora Road and Srinagar-Leh National Highway. Lower regions, including Srinagar, were hit by widespread rain, thunderstorms, and hail, causing damage to crops. Authorities have issued weather advisories, cautioning farmers and highlighting the risk of landslides in vulnerable areas until Monday.",
+        "time": "19 Apr, 2025, 01:40 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120427907,width-100,height-75,resizemode-4/news/india/kashmir-experiences-fresh-snow-and-heavy-rainfall-road-closures-school-suspensions-as-weather-takes-a-turn.jpg"
+    },
+    {
+        "title": "Farmer fooled by tariff talk? Upstate NY farmer stunned as Trump tariffs hit hard, admits he thought Canada, not U.S. farmers, would foot the bill",
+        "link": "https://economictimes.indiatimes.com/news/international/us/farmer-fooled-by-tariff-talk-upstate-ny-farmer-stunned-as-trump-tariffs-hit-hard-admits-he-thought-canada-not-u-s-farmers-would-foot-the-bill/articleshow/120410583.cms",
+        "desc": "Upstate NY farmer Nicholas Gilbert got a shocking $2,200 bill on a feed order from Canada—thanks to Trump’s tariffs. The dairy farmer from Potsdam mistakenly thought Canada would pay the tariff, not realizing American importers bear the cost. With no cheaper supplier nearby and milk prices fixed by a co-op, Gilbert is stuck. As President Trump’s trade war continues, other small businesses along the U.S.-Canada border are also hurting, from manufacturers to ski resorts.",
+        "time": "18 Apr, 2025, 09:59 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120410583,width-100,height-75,resizemode-4/news/international/us/farmer-fooled-by-tariff-talk-upstate-ny-farmer-stunned-as-trump-tariffs-hit-hard-admits-he-thought-canada-not-u-s-farmers-would-foot-the-bill.jpg"
+    },
+    {
+        "title": "India urges global support for small farmers amid climate change, price challenges",
+        "link": "https://economictimes.indiatimes.com/news/india/india-urges-global-support-for-small-farmers-amid-climate-change-price-challenges/articleshow/120411745.cms",
+        "desc": "India advocated for prioritizing small and marginal farmers in global agricultural strategies at the 15th BRICS Agriculture Ministers meeting. Shivraj Singh Chouhan emphasized the necessity of policy support to empower these farmers against climate change and market volatility. BRICS nations launched a land restoration partnership and committed to a fair, sustainable agri-food system, inviting participation in World Food India 2025.",
+        "time": "18 Apr, 2025, 09:19 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120411745,width-100,height-75,resizemode-4/news/india/india-urges-global-support-for-small-farmers-amid-climate-change-price-challenges.jpg"
+    },
+    {
+        "title": "Govt procures 3,40,000 tonnes of tur under price support scheme",
+        "link": "https://economictimes.indiatimes.com/news/economy/agriculture/govt-procures-340000-tonnes-of-tur-under-price-support-scheme/articleshow/120403800.cms",
+        "desc": "Under the Price Support Scheme, the government has procured 3,40,000 tonnes of tur as of April 13, with Karnataka leading the procurement. While chana procurement remains slow due to higher domestic prices, masur and moong procurement have reached 28,700 and 3,000 tonnes, respectively.",
+        "time": "18 Apr, 2025, 02:09 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120403800,width-100,height-75,resizemode-4/news/economy/agriculture/govt-procures-340000-tonnes-of-tur-under-price-support-scheme.jpg"
+    },
+    {
         "title": "IIT Guwahati, HDFC Parivartan power sustainability push in Northeast India",
         "link": "https://economictimes.indiatimes.com/news/india/iit-guwahati-hdfc-parivartan-power-sustainability-push-in-northeast-india/articleshow/120386928.cms",
         "desc": "IIT Guwahati, in collaboration with HDFC Parivartan, is implementing technology-driven interventions in Assam and Meghalaya to enhance food and energy security. The project focuses on biomass pellet production, agrivoltaics farming, tea processing, and freeze-drying facilities. These initiatives aim to empower farmers, promote sustainable agribusiness models, and boost the rural economy.",
@@ -12,13 +54,6 @@
         "desc": "Amidst a high-stakes tariff war, China and the US are in communication at working levels, addressing trade imbalances. Beijing insists the US, having initiated the tariffs, should resolve the dispute through respectful dialogue, urging an end to pressure tactics.",
         "time": "17 Apr, 2025, 07:45 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120384172,width-100,height-75,resizemode-4/news/international/business/china-says-in-working-level-communication-with-us-over-tariff-war.jpg"
-    },
-    {
-        "title": "Germany sees 'worrying' record dry spell in early 2025",
-        "link": "https://economictimes.indiatimes.com/news/environment/global-warming/germany-sees-worrying-record-dry-spell-in-early-2025/articleshow/120378234.cms",
-        "desc": "Germany's environment minister has issued a warning about the heightened risk of forest fires and potential harvest failures due to a significant lack of rainfall. The country experienced its driest period since 1931, with rainfall levels far below the average, particularly impacting northwest and southeast regions.",
-        "time": "17 Apr, 2025, 04:11 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120378234,width-100,height-75,resizemode-4/news/environment/global-warming/germany-sees-worrying-record-dry-spell-in-early-2025.jpg"
     },
     {
         "title": "Opportunities at a macro level: 5 stocks of companies which help in managing a scarce resource called ‘water’",
@@ -63,13 +98,6 @@
         "img_src": "https://img.etimg.com/thumb/msid-120314917,width-100,height-75,resizemode-4/news/india/andhra-pradesh-mulls-pooling-30000-more-acres-for-amaravati-no-decision-yet-minister.jpg"
     },
     {
-        "title": "India to receive above normal rainfall in 2025 with neutral El Nino conditions, IMD says",
-        "link": "https://economictimes.indiatimes.com/news/india/india-to-receive-above-normal-rainfall-in-2025-with-neutral-el-nino-conditions-imd-says/articleshow/120307740.cms",
-        "desc": "India is expected to receive above-average monsoon rains in 2025, according to the India Meteorological Department. The monsoon is projected to be 105% of the long-term average, potentially boosting the agricultural sector. While most of the country will experience above-normal rainfall, some regions in Northwest, Northeast, and South Peninsular India may receive below-normal rainfall.",
-        "time": "15 Apr, 2025, 03:39 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120307740,width-100,height-75,resizemode-4/news/india/india-to-receive-above-normal-rainfall-in-2025-with-neutral-el-nino-conditions-imd-says.jpg"
-    },
-    {
         "title": "Farming meets the future: This AI-powered app equips farmers for a changing climate",
         "link": "https://economictimes.indiatimes.com/small-biz/sustainability/farming-meets-the-future-this-ai-powered-app-equips-farmers-for-a-changing-climate/articleshow/120300010.cms",
         "desc": "Farmers using Digital Green’s Farmer.Chat app receive valuable insights on pest and disease outbreaks, weather updates, and market access.",
@@ -112,32 +140,11 @@
         "img_src": "https://img.etimg.com/thumb/msid-120238735,width-100,height-75,resizemode-4/news/economy/foreign-trade/tariffied-shrimp-exporters-look-beyond-us-shores.jpg"
     },
     {
-        "title": "Punjab National Bank launches 34 new products on its 131st foundation day",
-        "link": "https://economictimes.indiatimes.com/industry/banking/finance/banking/punjab-national-bank-launches-34-new-products-on-its-131st-foundation-day/articleshow/120237470.cms",
-        "desc": "Punjab National Bank celebrated its 131st foundation day by launching 34 new products, including customer-centric deposit schemes and digital transformation initiatives. Financial Services Secretary M Nagaraju commended PNB's efforts to deepen financial inclusion and enhance customer experience. The bank also organized a 'Cyber Run' to promote cybersecurity awareness and safe digital banking practices.",
-        "time": "12 Apr, 2025, 10:02 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120237470,width-100,height-75,resizemode-4/industry/banking/finance/banking/punjab-national-bank-launches-34-new-products-on-its-131st-foundation-day.jpg"
-    },
-    {
         "title": "Time for India’s agri-exporters to look beyond US to mitigate Trump’s tariffs, say experts, stakeholders",
         "link": "https://economictimes.indiatimes.com/small-biz/trade/exports/insights/time-for-indias-agri-exporters-to-look-beyond-us-to-mitigate-trumps-tariffs-say-experts-stakeholders/articleshow/120195826.cms",
         "desc": "Diversification into new markets and value-added products, along with infrastructure upgrades and support for MSMEs, are crucial for mitigating the impact and ensuring long-term competitiveness.",
         "time": "12 Apr, 2025, 10:49 AM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120195826,width-100,height-75,resizemode-4/small-biz/trade/exports/insights/time-for-indias-agri-exporters-to-look-beyond-us-to-mitigate-trumps-tariffs-say-experts-stakeholders.jpg"
-    },
-    {
-        "title": "Daylight savings 2025: Donald Trump wants to stop moving clocks back one hour every autumn, cites THIS reason",
-        "link": "https://economictimes.indiatimes.com/news/international/us/daylight-savings-2025-donald-trump-wants-to-stop-moving-clocks-back-one-hour-every-autumn-cites-this-reason/articleshow/120212605.cms",
-        "desc": "Daylight Saving Time was adopted by the federal government during World War I but was unpopular with farmers rushing to get produce to morning markets, and was quickly abolished.",
-        "time": "11 Apr, 2025, 09:27 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120212605,width-100,height-75,resizemode-4/news/international/us/daylight-savings-2025-donald-trump-wants-to-stop-moving-clocks-back-one-hour-every-autumn-cites-this-reason.jpg"
-    },
-    {
-        "title": "Tariffs impact? Texas famers to immediately receive water from Mexico under over 80-year-old water sharing treaty, day after Donald Trump issued threat",
-        "link": "https://economictimes.indiatimes.com/news/international/us/tariffs-impact-texas-famers-to-immediately-receive-water-from-mexico-under-over-80-year-old-water-sharing-treaty-day-after-donald-trump-issued-threat/articleshow/120211735.cms",
-        "desc": "Mexico, which has fallen short on it deliveries under an 81-year-old water sharing treaty with the U.S.",
-        "time": "11 Apr, 2025, 08:52 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120211735,width-100,height-75,resizemode-4/news/international/us/tariffs-impact-texas-famers-to-immediately-receive-water-from-mexico-under-over-80-year-old-water-sharing-treaty-day-after-donald-trump-issued-threat.jpg"
     },
     {
         "title": "After China, Trump threatens sanctions, tariffs on Mexico for 'stealing water'",
@@ -159,13 +166,6 @@
         "desc": "\"Historically, pay commission recommendations have led to a fitment factor of around 2.8, implying that salaries could rise nearly 3x. To pre-empt accusations of bias, comparisons are often made between incomes of lower-grade gov employees and those of farmers.\"",
         "time": "09 Apr, 2025, 11:40 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120136582,width-100,height-75,resizemode-4/opinion/et-commentary/pay-commission-math-doesnt-work.jpg"
-    },
-    {
-        "title": "MrBeast criticises Trump tariffs, highlights impact on his chocolate brand Feastables",
-        "link": "https://economictimes.indiatimes.com/tech/technology/mrbeast-criticises-trump-tariffs-highlights-impact-on-his-chocolate-brand-feastables/articleshow/120120798.cms",
-        "desc": "Feastables is currently produced in both Peru and the US, but the company sources its cocoa internationally and ensures fair pay for farmers. “We pay our farmers a living income, use fair trade certified beans, etc. so I was already spending a lot on cocoa,” he said. “A random price hike was pretty brutal ngl.”",
-        "time": "09 Apr, 2025, 01:08 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120120798,width-100,height-75,resizemode-4/tech/technology/mrbeast-criticises-trump-tariffs-highlights-impact-on-his-chocolate-brand-feastables.jpg"
     },
     {
         "title": "Congress passes seven-point resolution on Sardar Vallabhbhai Patel",
