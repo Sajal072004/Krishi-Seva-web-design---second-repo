@@ -1,5 +1,19 @@
 [
     {
+        "title": "Panic in Pakistan as India vows to cut off water supply over Kashmir",
+        "link": "https://economictimes.indiatimes.com/news/international/world-news/panic-in-pakistan-as-india-vows-to-cut-off-water-supply-over-kashmir/articleshow/120683286.cms",
+        "desc": "Pakistani farmers fear widespread desertification and hunger as India threatens to cut off water supplies from the Indus River following a terrorist attack in Kashmir. India suspended the Indus Waters Treaty, raising concerns about irrigation for 80% of Pakistani farms and potentially crippling the nation's economy due to water shortages impacting agriculture and electricity generation.",
+        "time": "28 Apr, 2025, 08:22 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120683286,width-100,height-75,resizemode-4/news/international/world-news/panic-in-pakistan-as-india-vows-to-cut-off-water-supply-over-kashmir.jpg"
+    },
+    {
+        "title": "India-US trade deal: PM Modi will never compromise interests of our farmers, says Suresh Prabhu",
+        "link": "https://economictimes.indiatimes.com/small-biz/sme-sector/india-us-trade-deal-pm-modi-will-never-compromise-interests-of-our-farmers-says-suresh-prabhu/articleshow/120687869.cms",
+        "desc": "Trade policies and the interventions should be managed with precision to safeguard the interests of both farmers and consumers, says Suresh Prabhu.",
+        "time": "28 Apr, 2025, 12:34 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-120687869,width-100,height-75,resizemode-4/small-biz/sme-sector/india-us-trade-deal-pm-modi-will-never-compromise-interests-of-our-farmers-says-suresh-prabhu.jpg"
+    },
+    {
         "title": "Maharashtra govt to start using satellite images to assess crop damage and compensation",
         "link": "https://economictimes.indiatimes.com/news/india/maharashtra-govt-to-start-using-satellite-images-to-assess-crop-damage-and-compensation/articleshow/120667860.cms",
         "desc": "The Maharashtra government will now use satellite imagery and NDVI to assess crop damage, excluding droughts, for faster and more accurate aid distribution to farmers. This technology-driven approach aims to replace traditional on-field surveys and curb inflated damage claims. The initiative, delayed due to opposition, is set to roll out across the state after a successful study group report.",
@@ -47,13 +61,6 @@
         "desc": "Meghalaya's Strawberry Festival, a blend of agro-tourism, culture, and rural development, will be held on May 2nd and 3rd, 2025, across three districts. The festival offers strawberry picking, product stalls, workshops, and cultural performances. Strawberry production has increased, and the government aims to expand cultivation, boosting the local economy and empowering farmers.",
         "time": "26 Apr, 2025, 07:40 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120647952,width-100,height-75,resizemode-4/news/india/meghalaya-to-host-vibrant-strawberry-festival-on-may-2-3-2025.jpg"
-    },
-    {
-        "title": "Centre to unveil Rs 255 crore worth of fisheries projects at coastal states meet on April 28",
-        "link": "https://economictimes.indiatimes.com/news/economy/policy/centre-to-unveil-rs-255-crore-worth-of-fisheries-projects-at-coastal-states-meet-on-april-28/articleshow/120642424.cms",
-        "desc": "Union Minister Rajiv Ranjan Singh will inaugurate projects worth Rs 255.30 crore under PMMSY in Mumbai, benefiting seven coastal states and UTs. Key initiatives like Marine Fisheries Census, TED project, and Vessel Communication SOP will be launched. The event will also recognize outstanding cooperatives and distribute Aqua Insurance certificates and Kisan Credit Cards.",
-        "time": "26 Apr, 2025, 03:02 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120642424,width-100,height-75,resizemode-4/news/economy/policy/centre-to-unveil-rs-255-crore-worth-of-fisheries-projects-at-coastal-states-meet-on-april-28.jpg"
     },
     {
         "title": "U.S agro industry in dire straits; China suddenly halts 12,000 metric tons of pork shipments",
@@ -194,12 +201,5 @@
         "desc": "Farmers using Digital Green’s Farmer.Chat app receive valuable insights on pest and disease outbreaks, weather updates, and market access.",
         "time": "15 Apr, 2025, 01:48 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120300010,width-100,height-75,resizemode-4/small-biz/sustainability/farming-meets-the-future-this-ai-powered-app-equips-farmers-for-a-changing-climate.jpg"
-    },
-    {
-        "title": "Around 80 pc of Maharashtra farmers will get free power by Dec next year: Devendra Fadnavis",
-        "link": "https://economictimes.indiatimes.com/news/politics-and-nation/around-80-pc-of-maharashtra-farmers-will-get-free-power-by-dec-next-year-devendra-fadnavis/articleshow/120257186.cms",
-        "desc": "Maharashtra Chief Minister Devendra Fadnavis announced that approximately 80% of farmers in the state will receive free electricity by December 2026. This initiative aims to provide 12 hours of daytime electricity throughout the year, offering significant relief to the agricultural community. The government is actively working on generating 16000 MW of electricity under the Mukhyamantri Saur Krishi Yojana.",
-        "time": "13 Apr, 2025, 08:01 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120257186,width-100,height-75,resizemode-4/news/politics-and-nation/around-80-pc-of-maharashtra-farmers-will-get-free-power-by-dec-next-year-devendra-fadnavis.jpg"
     }
 ]
