@@ -1,5 +1,12 @@
 [
     {
+        "title": "The day Grok lost its mind",
+        "link": "https://economictimes.indiatimes.com/tech/artificial-intelligence/the-day-grok-lost-its-mind/articleshow/121248860.cms",
+        "desc": "A controversy erupted when Elon Musk shared a post about murdered white farmers in South Africa. Grok, an AI chatbot, initially debunked claims of 'white genocide'. Later, Grok strangely fixated on this topic, even in unrelated conversations. This incident highlights the unpredictable nature of AI. It also raises concerns about potential manipulation and the spread of misinformation.",
+        "time": "18 May, 2025, 04:50 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-121248860,width-100,height-75,resizemode-4/tech/artificial-intelligence/the-day-grok-lost-its-mind.jpg"
+    },
+    {
         "title": "Assam govt hands over 55,000 pucca houses, launches women mason drive",
         "link": "https://economictimes.indiatimes.com/news/india/assam-govt-hands-over-55000-pucca-houses-launches-women-mason-drive/articleshow/121238450.cms",
         "desc": "Union Minister Shivraj Singh Chouhan and Chief Minister Himanta Biswa Sarma presented 55,000 pucca houses to rural beneficiaries in Assam under PMAY-G. They launched the 'Lakhimi Mistri' initiative, training women in masonry, and inaugurated 21 knowledge centers. Assam has been allotted a target of 3,76,075 houses for FY 2025-26, aiming to achieve 'Housing for All' in rural areas.",
@@ -75,6 +82,13 @@
         "desc": "Jairam Thakur supports Himachal Pradesh apple growers' demand. They want a ban on Turkish apple imports. Growers cite Turkey's perceived anti-India stance. They allege Turkish support for Pakistan. Ankit Bramta highlights the impact of imports on local prices. He suggests a ban could benefit Indian farmers. The demand gains traction in Shimla's apple-growing region.",
         "time": "16 May, 2025, 09:00 AM IST",
         "img_src": "https://img.etimg.com/thumb/msid-121201230,width-100,height-75,resizemode-4/news/politics-and-nation/similar-actions-taken-for-pakistan-should-also-be-taken-for-turkey-hp-lop-jairam-thakur.jpg"
+    },
+    {
+        "title": "Trade unions defer nationwide general strike to July 9",
+        "link": "https://economictimes.indiatimes.com/news/india/trade-unions-defer-nationwide-general-strike-to-july-9/articleshow/121193276.cms",
+        "desc": "The joint platform of 10-central trade unions, barring the RSS-affiliate Bhartiya Mazdoor Sangh, have deferred their proposed nationwide general strike on May 20 to July 9, 2025 citing the prevailing situation throughout the country. However, the joint platform has called for demonstrations across the state capitals at industry level on May 20.",
+        "time": "15 May, 2025, 09:34 PM IST",
+        "img_src": "https://img.etimg.com/thumb/msid-121193276,width-100,height-75,resizemode-4/news/india/trade-unions-defer-nationwide-general-strike-to-july-9.jpg"
     },
     {
         "title": "Maharashtra govt to set up irradiation centres after years of battling volatile onion prices",
@@ -182,24 +196,10 @@
         "img_src": "https://img.etimg.com/thumb/msid-120940612,width-100,height-75,resizemode-4/news/economy/foreign-trade/india-uk-fta-no-duty-concessions-on-british-dairy-products-apples-cheese.jpg"
     },
     {
-        "title": "PM Kisan 20th instalment: When will PM Kisan beneficiaries receive the next instalment?",
-        "link": "https://economictimes.indiatimes.com/wealth/save/pm-kisan-20th-instalment-when-will-pm-kisan-beneficiaries-receive-the-next-instalment/articleshow/120931821.cms",
-        "desc": "Prime Minister Narendra Modi disbursed the 19th installment of the PM-KISAN scheme on February 24, 2025, in Bhagalpur, Bihar, continuing financial aid to landholding farmers. The scheme provides Rs 6,000 annually, distributed in three installments of Rs 2,000 directly to beneficiaries' bank accounts.",
-        "time": "06 May, 2025, 05:21 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120931821,width-100,height-75,resizemode-4/wealth/save/pm-kisan-20th-instalment-when-will-pm-kisan-beneficiaries-receive-the-next-instalment.jpg"
-    },
-    {
         "title": "Tension along International Border: Farmers rush to wrap up harvest",
         "link": "https://economictimes.indiatimes.com/news/india/tension-along-international-border-farmers-rush-to-wrap-up-harvest/articleshow/120926247.cms",
         "desc": "Farmers along the Jammu and Kashmir International Border are urgently harvesting crops amidst heightened tensions following the Pahalgam terror attack. With most of the harvest complete, they are racing to package and transport their produce, fearing renewed shelling. Labor shortages and memories of past conflicts add to the anxiety as they strive to secure their livelihoods.",
         "time": "06 May, 2025, 02:00 PM IST",
         "img_src": "https://img.etimg.com/thumb/msid-120926247,width-100,height-75,resizemode-4/news/india/tension-along-international-border-farmers-rush-to-wrap-up-harvest.jpg"
-    },
-    {
-        "title": "Mango growers in Navsari are terrorised by organised theft",
-        "link": "https://economictimes.indiatimes.com/news/india/mango-growers-in-navsari-are-terrorised-by-organised-theft/articleshow/120902119.cms",
-        "desc": "Mango growers in Gujarat's Navsari district are facing a surge in organized mango theft, causing significant losses. Farmers report daily losses of 2000-3000 kgs, with thieves selling the stolen fruit at drastically reduced prices in neighboring Surat. Despite complaints to the district administration and police, farmers feel unprotected, fearing violence if they intervene.",
-        "time": "05 May, 2025, 06:40 PM IST",
-        "img_src": "https://img.etimg.com/thumb/msid-120902119,width-100,height-75,resizemode-4/news/india/mango-growers-in-navsari-are-terrorised-by-organised-theft.jpg"
     }
 ]
